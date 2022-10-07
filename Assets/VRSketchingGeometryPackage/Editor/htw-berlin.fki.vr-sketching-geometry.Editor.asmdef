@@ -1,0 +1,10 @@
+{
+  "name": "htw-berlin.fki.vr-sketching-geometry.Editor",
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": []
+}

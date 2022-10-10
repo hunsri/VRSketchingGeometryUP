@@ -1,7 +1,7 @@
 ﻿{
-  "name": "de.htw-berlin.fki.vr-sketching-geometry.Runtime.Tests",
+  "name": "HTWBerlin.FKI.VRSketchingGeometry.Runtime.Tests",
   "references": [
-    "de.htw-berlin.fki.vr-sketching-geometry.Runtime",
+    "HTWBerlin.FKI.VRSketchingGeometry.Runtime",
     "Unity.PerformanceTesting"
   ],
   "optionalUnityReferences": [

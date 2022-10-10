@@ -2,17 +2,22 @@
   "name": "de.htw-berlin.fki.vr-sketching-geometry",
   "version": "0.1.0",
   "displayName": "VR Sketching Geometry",
-  "description": "Leigthweight VR Sketching Tool",
+  "description": "Lightweight VR Sketching Tool",
   "documentationUrl": "https://tterpi.github.io/VRSketchingGeometry/articles/intro.html",
   "keywords": [
-    "VR",
-	  "Sketching"
+    "VR", 
+    "Sketching"
   ],
   "samples": [
     {
       "displayName": "Example Structures",
       "description": "Contains a simple scene with pre-generated structures",
-      "path": "Samples~/ExampleStructures"
+      "path": "Samples/ExampleStructures"
     }
-  ]
+  ],
+  "dependencies": {
+    "com.unity.test-framework": "1.1.22",
+    "com.unity.test-framework.performance": "2.4.0"
+  },
+  "testables": ["de.htw-berlin.fki.vr-sketching-geometry.Runtime.Tests", "Unity.PerformanceTesting"]
 }

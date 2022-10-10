@@ -8,7 +8,7 @@ using VRSketchingGeometry.Commands;
 using VRSketchingGeometry.Commands.Ribbon;
 using UnityEngine.SceneManagement;
 
-namespace Tests
+namespace VRSketchingGeometryPackage.Tests.Runtime.UnitTest
 {
     public class RibbonSketchObjectTest
     {

@@ -8,7 +8,7 @@ using VRSketchingGeometry.SketchObjectManagement;
 using VRSketchingGeometry;
 using UnityEngine.SceneManagement;
 
-namespace Tests
+namespace VRSketchingGeometryPackage.Tests.Runtime.UnitTest
 {
     public class MaterialSerializationTest
     {

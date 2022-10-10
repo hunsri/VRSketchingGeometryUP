@@ -10,7 +10,7 @@ using VRSketchingGeometry.Commands.Line;
 using VRSketchingGeometry.Commands.Ribbon;
 using UnityEngine.SceneManagement;
 
-namespace Tests
+namespace VRSketchingGeometryPackage.Tests.Runtime.UnitTest
 {
     public class BrushCommandTest
     {

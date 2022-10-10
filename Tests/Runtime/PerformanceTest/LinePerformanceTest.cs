@@ -9,7 +9,7 @@ using VRSketchingGeometry.Splines;
 using UnityEngine.SceneManagement;
 using Unity.PerformanceTesting;
 
-namespace Tests
+namespace VRSketchingGeometryPackage.Tests.Runtime.PerformanceTest
 {
     public class LinePerformanceTest
     {

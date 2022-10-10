@@ -10,7 +10,7 @@ using VRSketchingGeometry.SketchObjectManagement;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools.Utils;
 
-namespace Tests
+namespace VRSketchingGeometryPackage.Tests.Runtime.UnitTest
 {
     public class GroupSerializationTest
     {

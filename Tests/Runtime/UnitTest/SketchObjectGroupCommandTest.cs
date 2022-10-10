@@ -8,7 +8,7 @@ using VRSketchingGeometry.Commands.Group;
 using VRSketchingGeometry.SketchObjectManagement;
 using UnityEngine.SceneManagement;
 
-namespace Tests
+namespace VRSketchingGeometryPackage.Tests.Runtime.UnitTest
 {
     public class SketchObjectGroupCommandTest
     {

@@ -1,5 +1,5 @@
 {
-  "name": "de.htw-berlin.fki.vr-sketching-geometry.Runtime",
+  "name": "HTWBerlin.FKI.VRSketchingGeometry.Editor",
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,

@@ -19,5 +19,5 @@
     "com.unity.test-framework": "1.1.22",
     "com.unity.test-framework.performance": "2.4.0"
   },
-  "testables": ["de.htw-berlin.fki.vr-sketching-geometry.Runtime.Tests", "Unity.PerformanceTesting"]
+  "testables": ["HTWBerlin.FKI.VRSketchingGeometry.Runtime.Tests", "Unity.PerformanceTesting"]
 }

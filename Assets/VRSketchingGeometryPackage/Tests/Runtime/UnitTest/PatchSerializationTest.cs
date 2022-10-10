@@ -9,7 +9,7 @@ using VRSketchingGeometry.Commands.Patch;
 using VRSketchingGeometry.Serialization;
 using UnityEngine.SceneManagement;
 
-namespace Tests
+namespace VRSketchingGeometryPackage.Tests.Runtime.UnitTest
 {
     public class PatchSerializationTest
     {

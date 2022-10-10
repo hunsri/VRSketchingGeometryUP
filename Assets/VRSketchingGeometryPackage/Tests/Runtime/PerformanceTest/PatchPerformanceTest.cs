@@ -10,7 +10,7 @@ using VRSketchingGeometry.Serialization;
 using UnityEngine.SceneManagement;
 using Unity.PerformanceTesting;
 
-namespace Tests
+namespace VRSketchingGeometryPackage.Tests.Runtime.PerformanceTest
 {
     public class PatchPerformanceTest
     {

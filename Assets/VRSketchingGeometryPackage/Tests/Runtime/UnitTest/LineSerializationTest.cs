@@ -8,7 +8,7 @@ using VRSketchingGeometry.Serialization;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools.Utils;
 
-namespace Tests
+namespace VRSketchingGeometryPackage.Tests.Runtime.UnitTest
 {
     public class LineSerializationTest
     {

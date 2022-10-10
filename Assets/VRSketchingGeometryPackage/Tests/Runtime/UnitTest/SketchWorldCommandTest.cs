@@ -8,7 +8,7 @@ using VRSketchingGeometry;
 using VRSketchingGeometry.Commands;
 using VRSketchingGeometry.SketchObjectManagement;
 
-namespace Tests
+namespace VRSketchingGeometryPackage.Tests.Runtime.UnitTest
 {
     public class SketchWorldCommandTest
     {

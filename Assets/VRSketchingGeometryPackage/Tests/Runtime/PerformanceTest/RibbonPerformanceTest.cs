@@ -8,7 +8,7 @@ using VRSketchingGeometry.Meshing;
 using UnityEngine.SceneManagement;
 using Unity.PerformanceTesting;
 
-namespace Tests
+namespace VRSketchingGeometryPackage.Tests.Runtime.PerformanceTest
 {
     public class RibbonPerformanceTest
     {

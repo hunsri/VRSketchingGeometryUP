@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-namespace VRpen.Scripts.Examples.Editor
+namespace VRSketchingGeometryPackage.Samples.ExampleScenes.Scripts.Editor
 {
     [CustomEditor(typeof(LineExample))]
     public class EditorScriptLineExample : UnityEditor.Editor

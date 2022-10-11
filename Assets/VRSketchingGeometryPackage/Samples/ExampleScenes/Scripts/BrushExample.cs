@@ -6,7 +6,7 @@ using VRSketchingGeometry.Meshing;
 using VRSketchingGeometry.Serialization;
 using VRSketchingGeometry.SketchObjectManagement;
 
-namespace VRpen.Scripts.Examples
+namespace VRSketchingGeometryPackage.Samples.ExampleScenes.Scripts
 {
     public class BrushExample : MonoBehaviour
     {

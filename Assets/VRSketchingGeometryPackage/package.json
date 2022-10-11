@@ -11,14 +11,19 @@
   ],
   "samples": [
     {
-      "displayName": "Example Structures",
-      "description": "Contains a simple scene with pre-generated structures",
-      "path": "Samples/ExampleStructures"
+      "displayName": "Shared Assets",
+      "description": "Contains assets that are shared between samples. Can be used as reference for own assets.",
+      "path": "Samples~/SharedAssets"
     },
     {
       "displayName": "Example Scenes",
       "description": "Contains scenes with scripts and explanations.",
-      "path": "Samples/ExampleScenes"
+      "path": "Samples~/ExampleScenes"
+    },
+    {
+      "displayName": "Legacy Example",
+      "description": "The old example. Contains a static scene with various generated structures.",
+      "path": "Samples~/LegacyExample"
     }
   ],
   "dependencies": {

@@ -6,7 +6,7 @@ using VRSketchingGeometry.Commands.Line;
 using VRSketchingGeometry.SketchObjectManagement;
 using VRSketchingGeometry.Commands.Group;
 
-namespace VRpen.Scripts.Examples
+namespace VRSketchingGeometryPackage.Samples.ExampleScenes.Scripts
 {
     public class LineExample : MonoBehaviour
     {
@@ -139,7 +139,10 @@ namespace VRpen.Scripts.Examples
                     //The error handled here happens when there are only two points in a LineSketchObject left,
                     //and the last action was a redo.
                     //The issue is created by the necessity of 3 existing waypoints for re-rendering a LineSketchObject.
-
+                    Debug.LogError("Line interpolation error!\n" +
+                                   "View script comments for further details!\n" +
+                                   "Stack Trace:\n"+ e.StackTrace);
+                    
                     //This is necessary because of an issue within the modeling kernel
                     //Please note that this won't resolve all problems
                     //(such as losing the second waypoint)

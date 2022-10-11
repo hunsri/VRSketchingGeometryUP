@@ -202,6 +202,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Defaults: {fileID: 11400000, guid: 80ac1fe1704d8434eac74bc2c69b9794, type: 2}
-  highlightMaterial: {fileID: 0}
-  sphereObject: {fileID: 0}
+  highlightMaterial: {fileID: 2100000, guid: 9463805ee6ca2344397c6628a80a84d3, type: 2}
+  sphereObject: {fileID: 1415086077552610675}
   minimumControlPointDistance: 1

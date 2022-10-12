@@ -78,7 +78,7 @@ See [the example script](./Samples/LegacyExample/VRSketchingExample.cs) for a mo
 ```
 
 ## Workflow
-1. Instantiate a sketch world prefab. Easy access to prefabs is provided through the DefaultReferences asset at `Example Structures/DefaultReferences.asset`. (see [Import the examples](./README.md#import-the-examples))
+1. Instantiate a sketch world prefab. Easy access to prefabs is provided through the DefaultReferences asset at `Example Structures/DefaultReferences.asset`.
 2. Create sketch objects and groups from prefabs and add them to the sketch object world. Execute commands using a CommandInvoker object for undo and redo functionality. All scripts are in the VRSketchingGeometry namespace.
 4. Serialize or export using methods of the sketch world script.
 5. Load serialized sketch world from the serialized xml file for further editing.

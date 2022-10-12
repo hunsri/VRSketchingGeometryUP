@@ -32,7 +32,7 @@ This practice follows the Unity guidelines for creating the package structure.
 
 Note that `"version"` needs to be replaced by the version number that you want to release.
 ```
-git subtree split --prefix=UnityGLTFPackage/Assets/VRSketchingGeometry --branch upm
+git subtree split --prefix=VRSketchingGeometryUP/Assets/VRSketchingGeometryPackage --branch upm
 git tag "version" upm
 git push origin upm --tags
 ```

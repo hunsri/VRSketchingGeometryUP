@@ -7,6 +7,8 @@ Before you start the scenes make sure you also have the `Shared Assets` imported
 The scenes are designed to work independently from the input system.
 To interact with a scene at runtime you can use the buttons provided in the inspector of the `SceneScripts` GameObject within each scene.
 
+![BrushExample](https://user-images.githubusercontent.com/51961152/195395639-a0ab97dc-4f84-4e89-b9bb-d3c28ae27885.png)
+
 ## LineExample
 
 ### Shows

@@ -1,0 +1,34 @@
+{
+  "name": "de.htw-berlin.fki.vr-sketching-geometry",
+  "version": "0.1.0",
+  "displayName": "VR Sketching Geometry",
+  "description": "Lightweight VR Sketching Tool",
+  "unity": "2019.4",
+  "documentationUrl": "https://tterpi.github.io/VRSketchingGeometry/articles/intro.html",
+  "keywords": [
+    "VR",
+    "Sketching"
+  ],
+  "samples": [
+    {
+      "displayName": "Shared Assets",
+      "description": "Contains assets that are shared between samples. Can be used as reference for own assets.",
+      "path": "Samples~/SharedAssets"
+    },
+    {
+      "displayName": "Example Scenes",
+      "description": "Contains scenes with scripts and explanations.",
+      "path": "Samples~/ExampleScenes"
+    },
+    {
+      "displayName": "Legacy Example",
+      "description": "The old example. Contains a static scene with various generated structures.",
+      "path": "Samples~/LegacyExample"
+    }
+  ],
+  "dependencies": {
+    "com.unity.test-framework": "1.1.22",
+    "com.unity.test-framework.performance": "2.8.1-preview"
+  },
+  "testables": ["com.unity.test-framework.performance"]
+}

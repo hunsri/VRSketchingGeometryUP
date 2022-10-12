@@ -1,0 +1,13 @@
+﻿{
+  "name": "HTWBerlin.FKI.VRSketchingGeometry.Runtime.Tests",
+  "references": [
+    "HTWBerlin.FKI.VRSketchingGeometry.Runtime",
+    "Unity.PerformanceTesting"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "overrideReferences": true,
+  "includePlatforms": [],
+  "excludePlatforms": []
+}

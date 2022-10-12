@@ -27,7 +27,7 @@ This is a framework for developing 3D sketching applications in Unity.
 - choose "Add package from git URL..."
 - enter the URL 
 ``` 
-https://github.com/hunsri/VRSketchingGeometryPackage.git
+https://github.com/hunsri/VRSketchingGeometryUP.git#0.1.0
 ```
 
 ## Import the examples
@@ -45,7 +45,7 @@ The following example script shows how to create new line sketch object and add 
 You will have to reference the file DefaultReferences.asset found in `Example Structures/Scenes/ExampleScene` in the public field `defaults`.
 To access "Example Structures" you have to import it in the page of the package in the Package Manager (see [Import the examples](./README.md#import-the-examples) )
 
-See [the example script](https://github.com/tterpi/VRSketchingGeometry/blob/master/Assets/Plugins/VRSketchingGeometry/Example/VRSketchingExample.cs) for a more comprehensive demonstration.
+See [the example script](./Samples/LegacyExample/VRSketchingExample.cs) for a more comprehensive demonstration.
 
 ```CS
     using UnityEngine;
@@ -83,17 +83,24 @@ See [the example script](https://github.com/tterpi/VRSketchingGeometry/blob/mast
 4. Serialize or export using methods of the sketch world script.
 5. Load serialized sketch world from the serialized xml file for further editing.
 
-An [example script](https://github.com/tterpi/VRSketchingGeometry/blob/master/Assets/Plugins/VRSketchingGeometry/Example/VRSketchingExample.cs) was created to show this process in practice.
+An [example script](./Samples/LegacyExample/VRSketchingExample.cs) was created to show this process in practice.
 
-## Sample scene
-The sample scene contains various messy test scripts and corresponding game object.
+## Samples
+
+Various examples are provided under `VRSketchingGeometryPackage/Samples`.
+These can be imported via the Unity Package Manager.
 (see [Import the examples](./README.md#import-the-examples))
 
+### Shared Assets
+Contains all the assets required to run the examples.
+Can be used as a reference for the creation of own assets.
+
+### Example Scenes
+Contains various examples. For further details please refer to [this readme](./Samples/ExampleScenes/Scenes/README.md).
+
+### Legacy Example
+Contains a static scene with various messy test scripts and corresponding game objects.
 ![sampleScene](https://user-images.githubusercontent.com/51961152/192534926-2c6406b1-4556-4808-baf7-9f8eeab0bc5f.png)
-
-## Tests
-
-Tests still have to be migrated from the original plugin version.
 
 ## Notes
 This is a conversion from the plugin version (https://github.com/tterpi/VRSketchingGeometry) to a package version.

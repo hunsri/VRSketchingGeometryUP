@@ -41,13 +41,15 @@ https://github.com/hunsri/VRSketchingGeometryUP.git#0.1.0
 Read the [developer guide](https://tterpi.github.io/VRSketchingGeometry/articles/intro.html) and [API documentation](https://tterpi.github.io/VRSketchingGeometry/api/index.html) at the github pages site.
 
 ## Quick start
-The following example script shows how to create new line sketch object and add few control points to it using a command invoker. At the end one command is undone.  
-You will have to reference the file DefaultReferences.asset found in `Example Structures/Scenes/ExampleScene` in the public field `defaults`.
-To access "Example Structures" you have to import it in the page of the package in the Package Manager (see [Import the examples](./README.md#import-the-examples) )
+The following example script shows how to create a new line sketch object and add few control points to it using a command invoker.</br>
+At the end one command is undone.</br></br>
+You will have to reference a `DefaultReference` Scriptable Object in the inspector.</br>
+An example can be found under `SharedAssets/Assets/DefaultReferences.asset`.</br>
+To access `SharedAssets` you have to import it in the Package Manager (see [Import the examples](./README.md#import-the-examples))</br>
 
-See [the example script](./Samples/LegacyExample/VRSketchingExample.cs) for a more comprehensive demonstration.
+See [the example script](./Samples/LegacyExample/Scripts/VRSketchingExample.cs) for a more comprehensive demonstration.
 
-```CS
+```C#
     using UnityEngine;
     using VRSketchingGeometry.SketchObjectManagement;
     using VRSketchingGeometry;
@@ -74,16 +76,15 @@ See [the example script](./Samples/LegacyExample/VRSketchingExample.cs) for a mo
             Invoker.Undo();
         }
     }
-
 ```
 
 ## Workflow
-1. Instantiate a sketch world prefab. Easy access to prefabs is provided through the DefaultReferences asset at `Example Structures/DefaultReferences.asset`.
+1. Instantiate a sketch world prefab. Easy access to prefabs is provided through the DefaultReferences asset at `SharedAssets/Assets/DefaultReferences.asset`.
 2. Create sketch objects and groups from prefabs and add them to the sketch object world. Execute commands using a CommandInvoker object for undo and redo functionality. All scripts are in the VRSketchingGeometry namespace.
 4. Serialize or export using methods of the sketch world script.
 5. Load serialized sketch world from the serialized xml file for further editing.
 
-An [example script](./Samples/LegacyExample/VRSketchingExample.cs) was created to show this process in practice.
+An [example script](./Samples/LegacyExample/Scripts/VRSketchingExample.cs) was created to show this process in practice.
 
 ## Samples
 

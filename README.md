@@ -25,6 +25,11 @@ You can find further details [here](https://www.patreon.com/posts/25070968)
 
 ### Pushing the Unity package to the upm branch
 
+**IMPORTANT**</br>
+Check that the `Samples` folder located under `Assets/` is renamed to `Samples~` before creating a new release!
+Otherwise Unity will throw an error stating that the contained scripts can't be compiled.
+This practice follows the Unity guidelines for creating the package structure.
+
 Note that `"version"` needs to be replaced by the version number that you want to release.
 ```
 git subtree split --prefix=UnityGLTFPackage/Assets/VRSketchingGeometry --branch upm

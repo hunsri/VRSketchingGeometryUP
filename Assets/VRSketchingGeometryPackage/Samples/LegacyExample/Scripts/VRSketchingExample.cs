@@ -78,15 +78,16 @@ namespace VRSketchingGeometryPackage.Samples.LegacyExample.Scripts
             Invoker.ExecuteCommand(new AddToGroupCommand(SketchObjectGroup, PatchSketchObject));
             //Add the SketchObjectGroup to the SketchWorld
             Invoker.ExecuteCommand(new AddObjectToSketchWorldRootCommand(SketchObjectGroup, SketchWorld));
-
+            
+            //Remove comments to enable serialization and deserialization
             //Serialize the SketchWorld to a XML file
-            SavePath = System.IO.Path.Combine(Application.dataPath, "YourSketch.xml");
-            SketchWorld.SaveSketchWorld(SavePath);
+            //SavePath = System.IO.Path.Combine(Application.dataPath, "YourSketch.xml");
+            //SketchWorld.SaveSketchWorld(SavePath);
 
             //Create another SketchWorld and load the serialized SketchWorld
-            DeserializedSketchWorld = Instantiate(Defaults.SketchWorldPrefab).GetComponent<SketchWorld>();
-            DeserializedSketchWorld.LoadSketchWorld(SavePath);
-            DeserializedSketchWorld.transform.position += new Vector3(5, 0, 0);
+            //DeserializedSketchWorld = Instantiate(Defaults.SketchWorldPrefab).GetComponent<SketchWorld>();
+            //DeserializedSketchWorld.LoadSketchWorld(SavePath);
+            //DeserializedSketchWorld.transform.position += new Vector3(5, 0, 0);
 
             //Export the SketchWorld as an OBJ file
             //SketchWorld.ExportSketchWorldToDefaultPath();

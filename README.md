@@ -27,7 +27,7 @@ You can find further details [here](https://www.patreon.com/posts/25070968)
 
 Note that `"version"` needs to be replaced by the version number that you want to release.
 ```
-git subtree split --prefix=UnityGLTFPackage/Assets/GLTFSerializer --branch upm
+git subtree split --prefix=UnityGLTFPackage/Assets/VRSketchingGeometry --branch upm
 git tag "version" upm
 git push origin upm --tags
 ```
@@ -47,12 +47,18 @@ There are unit tests using Unity Testing Framework. (https://docs.unity3d.com/Pa
 They mostly cover the undoable commands and the generation and applying of data objects.
 Coverage of the unit tests should be expanded.
 
-The tests are located at `Assets/VRSketchingGeometryPackage/Tests`</br>
-Before you can run the tests, you have to make sure the `CommandTestScene` is added in the Build Settings.</br>
+**Before you can run the tests, you have to make sure the `CommandTestScene` is added in the Build Settings**</br>
+The tests are located at `Assets/VRSketchingGeometryPackage/Tests`.</br>
 To do that go to "File>Build Settings..." and check if `VRSKetchingGeometryPackage/Tests/Scenes/CommandTestScene` is present there.</br>
 If that's not the case you have to add it.</br>
 
-To run the tests you have to open the Test Runner.</br>
+![BuildSettings](https://user-images.githubusercontent.com/51961152/195391439-bf552078-04a4-4722-aa1f-a12d7c8d21d0.png)
+
+
+**To run the tests you have to open the Test Runner**</br>
 You can find it under "Window>General>Test Runner".</br>
 Once the Test Runner is open, click on "Play Mode".</br>
 You can then select and perform the tests of your choice!</br>
+
+![TestRunner](https://user-images.githubusercontent.com/51961152/195391886-76177d36-d95f-46c4-beba-3a93c37cb2f8.png)
+![UnitTestSelection](https://user-images.githubusercontent.com/51961152/195391910-92307dfc-6cba-44df-b87e-50a8dfba7976.png)

@@ -47,8 +47,6 @@ You will have to reference a `DefaultReference` Scriptable Object in the inspect
 An example can be found under `SharedAssets/Assets/DefaultReferences.asset`.</br>
 To access `SharedAssets` you have to import it in the Package Manager (see [Import the examples](./README.md#import-the-examples))</br>
 
-See [the example script](./Samples~/LegacyExample/Scripts/VRSketchingExample.cs) for a more comprehensive demonstration.
-
 ```C#
     using UnityEngine;
     using VRSketchingGeometry.SketchObjectManagement;
@@ -84,7 +82,7 @@ See [the example script](./Samples~/LegacyExample/Scripts/VRSketchingExample.cs)
 4. Serialize or export using methods of the sketch world script.
 5. Load serialized sketch world from the serialized xml file for further editing.
 
-An [example script](./Samples~/LegacyExample/Scripts/VRSketchingExample.cs) was created to show this process in practice.
+The [LegacyExample](./README.md#legacy-example) also shows this process in practice.
 
 ## Samples
 

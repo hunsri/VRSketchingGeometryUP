@@ -13,7 +13,7 @@ The version of the package that can be used to import it into Unity lays on the 
 To import this package into Unity the import via URL can be used.</br>
 For example: `https://github.com/hunsri/VRSketchingGeometryUP.git#<version>` </br>
 
-For further details, please refer to [this readme](./Assets/VRSketchingGeometryPackage/README.md) inside the package.
+For further details, please refer to [this readme](Assets/VRSketchingGeometryPackage/README.md) inside the package.
 
 ## Developing for this package
 

@@ -1,3 +1,5 @@
-#[Readme](../README.md)
+#[Development Readme](../README.md)
+#[Usage Readme](../Assets/VRSketchingGeometryPackage/README.md)
+#[Example Scenes](../Assets/VRSketchingGeometryPackage/Samples~/ExampleScenes/Scenes/README.md)
 #[Developer guide](intro.md)
 #[Extension guide](extension_guide.md)

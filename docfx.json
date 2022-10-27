@@ -4,7 +4,8 @@
       "src": [
         {
           "files": [
-            "VRSketchingGeometry.csproj"
+            "HTWBerlin.FKI.VRSketchingGeometry.Editor.csproj",
+            "HTWBerlin.FKI.VRSketchingGeometry.Runtime.csproj"
           ],
           "cwd": ".",
           "exclude": [
@@ -31,7 +32,9 @@
           "api/*.md",
           "articles/**.md",
           "toc.yml",
-          "*.md"
+          "*.md",
+          "Assets/VRSketchingGeometryPackage/README.md",
+          "Assets/VRSketchingGeometryPackage/Samples~/ExampleScenes/Scenes/README.md"
         ],
         "exclude": [
           "obj/**",

@@ -1,0 +1,1152 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  id: RibbonSketchObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  children:
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.AddControlPoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Quaternion})
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.Awake
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetBrush
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetCrossSection
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPoints
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPointsCount
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetRotations
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.MinimumControlPointDistance
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Quaternion})
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Quaternion})
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},UnityEngine.Vector3)
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetRibbonScale(UnityEngine.Vector3)
+  langs:
+  - csharp
+  - vb
+  name: RibbonSketchObject
+  nameWithType: RibbonSketchObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: RibbonSketchObject
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 12
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nRibbon sketch object. Creates a flat ribbon shaped geometry along control points and rotations.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: >-
+      [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer), typeof(MeshCollider))]
+
+      public class RibbonSketchObject : SketchObject, ISelectable, IHighlightable, IGroupable, IBrushable
+    content.vb: >-
+      <RequireComponent(GetType(MeshFilter), GetType(MeshRenderer), GetType(MeshCollider))>
+
+      Public Class RibbonSketchObject
+
+          Inherits SketchObject
+
+          Implements ISelectable, IHighlightable, IGroupable, IBrushable
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject
+  implements:
+  - VRSketchingGeometry.SketchObjectManagement.ISelectable
+  - VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  - VRSketchingGeometry.SketchObjectManagement.IGroupable
+  - VRSketchingGeometry.SketchObjectManagement.IBrushable
+  inheritedMembers:
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.MinimumControlPointDistance
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.MinimumControlPointDistance
+  id: MinimumControlPointDistance
+  parent: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  langs:
+  - csharp
+  - vb
+  name: MinimumControlPointDistance
+  nameWithType: RibbonSketchObject.MinimumControlPointDistance
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.MinimumControlPointDistance
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: MinimumControlPointDistance
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 19
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public float MinimumControlPointDistance
+    return:
+      type: System.Single
+    content.vb: Public MinimumControlPointDistance As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.Awake
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.Awake
+  id: Awake
+  parent: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  langs:
+  - csharp
+  - vb
+  name: Awake()
+  nameWithType: RibbonSketchObject.Awake()
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.Awake()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Awake
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 21
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: protected override void Awake()
+    content.vb: Protected Overrides Sub Awake
+  overridden: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  overload: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.Awake*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Quaternion})
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Quaternion})
+  id: SetControlPoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Quaternion})
+  parent: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  langs:
+  - csharp
+  - vb
+  name: SetControlPoints(List<Vector3>, List<Quaternion>)
+  nameWithType: RibbonSketchObject.SetControlPoints(List<Vector3>, List<Quaternion>)
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPoints(System.Collections.Generic.List<UnityEngine.Vector3>, System.Collections.Generic.List<UnityEngine.Quaternion>)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetControlPoints
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 38
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nSet all control points. Points and rotations should be in world space.\n"
+  example: []
+  syntax:
+    content: public void SetControlPoints(List<Vector3> newPoints, List<Quaternion> newRotations)
+    parameters:
+    - id: newPoints
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: ''
+    - id: newRotations
+      type: System.Collections.Generic.List{UnityEngine.Quaternion}
+      description: ''
+    content.vb: Public Sub SetControlPoints(newPoints As List(Of Vector3), newRotations As List(Of Quaternion))
+  overload: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPoints*
+  nameWithType.vb: RibbonSketchObject.SetControlPoints(List(Of Vector3), List(Of Quaternion))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPoints(System.Collections.Generic.List(Of UnityEngine.Vector3), System.Collections.Generic.List(Of UnityEngine.Quaternion))
+  name.vb: SetControlPoints(List(Of Vector3), List(Of Quaternion))
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Quaternion})
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Quaternion})
+  id: SetControlPointsLocalSpace(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Quaternion})
+  parent: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  langs:
+  - csharp
+  - vb
+  name: SetControlPointsLocalSpace(List<Vector3>, List<Quaternion>)
+  nameWithType: RibbonSketchObject.SetControlPointsLocalSpace(List<Vector3>, List<Quaternion>)
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List<UnityEngine.Vector3>, System.Collections.Generic.List<UnityEngine.Quaternion>)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetControlPointsLocalSpace
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 50
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nSet all control points. Points and rotations should be in local space.\n"
+  example: []
+  syntax:
+    content: public void SetControlPointsLocalSpace(List<Vector3> newPoints, List<Quaternion> newRotations)
+    parameters:
+    - id: newPoints
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: ''
+    - id: newRotations
+      type: System.Collections.Generic.List{UnityEngine.Quaternion}
+      description: ''
+    content.vb: Public Sub SetControlPointsLocalSpace(newPoints As List(Of Vector3), newRotations As List(Of Quaternion))
+  overload: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPointsLocalSpace*
+  nameWithType.vb: RibbonSketchObject.SetControlPointsLocalSpace(List(Of Vector3), List(Of Quaternion))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List(Of UnityEngine.Vector3), System.Collections.Generic.List(Of UnityEngine.Quaternion))
+  name.vb: SetControlPointsLocalSpace(List(Of Vector3), List(Of Quaternion))
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.AddControlPoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Quaternion})
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.AddControlPoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Quaternion})
+  id: AddControlPoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Quaternion})
+  parent: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  langs:
+  - csharp
+  - vb
+  name: AddControlPoints(List<Vector3>, List<Quaternion>)
+  nameWithType: RibbonSketchObject.AddControlPoints(List<Vector3>, List<Quaternion>)
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.AddControlPoints(System.Collections.Generic.List<UnityEngine.Vector3>, System.Collections.Generic.List<UnityEngine.Quaternion>)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: AddControlPoints
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 103
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nAdd multiple control points. Should be in world space.\n"
+  example: []
+  syntax:
+    content: public void AddControlPoints(List<Vector3> newPoints, List<Quaternion> newRotations)
+    parameters:
+    - id: newPoints
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: ''
+    - id: newRotations
+      type: System.Collections.Generic.List{UnityEngine.Quaternion}
+      description: ''
+    content.vb: Public Sub AddControlPoints(newPoints As List(Of Vector3), newRotations As List(Of Quaternion))
+  overload: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.AddControlPoints*
+  nameWithType.vb: RibbonSketchObject.AddControlPoints(List(Of Vector3), List(Of Quaternion))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.AddControlPoints(System.Collections.Generic.List(Of UnityEngine.Vector3), System.Collections.Generic.List(Of UnityEngine.Quaternion))
+  name.vb: AddControlPoints(List(Of Vector3), List(Of Quaternion))
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetRibbonScale(UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetRibbonScale(UnityEngine.Vector3)
+  id: SetRibbonScale(UnityEngine.Vector3)
+  parent: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  langs:
+  - csharp
+  - vb
+  name: SetRibbonScale(Vector3)
+  nameWithType: RibbonSketchObject.SetRibbonScale(Vector3)
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetRibbonScale(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetRibbonScale
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 125
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nSet the scale of the ribbon cross section.\n"
+  example: []
+  syntax:
+    content: public void SetRibbonScale(Vector3 scale)
+    parameters:
+    - id: scale
+      type: UnityEngine.Vector3
+      description: ''
+    content.vb: Public Sub SetRibbonScale(scale As Vector3)
+  overload: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetRibbonScale*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},UnityEngine.Vector3)
+  id: SetCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},UnityEngine.Vector3)
+  parent: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  langs:
+  - csharp
+  - vb
+  name: SetCrossSection(List<Vector3>, Vector3)
+  nameWithType: RibbonSketchObject.SetCrossSection(List<Vector3>, Vector3)
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetCrossSection(System.Collections.Generic.List<UnityEngine.Vector3>, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetCrossSection
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 132
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public void SetCrossSection(List<Vector3> CrossSectionVertices, Vector3 CrossSectionScale)
+    parameters:
+    - id: CrossSectionVertices
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    - id: CrossSectionScale
+      type: UnityEngine.Vector3
+    content.vb: Public Sub SetCrossSection(CrossSectionVertices As List(Of Vector3), CrossSectionScale As Vector3)
+  overload: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetCrossSection*
+  nameWithType.vb: RibbonSketchObject.SetCrossSection(List(Of Vector3), Vector3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetCrossSection(System.Collections.Generic.List(Of UnityEngine.Vector3), UnityEngine.Vector3)
+  name.vb: SetCrossSection(List(Of Vector3), Vector3)
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetCrossSection
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetCrossSection
+  id: GetCrossSection
+  parent: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  langs:
+  - csharp
+  - vb
+  name: GetCrossSection()
+  nameWithType: RibbonSketchObject.GetCrossSection()
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetCrossSection()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetCrossSection
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 137
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public List<Vector3> GetCrossSection()
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    content.vb: Public Function GetCrossSection As List(Of Vector3)
+  overload: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetCrossSection*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  id: SetBrush(VRSketchingGeometry.Serialization.Brush)
+  parent: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  langs:
+  - csharp
+  - vb
+  name: SetBrush(Brush)
+  nameWithType: RibbonSketchObject.SetBrush(Brush)
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetBrush
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 141
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public void SetBrush(Brush brush)
+    parameters:
+    - id: brush
+      type: VRSketchingGeometry.Serialization.Brush
+    content.vb: Public Sub SetBrush(brush As Brush)
+  overload: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetBrush*
+  implements:
+  - VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPoints
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPoints
+  id: GetPoints
+  parent: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  langs:
+  - csharp
+  - vb
+  name: GetPoints()
+  nameWithType: RibbonSketchObject.GetPoints()
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPoints()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetPoints
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 153
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nGet the control points in local space.\n"
+  example: []
+  syntax:
+    content: public List<Vector3> GetPoints()
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: ''
+    content.vb: Public Function GetPoints As List(Of Vector3)
+  overload: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPoints*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPointsCount
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPointsCount
+  id: GetPointsCount
+  parent: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  langs:
+  - csharp
+  - vb
+  name: GetPointsCount()
+  nameWithType: RibbonSketchObject.GetPointsCount()
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPointsCount()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetPointsCount
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 154
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public int GetPointsCount()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetPointsCount As Integer
+  overload: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPointsCount*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetRotations
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetRotations
+  id: GetRotations
+  parent: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  langs:
+  - csharp
+  - vb
+  name: GetRotations()
+  nameWithType: RibbonSketchObject.GetRotations()
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetRotations()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetRotations
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 160
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nGet the rotations in local space.\n"
+  example: []
+  syntax:
+    content: public List<Quaternion> GetRotations()
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Quaternion}
+      description: ''
+    content.vb: Public Function GetRotations As List(Of Quaternion)
+  overload: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetRotations*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetBrush
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetBrush
+  id: GetBrush
+  parent: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  langs:
+  - csharp
+  - vb
+  name: GetBrush()
+  nameWithType: RibbonSketchObject.GetBrush()
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetBrush()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetBrush
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/RibbonSketchObject.cs
+    startLine: 162
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public Brush GetBrush()
+    return:
+      type: VRSketchingGeometry.Serialization.Brush
+    content.vb: Public Function GetBrush As Brush
+  overload: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetBrush*
+  implements:
+  - VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SelectableObject
+  nameWithType: SelectableObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SketchObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SketchObject
+  nameWithType: SketchObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject
+- uid: VRSketchingGeometry.SketchObjectManagement.ISelectable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.ISelectable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: ISelectable
+  nameWithType: ISelectable
+  fullName: VRSketchingGeometry.SketchObjectManagement.ISelectable
+- uid: VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IHighlightable
+  nameWithType: IHighlightable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IHighlightable
+- uid: VRSketchingGeometry.SketchObjectManagement.IGroupable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IGroupable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IGroupable
+  nameWithType: IGroupable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable
+- uid: VRSketchingGeometry.SketchObjectManagement.IBrushable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IBrushable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IBrushable
+  nameWithType: IBrushable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: Defaults
+  nameWithType: SketchObject.Defaults
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  commentId: P:VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: ParentGroup
+  nameWithType: SketchObject.ParentGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: meshRenderer
+  nameWithType: SketchObject.meshRenderer
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: meshFilter
+  nameWithType: SketchObject.meshFilter
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: meshCollider
+  nameWithType: SketchObject.meshCollider
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: originalMaterial
+  nameWithType: SketchObject.originalMaterial
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: highlightMaterial
+  nameWithType: SketchObject.highlightMaterial
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: resetToParentGroup()
+  nameWithType: SketchObject.resetToParentGroup()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: SketchObject.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: SketchObject.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: setUpOriginalMaterialAndMeshRenderer()
+  nameWithType: SketchObject.setUpOriginalMaterialAndMeshRenderer()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+    name: setUpOriginalMaterialAndMeshRenderer
+    nameWithType: SketchObject.setUpOriginalMaterialAndMeshRenderer
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+    name: setUpOriginalMaterialAndMeshRenderer
+    nameWithType: SketchObject.setUpOriginalMaterialAndMeshRenderer
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: highlight()
+  nameWithType: SketchObject.highlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+    name: highlight
+    nameWithType: SketchObject.highlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+    name: highlight
+    nameWithType: SketchObject.highlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: revertHighlight()
+  nameWithType: SketchObject.revertHighlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+    name: revertHighlight
+    nameWithType: SketchObject.revertHighlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+    name: revertHighlight
+    nameWithType: SketchObject.revertHighlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  isExternal: true
+  name: UpdateSceneMesh(Mesh)
+  nameWithType: SketchObject.UpdateSceneMesh(Mesh)
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+    name: UpdateSceneMesh
+    nameWithType: SketchObject.UpdateSceneMesh
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Mesh
+    name: Mesh
+    nameWithType: Mesh
+    fullName: UnityEngine.Mesh
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+    name: UpdateSceneMesh
+    nameWithType: SketchObject.UpdateSceneMesh
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Mesh
+    name: Mesh
+    nameWithType: Mesh
+    fullName: UnityEngine.Mesh
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: Awake()
+  nameWithType: SketchObject.Awake()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+    name: Awake
+    nameWithType: SketchObject.Awake
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+    name: Awake
+    nameWithType: SketchObject.Awake
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.Awake*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.Awake
+  name: Awake
+  nameWithType: RibbonSketchObject.Awake
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.Awake
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPoints*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPoints
+  name: SetControlPoints
+  nameWithType: RibbonSketchObject.SetControlPoints
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPoints
+- uid: System.Collections.Generic.List{UnityEngine.Vector3}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector3>
+  nameWithType: List<Vector3>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector3>
+  nameWithType.vb: List(Of Vector3)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector3)
+  name.vb: List(Of Vector3)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{UnityEngine.Quaternion}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Quaternion}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Quaternion>
+  nameWithType: List<Quaternion>
+  fullName: System.Collections.Generic.List<UnityEngine.Quaternion>
+  nameWithType.vb: List(Of Quaternion)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Quaternion)
+  name.vb: List(Of Quaternion)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPointsLocalSpace*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPointsLocalSpace
+  name: SetControlPointsLocalSpace
+  nameWithType: RibbonSketchObject.SetControlPointsLocalSpace
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetControlPointsLocalSpace
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.AddControlPoints*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.AddControlPoints
+  name: AddControlPoints
+  nameWithType: RibbonSketchObject.AddControlPoints
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.AddControlPoints
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetRibbonScale*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetRibbonScale
+  name: SetRibbonScale
+  nameWithType: RibbonSketchObject.SetRibbonScale
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetRibbonScale
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetCrossSection*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetCrossSection
+  name: SetCrossSection
+  nameWithType: RibbonSketchObject.SetCrossSection
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetCrossSection
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetCrossSection*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetCrossSection
+  name: GetCrossSection
+  nameWithType: RibbonSketchObject.GetCrossSection
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetCrossSection
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetBrush*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetBrush
+  name: SetBrush
+  nameWithType: RibbonSketchObject.SetBrush
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.SetBrush
+- uid: VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  parent: VRSketchingGeometry.SketchObjectManagement.IBrushable
+  name: SetBrush(Brush)
+  nameWithType: IBrushable.SetBrush(Brush)
+  fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush(VRSketchingGeometry.Serialization.Brush)
+    name: SetBrush
+    nameWithType: IBrushable.SetBrush
+    fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: VRSketchingGeometry.Serialization.Brush
+    name: Brush
+    nameWithType: Brush
+    fullName: VRSketchingGeometry.Serialization.Brush
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush(VRSketchingGeometry.Serialization.Brush)
+    name: SetBrush
+    nameWithType: IBrushable.SetBrush
+    fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: VRSketchingGeometry.Serialization.Brush
+    name: Brush
+    nameWithType: Brush
+    fullName: VRSketchingGeometry.Serialization.Brush
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Serialization.Brush
+  commentId: T:VRSketchingGeometry.Serialization.Brush
+  parent: VRSketchingGeometry.Serialization
+  name: Brush
+  nameWithType: Brush
+  fullName: VRSketchingGeometry.Serialization.Brush
+- uid: VRSketchingGeometry.Serialization
+  commentId: N:VRSketchingGeometry.Serialization
+  name: VRSketchingGeometry.Serialization
+  nameWithType: VRSketchingGeometry.Serialization
+  fullName: VRSketchingGeometry.Serialization
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPoints*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPoints
+  name: GetPoints
+  nameWithType: RibbonSketchObject.GetPoints
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPoints
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPointsCount*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPointsCount
+  name: GetPointsCount
+  nameWithType: RibbonSketchObject.GetPointsCount
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetPointsCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetRotations*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetRotations
+  name: GetRotations
+  nameWithType: RibbonSketchObject.GetRotations
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetRotations
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetBrush*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetBrush
+  name: GetBrush
+  nameWithType: RibbonSketchObject.GetBrush
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject.GetBrush
+- uid: VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+  parent: VRSketchingGeometry.SketchObjectManagement.IBrushable
+  name: GetBrush()
+  nameWithType: IBrushable.GetBrush()
+  fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+    name: GetBrush
+    nameWithType: IBrushable.GetBrush
+    fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+    name: GetBrush
+    nameWithType: IBrushable.GetBrush
+    fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

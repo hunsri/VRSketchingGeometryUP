@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Commands.Line
+  commentId: N:VRSketchingGeometry.Commands.Line
+  id: VRSketchingGeometry.Commands.Line
+  children:
+  - VRSketchingGeometry.Commands.Line.AddControlPointCommand
+  - VRSketchingGeometry.Commands.Line.AddControlPointContinuousCommand
+  - VRSketchingGeometry.Commands.Line.DeleteControlPointCommand
+  - VRSketchingGeometry.Commands.Line.DeleteControlPointsByRadiusCommand
+  - VRSketchingGeometry.Commands.Line.RefineMeshCommand
+  langs:
+  - csharp
+  - vb
+  name: VRSketchingGeometry.Commands.Line
+  nameWithType: VRSketchingGeometry.Commands.Line
+  fullName: VRSketchingGeometry.Commands.Line
+  type: Namespace
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+references:
+- uid: VRSketchingGeometry.Commands.Line.AddControlPointCommand
+  commentId: T:VRSketchingGeometry.Commands.Line.AddControlPointCommand
+  name: AddControlPointCommand
+  nameWithType: AddControlPointCommand
+  fullName: VRSketchingGeometry.Commands.Line.AddControlPointCommand
+- uid: VRSketchingGeometry.Commands.Line.AddControlPointContinuousCommand
+  commentId: T:VRSketchingGeometry.Commands.Line.AddControlPointContinuousCommand
+  name: AddControlPointContinuousCommand
+  nameWithType: AddControlPointContinuousCommand
+  fullName: VRSketchingGeometry.Commands.Line.AddControlPointContinuousCommand
+- uid: VRSketchingGeometry.Commands.Line.DeleteControlPointCommand
+  commentId: T:VRSketchingGeometry.Commands.Line.DeleteControlPointCommand
+  name: DeleteControlPointCommand
+  nameWithType: DeleteControlPointCommand
+  fullName: VRSketchingGeometry.Commands.Line.DeleteControlPointCommand
+- uid: VRSketchingGeometry.Commands.Line.DeleteControlPointsByRadiusCommand
+  commentId: T:VRSketchingGeometry.Commands.Line.DeleteControlPointsByRadiusCommand
+  name: DeleteControlPointsByRadiusCommand
+  nameWithType: DeleteControlPointsByRadiusCommand
+  fullName: VRSketchingGeometry.Commands.Line.DeleteControlPointsByRadiusCommand
+- uid: VRSketchingGeometry.Commands.Line.RefineMeshCommand
+  commentId: T:VRSketchingGeometry.Commands.Line.RefineMeshCommand
+  name: RefineMeshCommand
+  nameWithType: RefineMeshCommand
+  fullName: VRSketchingGeometry.Commands.Line.RefineMeshCommand

@@ -1,0 +1,238 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Serialization.Serializer
+  commentId: T:VRSketchingGeometry.Serialization.Serializer
+  id: Serializer
+  parent: VRSketchingGeometry.Serialization
+  children:
+  - VRSketchingGeometry.Serialization.Serializer.DeserializeFromXmlFile``1(``0@,System.String)
+  - VRSketchingGeometry.Serialization.Serializer.SerializeToXmlFile``1(``0,System.String)
+  - VRSketchingGeometry.Serialization.Serializer.WriteTestXmlFile``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: Serializer
+  nameWithType: Serializer
+  fullName: VRSketchingGeometry.Serialization.Serializer
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/Serializer.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Serializer
+    path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/Serializer.cs
+    startLine: 11
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Serialization
+  summary: "\nThis class provides methods for serializing and deserializing objects to and from XML files.\n"
+  example: []
+  syntax:
+    content: public class Serializer
+    content.vb: Public Class Serializer
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Serialization.Serializer.SerializeToXmlFile``1(``0,System.String)
+  commentId: M:VRSketchingGeometry.Serialization.Serializer.SerializeToXmlFile``1(``0,System.String)
+  id: SerializeToXmlFile``1(``0,System.String)
+  parent: VRSketchingGeometry.Serialization.Serializer
+  langs:
+  - csharp
+  - vb
+  name: SerializeToXmlFile<T>(T, String)
+  nameWithType: Serializer.SerializeToXmlFile<T>(T, String)
+  fullName: VRSketchingGeometry.Serialization.Serializer.SerializeToXmlFile<T>(T, System.String)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/Serializer.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SerializeToXmlFile
+    path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/Serializer.cs
+    startLine: 22
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Serialization
+  summary: "\n\n"
+  remarks: >
+    The type t should only contain fields of types that can be automatically serialized by the
+
+    .NET XmlSerializer class. This is the case for the data classes in the <xref href="VRSketchingGeometry.Serialization" data-throw-if-not-resolved="false"></xref> namespace.
+  example: []
+  syntax:
+    content: public static void SerializeToXmlFile<T>(T objectToSerialize, string path)
+    parameters:
+    - id: objectToSerialize
+      type: '{T}'
+      description: ''
+    - id: path
+      type: System.String
+      description: File path of the xml file.
+    typeParameters:
+    - id: T
+      description: Type of the object to be serialized.
+    content.vb: Public Shared Sub SerializeToXmlFile(Of T)(objectToSerialize As T, path As String)
+  overload: VRSketchingGeometry.Serialization.Serializer.SerializeToXmlFile*
+  nameWithType.vb: Serializer.SerializeToXmlFile(Of T)(T, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: VRSketchingGeometry.Serialization.Serializer.SerializeToXmlFile(Of T)(T, System.String)
+  name.vb: SerializeToXmlFile(Of T)(T, String)
+- uid: VRSketchingGeometry.Serialization.Serializer.DeserializeFromXmlFile``1(``0@,System.String)
+  commentId: M:VRSketchingGeometry.Serialization.Serializer.DeserializeFromXmlFile``1(``0@,System.String)
+  id: DeserializeFromXmlFile``1(``0@,System.String)
+  parent: VRSketchingGeometry.Serialization.Serializer
+  langs:
+  - csharp
+  - vb
+  name: DeserializeFromXmlFile<T>(out T, String)
+  nameWithType: Serializer.DeserializeFromXmlFile<T>(out T, String)
+  fullName: VRSketchingGeometry.Serialization.Serializer.DeserializeFromXmlFile<T>(out T, System.String)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/Serializer.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: DeserializeFromXmlFile
+    path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/Serializer.cs
+    startLine: 38
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Serialization
+  summary: "\nThis will deserialize an object from a XML file. \n"
+  example: []
+  syntax:
+    content: public static void DeserializeFromXmlFile<T>(out T targetObject, string path)
+    parameters:
+    - id: targetObject
+      type: '{T}'
+      description: ''
+    - id: path
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Shared Sub DeserializeFromXmlFile(Of T)(ByRef targetObject As T, path As String)
+  overload: VRSketchingGeometry.Serialization.Serializer.DeserializeFromXmlFile*
+  nameWithType.vb: Serializer.DeserializeFromXmlFile(Of T)(ByRef T, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: VRSketchingGeometry.Serialization.Serializer.DeserializeFromXmlFile(Of T)(ByRef T, System.String)
+  name.vb: DeserializeFromXmlFile(Of T)(ByRef T, String)
+- uid: VRSketchingGeometry.Serialization.Serializer.WriteTestXmlFile``1(``0)
+  commentId: M:VRSketchingGeometry.Serialization.Serializer.WriteTestXmlFile``1(``0)
+  id: WriteTestXmlFile``1(``0)
+  parent: VRSketchingGeometry.Serialization.Serializer
+  langs:
+  - csharp
+  - vb
+  name: WriteTestXmlFile<T>(T)
+  nameWithType: Serializer.WriteTestXmlFile<T>(T)
+  fullName: VRSketchingGeometry.Serialization.Serializer.WriteTestXmlFile<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/Serializer.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: WriteTestXmlFile
+    path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/Serializer.cs
+    startLine: 56
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Serialization
+  summary: "\nWrites an object as xml to a default path.\n"
+  remarks: Default path is <code>UnityEngine.Application.dataPath</code>
+  example: []
+  syntax:
+    content: public static string WriteTestXmlFile<T>(T objectToWrite)
+    parameters:
+    - id: objectToWrite
+      type: '{T}'
+      description: ''
+    typeParameters:
+    - id: T
+      description: Type of the object to be serialized.
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function WriteTestXmlFile(Of T)(objectToWrite As T) As String
+  overload: VRSketchingGeometry.Serialization.Serializer.WriteTestXmlFile*
+  nameWithType.vb: Serializer.WriteTestXmlFile(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: VRSketchingGeometry.Serialization.Serializer.WriteTestXmlFile(Of T)(T)
+  name.vb: WriteTestXmlFile(Of T)(T)
+references:
+- uid: VRSketchingGeometry.Serialization
+  commentId: N:VRSketchingGeometry.Serialization
+  name: VRSketchingGeometry.Serialization
+  nameWithType: VRSketchingGeometry.Serialization
+  fullName: VRSketchingGeometry.Serialization
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Serialization.Serializer.SerializeToXmlFile*
+  commentId: Overload:VRSketchingGeometry.Serialization.Serializer.SerializeToXmlFile
+  name: SerializeToXmlFile
+  nameWithType: Serializer.SerializeToXmlFile
+  fullName: VRSketchingGeometry.Serialization.Serializer.SerializeToXmlFile
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: VRSketchingGeometry.Serialization.Serializer.DeserializeFromXmlFile*
+  commentId: Overload:VRSketchingGeometry.Serialization.Serializer.DeserializeFromXmlFile
+  name: DeserializeFromXmlFile
+  nameWithType: Serializer.DeserializeFromXmlFile
+  fullName: VRSketchingGeometry.Serialization.Serializer.DeserializeFromXmlFile
+- uid: VRSketchingGeometry.Serialization.Serializer.WriteTestXmlFile*
+  commentId: Overload:VRSketchingGeometry.Serialization.Serializer.WriteTestXmlFile
+  name: WriteTestXmlFile
+  nameWithType: Serializer.WriteTestXmlFile
+  fullName: VRSketchingGeometry.Serialization.Serializer.WriteTestXmlFile

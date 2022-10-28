@@ -1,0 +1,887 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Meshing.SplineMesh
+  commentId: T:VRSketchingGeometry.Meshing.SplineMesh
+  id: SplineMesh
+  parent: VRSketchingGeometry.Meshing
+  children:
+  - VRSketchingGeometry.Meshing.SplineMesh.#ctor(VRSketchingGeometry.Splines.Spline)
+  - VRSketchingGeometry.Meshing.SplineMesh.#ctor(VRSketchingGeometry.Splines.Spline,UnityEngine.Vector3,System.Int32)
+  - VRSketchingGeometry.Meshing.SplineMesh.#ctor(VRSketchingGeometry.Splines.Spline,VRSketchingGeometry.Meshing.ITubeMesh)
+  - VRSketchingGeometry.Meshing.SplineMesh.AddControlPoint(UnityEngine.Vector3)
+  - VRSketchingGeometry.Meshing.SplineMesh.DeleteControlPoint(System.Int32)
+  - VRSketchingGeometry.Meshing.SplineMesh.GetControlPoints
+  - VRSketchingGeometry.Meshing.SplineMesh.GetCrossSection
+  - VRSketchingGeometry.Meshing.SplineMesh.GetCrossSectionShape(System.Collections.Generic.List{UnityEngine.Vector3}@,System.Collections.Generic.List{UnityEngine.Vector3}@)
+  - VRSketchingGeometry.Meshing.SplineMesh.GetNumberOfControlPoints
+  - VRSketchingGeometry.Meshing.SplineMesh.InsertControlPoint(System.Int32,UnityEngine.Vector3)
+  - VRSketchingGeometry.Meshing.SplineMesh.RefineMesh
+  - VRSketchingGeometry.Meshing.SplineMesh.SetControlPoint(System.Int32,UnityEngine.Vector3)
+  - VRSketchingGeometry.Meshing.SplineMesh.SetControlPoints(UnityEngine.Vector3[])
+  - VRSketchingGeometry.Meshing.SplineMesh.SetCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Vector3},UnityEngine.Vector3)
+  - VRSketchingGeometry.Meshing.SplineMesh.SetCrossSectionScale(UnityEngine.Vector3)
+  langs:
+  - csharp
+  - vb
+  name: SplineMesh
+  nameWithType: SplineMesh
+  fullName: VRSketchingGeometry.Meshing.SplineMesh
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SplineMesh
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 20
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nManages the communication between a spline object and the corresponding mesh.\nProvides methods to manipulate the spline and mesh simultaneously.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: public class SplineMesh
+    content.vb: Public Class SplineMesh
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Meshing.SplineMesh.#ctor(VRSketchingGeometry.Splines.Spline)
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.#ctor(VRSketchingGeometry.Splines.Spline)
+  id: '#ctor(VRSketchingGeometry.Splines.Spline)'
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: SplineMesh(Spline)
+  nameWithType: SplineMesh.SplineMesh(Spline)
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.SplineMesh(VRSketchingGeometry.Splines.Spline)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: .ctor
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 30
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nContructor with default circular cross section and default tube mesh implementation.\n"
+  remarks: Scale is 0.4 and cross section resolution is 6.
+  example: []
+  syntax:
+    content: public SplineMesh(Spline spline)
+    parameters:
+    - id: spline
+      type: VRSketchingGeometry.Splines.Spline
+      description: ''
+    content.vb: Public Sub New(spline As Spline)
+  overload: VRSketchingGeometry.Meshing.SplineMesh.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Meshing.SplineMesh.#ctor(VRSketchingGeometry.Splines.Spline,UnityEngine.Vector3,System.Int32)
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.#ctor(VRSketchingGeometry.Splines.Spline,UnityEngine.Vector3,System.Int32)
+  id: '#ctor(VRSketchingGeometry.Splines.Spline,UnityEngine.Vector3,System.Int32)'
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: SplineMesh(Spline, Vector3, Int32)
+  nameWithType: SplineMesh.SplineMesh(Spline, Vector3, Int32)
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.SplineMesh(VRSketchingGeometry.Splines.Spline, UnityEngine.Vector3, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: .ctor
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 41
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nContructor for a spline mesh using the default TubeMesh implementation.\n"
+  example: []
+  syntax:
+    content: public SplineMesh(Spline spline, Vector3 crossSectionScale, int crossSectionResolution = 6)
+    parameters:
+    - id: spline
+      type: VRSketchingGeometry.Splines.Spline
+      description: ''
+    - id: crossSectionScale
+      type: UnityEngine.Vector3
+      description: ''
+    - id: crossSectionResolution
+      type: System.Int32
+      description: "Number of vertices per circular cross section. \nThere will be one more vertex per cross section to create a seam for UV mapping reasons.\n"
+    content.vb: Public Sub New(spline As Spline, crossSectionScale As Vector3, crossSectionResolution As Integer = 6)
+  overload: VRSketchingGeometry.Meshing.SplineMesh.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Meshing.SplineMesh.#ctor(VRSketchingGeometry.Splines.Spline,VRSketchingGeometry.Meshing.ITubeMesh)
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.#ctor(VRSketchingGeometry.Splines.Spline,VRSketchingGeometry.Meshing.ITubeMesh)
+  id: '#ctor(VRSketchingGeometry.Splines.Spline,VRSketchingGeometry.Meshing.ITubeMesh)'
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: SplineMesh(Spline, ITubeMesh)
+  nameWithType: SplineMesh.SplineMesh(Spline, ITubeMesh)
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.SplineMesh(VRSketchingGeometry.Splines.Spline, VRSketchingGeometry.Meshing.ITubeMesh)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: .ctor
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 62
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nContructor for setting a specific ITubeMesh implementation.\n"
+  example: []
+  syntax:
+    content: public SplineMesh(Spline spline, ITubeMesh tubeMesh)
+    parameters:
+    - id: spline
+      type: VRSketchingGeometry.Splines.Spline
+      description: The spline implementation to be used.
+    - id: tubeMesh
+      type: VRSketchingGeometry.Meshing.ITubeMesh
+      description: The <xref href="VRSketchingGeometry.Meshing.ITubeMesh" data-throw-if-not-resolved="false"></xref> implementation to use.
+    content.vb: Public Sub New(spline As Spline, tubeMesh As ITubeMesh)
+  overload: VRSketchingGeometry.Meshing.SplineMesh.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Meshing.SplineMesh.AddControlPoint(UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.AddControlPoint(UnityEngine.Vector3)
+  id: AddControlPoint(UnityEngine.Vector3)
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: AddControlPoint(Vector3)
+  nameWithType: SplineMesh.AddControlPoint(Vector3)
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.AddControlPoint(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: AddControlPoint
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 78
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nAdd a control point to the end of the spline.\n"
+  example: []
+  syntax:
+    content: public Mesh AddControlPoint(Vector3 controlPoint)
+    parameters:
+    - id: controlPoint
+      type: UnityEngine.Vector3
+      description: ''
+    return:
+      type: UnityEngine.Mesh
+      description: ''
+    content.vb: Public Function AddControlPoint(controlPoint As Vector3) As Mesh
+  overload: VRSketchingGeometry.Meshing.SplineMesh.AddControlPoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Meshing.SplineMesh.DeleteControlPoint(System.Int32)
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.DeleteControlPoint(System.Int32)
+  id: DeleteControlPoint(System.Int32)
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: DeleteControlPoint(Int32)
+  nameWithType: SplineMesh.DeleteControlPoint(Int32)
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.DeleteControlPoint(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: DeleteControlPoint
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 89
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nDelete the control point at index.\n"
+  example: []
+  syntax:
+    content: public Mesh DeleteControlPoint(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: ''
+    return:
+      type: UnityEngine.Mesh
+      description: ''
+    content.vb: Public Function DeleteControlPoint(index As Integer) As Mesh
+  overload: VRSketchingGeometry.Meshing.SplineMesh.DeleteControlPoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Meshing.SplineMesh.InsertControlPoint(System.Int32,UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.InsertControlPoint(System.Int32,UnityEngine.Vector3)
+  id: InsertControlPoint(System.Int32,UnityEngine.Vector3)
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: InsertControlPoint(Int32, Vector3)
+  nameWithType: SplineMesh.InsertControlPoint(Int32, Vector3)
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.InsertControlPoint(System.Int32, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: InsertControlPoint
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 101
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nInsert control point at index.\n"
+  example: []
+  syntax:
+    content: public Mesh InsertControlPoint(int index, Vector3 controlPoint)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: ''
+    - id: controlPoint
+      type: UnityEngine.Vector3
+      description: ''
+    return:
+      type: UnityEngine.Mesh
+      description: ''
+    content.vb: Public Function InsertControlPoint(index As Integer, controlPoint As Vector3) As Mesh
+  overload: VRSketchingGeometry.Meshing.SplineMesh.InsertControlPoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Meshing.SplineMesh.SetControlPoint(System.Int32,UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.SetControlPoint(System.Int32,UnityEngine.Vector3)
+  id: SetControlPoint(System.Int32,UnityEngine.Vector3)
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: SetControlPoint(Int32, Vector3)
+  nameWithType: SplineMesh.SetControlPoint(Int32, Vector3)
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.SetControlPoint(System.Int32, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetControlPoint
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 113
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nReplace the control point at index.\n"
+  example: []
+  syntax:
+    content: public Mesh SetControlPoint(int index, Vector3 controlPoint)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: ''
+    - id: controlPoint
+      type: UnityEngine.Vector3
+      description: ''
+    return:
+      type: UnityEngine.Mesh
+      description: ''
+    content.vb: Public Function SetControlPoint(index As Integer, controlPoint As Vector3) As Mesh
+  overload: VRSketchingGeometry.Meshing.SplineMesh.SetControlPoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Meshing.SplineMesh.SetControlPoints(UnityEngine.Vector3[])
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.SetControlPoints(UnityEngine.Vector3[])
+  id: SetControlPoints(UnityEngine.Vector3[])
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: SetControlPoints(Vector3[])
+  nameWithType: SplineMesh.SetControlPoints(Vector3[])
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.SetControlPoints(UnityEngine.Vector3[])
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetControlPoints
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 124
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nSet all control points.\n"
+  example: []
+  syntax:
+    content: public Mesh SetControlPoints(Vector3[] controlPoints)
+    parameters:
+    - id: controlPoints
+      type: UnityEngine.Vector3[]
+      description: ''
+    return:
+      type: UnityEngine.Mesh
+      description: ''
+    content.vb: Public Function SetControlPoints(controlPoints As Vector3()) As Mesh
+  overload: VRSketchingGeometry.Meshing.SplineMesh.SetControlPoints*
+  nameWithType.vb: SplineMesh.SetControlPoints(Vector3())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VRSketchingGeometry.Meshing.SplineMesh.SetControlPoints(UnityEngine.Vector3())
+  name.vb: SetControlPoints(Vector3())
+- uid: VRSketchingGeometry.Meshing.SplineMesh.GetNumberOfControlPoints
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.GetNumberOfControlPoints
+  id: GetNumberOfControlPoints
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: GetNumberOfControlPoints()
+  nameWithType: SplineMesh.GetNumberOfControlPoints()
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.GetNumberOfControlPoints()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetNumberOfControlPoints
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 130
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  syntax:
+    content: public int GetNumberOfControlPoints()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetNumberOfControlPoints As Integer
+  overload: VRSketchingGeometry.Meshing.SplineMesh.GetNumberOfControlPoints*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Meshing.SplineMesh.GetControlPoints
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.GetControlPoints
+  id: GetControlPoints
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: GetControlPoints()
+  nameWithType: SplineMesh.GetControlPoints()
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.GetControlPoints()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetControlPoints
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 135
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  syntax:
+    content: public List<Vector3> GetControlPoints()
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    content.vb: Public Function GetControlPoints As List(Of Vector3)
+  overload: VRSketchingGeometry.Meshing.SplineMesh.GetControlPoints*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Meshing.SplineMesh.SetCrossSectionScale(UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.SetCrossSectionScale(UnityEngine.Vector3)
+  id: SetCrossSectionScale(UnityEngine.Vector3)
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: SetCrossSectionScale(Vector3)
+  nameWithType: SplineMesh.SetCrossSectionScale(Vector3)
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.SetCrossSectionScale(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetCrossSectionScale
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 145
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nThe diameter of the spline will depend on the native size of the set cross section.\nThe default circular cross section has a default diameter of 1.\n"
+  example: []
+  syntax:
+    content: public Mesh SetCrossSectionScale(Vector3 scale)
+    parameters:
+    - id: scale
+      type: UnityEngine.Vector3
+      description: ''
+    return:
+      type: UnityEngine.Mesh
+    content.vb: Public Function SetCrossSectionScale(scale As Vector3) As Mesh
+  overload: VRSketchingGeometry.Meshing.SplineMesh.SetCrossSectionScale*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Meshing.SplineMesh.GetCrossSectionShape(System.Collections.Generic.List{UnityEngine.Vector3}@,System.Collections.Generic.List{UnityEngine.Vector3}@)
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.GetCrossSectionShape(System.Collections.Generic.List{UnityEngine.Vector3}@,System.Collections.Generic.List{UnityEngine.Vector3}@)
+  id: GetCrossSectionShape(System.Collections.Generic.List{UnityEngine.Vector3}@,System.Collections.Generic.List{UnityEngine.Vector3}@)
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: GetCrossSectionShape(out List<Vector3>, out List<Vector3>)
+  nameWithType: SplineMesh.GetCrossSectionShape(out List<Vector3>, out List<Vector3>)
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.GetCrossSectionShape(out System.Collections.Generic.List<UnityEngine.Vector3>, out System.Collections.Generic.List<UnityEngine.Vector3>)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetCrossSectionShape
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 157
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nGet the cross section.\n"
+  example: []
+  syntax:
+    content: public void GetCrossSectionShape(out List<Vector3> crossSectionShape, out List<Vector3> crossSectionShapeNormals)
+    parameters:
+    - id: crossSectionShape
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: A copy of the cross section shape is assigned to this variable.
+    - id: crossSectionShapeNormals
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: A copy of the cross section normals is assigned to this variable.
+    content.vb: Public Sub GetCrossSectionShape(ByRef crossSectionShape As List(Of Vector3), ByRef crossSectionShapeNormals As List(Of Vector3))
+  overload: VRSketchingGeometry.Meshing.SplineMesh.GetCrossSectionShape*
+  nameWithType.vb: SplineMesh.GetCrossSectionShape(ByRef List(Of Vector3), ByRef List(Of Vector3))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VRSketchingGeometry.Meshing.SplineMesh.GetCrossSectionShape(ByRef System.Collections.Generic.List(Of UnityEngine.Vector3), ByRef System.Collections.Generic.List(Of UnityEngine.Vector3))
+  name.vb: GetCrossSectionShape(ByRef List(Of Vector3), ByRef List(Of Vector3))
+- uid: VRSketchingGeometry.Meshing.SplineMesh.GetCrossSection
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.GetCrossSection
+  id: GetCrossSection
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: GetCrossSection()
+  nameWithType: SplineMesh.GetCrossSection()
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.GetCrossSection()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetCrossSection
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 167
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nGet a copy of the cross section used by the tube mesh.\n"
+  example: []
+  syntax:
+    content: public CrossSection GetCrossSection()
+    return:
+      type: VRSketchingGeometry.Meshing.CrossSection
+      description: ''
+    content.vb: Public Function GetCrossSection As CrossSection
+  overload: VRSketchingGeometry.Meshing.SplineMesh.GetCrossSection*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Meshing.SplineMesh.SetCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Vector3},UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.SetCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Vector3},UnityEngine.Vector3)
+  id: SetCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Vector3},UnityEngine.Vector3)
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: SetCrossSection(List<Vector3>, List<Vector3>, Vector3)
+  nameWithType: SplineMesh.SetCrossSection(List<Vector3>, List<Vector3>, Vector3)
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.SetCrossSection(System.Collections.Generic.List<UnityEngine.Vector3>, System.Collections.Generic.List<UnityEngine.Vector3>, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetCrossSection
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 178
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nChange the cross section of the mesh. This will regenerete the mesh.\n"
+  example: []
+  syntax:
+    content: public Mesh SetCrossSection(List<Vector3> crossSectionShape, List<Vector3> crossSectionNormals, Vector3 crossSectionDiameter)
+    parameters:
+    - id: crossSectionShape
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: ''
+    - id: crossSectionNormals
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: ''
+    - id: crossSectionDiameter
+      type: UnityEngine.Vector3
+      description: The requested diameter of the cross section.
+    return:
+      type: UnityEngine.Mesh
+      description: ''
+    content.vb: Public Function SetCrossSection(crossSectionShape As List(Of Vector3), crossSectionNormals As List(Of Vector3), crossSectionDiameter As Vector3) As Mesh
+  overload: VRSketchingGeometry.Meshing.SplineMesh.SetCrossSection*
+  nameWithType.vb: SplineMesh.SetCrossSection(List(Of Vector3), List(Of Vector3), Vector3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VRSketchingGeometry.Meshing.SplineMesh.SetCrossSection(System.Collections.Generic.List(Of UnityEngine.Vector3), System.Collections.Generic.List(Of UnityEngine.Vector3), UnityEngine.Vector3)
+  name.vb: SetCrossSection(List(Of Vector3), List(Of Vector3), Vector3)
+- uid: VRSketchingGeometry.Meshing.SplineMesh.RefineMesh
+  commentId: M:VRSketchingGeometry.Meshing.SplineMesh.RefineMesh
+  id: RefineMesh
+  parent: VRSketchingGeometry.Meshing.SplineMesh
+  langs:
+  - csharp
+  - vb
+  name: RefineMesh()
+  nameWithType: SplineMesh.RefineMesh()
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.RefineMesh()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: RefineMesh
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/SplineMesh.cs
+    startLine: 186
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nRefine the current mesh using the Parallel Transport algorithm.\n"
+  example: []
+  syntax:
+    content: public Mesh RefineMesh()
+    return:
+      type: UnityEngine.Mesh
+      description: ''
+    content.vb: Public Function RefineMesh As Mesh
+  overload: VRSketchingGeometry.Meshing.SplineMesh.RefineMesh*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: VRSketchingGeometry.Meshing
+  commentId: N:VRSketchingGeometry.Meshing
+  name: VRSketchingGeometry.Meshing
+  nameWithType: VRSketchingGeometry.Meshing
+  fullName: VRSketchingGeometry.Meshing
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Meshing.SplineMesh.#ctor*
+  commentId: Overload:VRSketchingGeometry.Meshing.SplineMesh.#ctor
+  name: SplineMesh
+  nameWithType: SplineMesh.SplineMesh
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.SplineMesh
+- uid: VRSketchingGeometry.Splines.Spline
+  commentId: T:VRSketchingGeometry.Splines.Spline
+  parent: VRSketchingGeometry.Splines
+  name: Spline
+  nameWithType: Spline
+  fullName: VRSketchingGeometry.Splines.Spline
+- uid: VRSketchingGeometry.Splines
+  commentId: N:VRSketchingGeometry.Splines
+  name: VRSketchingGeometry.Splines
+  nameWithType: VRSketchingGeometry.Splines
+  fullName: VRSketchingGeometry.Splines
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: VRSketchingGeometry.Meshing.ITubeMesh
+  commentId: T:VRSketchingGeometry.Meshing.ITubeMesh
+  parent: VRSketchingGeometry.Meshing
+  name: ITubeMesh
+  nameWithType: ITubeMesh
+  fullName: VRSketchingGeometry.Meshing.ITubeMesh
+- uid: VRSketchingGeometry.Meshing.SplineMesh.AddControlPoint*
+  commentId: Overload:VRSketchingGeometry.Meshing.SplineMesh.AddControlPoint
+  name: AddControlPoint
+  nameWithType: SplineMesh.AddControlPoint
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.AddControlPoint
+- uid: UnityEngine.Mesh
+  commentId: T:UnityEngine.Mesh
+  parent: UnityEngine
+  isExternal: true
+  name: Mesh
+  nameWithType: Mesh
+  fullName: UnityEngine.Mesh
+- uid: VRSketchingGeometry.Meshing.SplineMesh.DeleteControlPoint*
+  commentId: Overload:VRSketchingGeometry.Meshing.SplineMesh.DeleteControlPoint
+  name: DeleteControlPoint
+  nameWithType: SplineMesh.DeleteControlPoint
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.DeleteControlPoint
+- uid: VRSketchingGeometry.Meshing.SplineMesh.InsertControlPoint*
+  commentId: Overload:VRSketchingGeometry.Meshing.SplineMesh.InsertControlPoint
+  name: InsertControlPoint
+  nameWithType: SplineMesh.InsertControlPoint
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.InsertControlPoint
+- uid: VRSketchingGeometry.Meshing.SplineMesh.SetControlPoint*
+  commentId: Overload:VRSketchingGeometry.Meshing.SplineMesh.SetControlPoint
+  name: SetControlPoint
+  nameWithType: SplineMesh.SetControlPoint
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.SetControlPoint
+- uid: VRSketchingGeometry.Meshing.SplineMesh.SetControlPoints*
+  commentId: Overload:VRSketchingGeometry.Meshing.SplineMesh.SetControlPoints
+  name: SetControlPoints
+  nameWithType: SplineMesh.SetControlPoints
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.SetControlPoints
+- uid: UnityEngine.Vector3[]
+  isExternal: true
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: UnityEngine.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: UnityEngine.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: VRSketchingGeometry.Meshing.SplineMesh.GetNumberOfControlPoints*
+  commentId: Overload:VRSketchingGeometry.Meshing.SplineMesh.GetNumberOfControlPoints
+  name: GetNumberOfControlPoints
+  nameWithType: SplineMesh.GetNumberOfControlPoints
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.GetNumberOfControlPoints
+- uid: VRSketchingGeometry.Meshing.SplineMesh.GetControlPoints*
+  commentId: Overload:VRSketchingGeometry.Meshing.SplineMesh.GetControlPoints
+  name: GetControlPoints
+  nameWithType: SplineMesh.GetControlPoints
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.GetControlPoints
+- uid: System.Collections.Generic.List{UnityEngine.Vector3}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector3>
+  nameWithType: List<Vector3>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector3>
+  nameWithType.vb: List(Of Vector3)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector3)
+  name.vb: List(Of Vector3)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: VRSketchingGeometry.Meshing.SplineMesh.SetCrossSectionScale*
+  commentId: Overload:VRSketchingGeometry.Meshing.SplineMesh.SetCrossSectionScale
+  name: SetCrossSectionScale
+  nameWithType: SplineMesh.SetCrossSectionScale
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.SetCrossSectionScale
+- uid: VRSketchingGeometry.Meshing.SplineMesh.GetCrossSectionShape*
+  commentId: Overload:VRSketchingGeometry.Meshing.SplineMesh.GetCrossSectionShape
+  name: GetCrossSectionShape
+  nameWithType: SplineMesh.GetCrossSectionShape
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.GetCrossSectionShape
+- uid: VRSketchingGeometry.Meshing.SplineMesh.GetCrossSection*
+  commentId: Overload:VRSketchingGeometry.Meshing.SplineMesh.GetCrossSection
+  name: GetCrossSection
+  nameWithType: SplineMesh.GetCrossSection
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.GetCrossSection
+- uid: VRSketchingGeometry.Meshing.CrossSection
+  commentId: T:VRSketchingGeometry.Meshing.CrossSection
+  parent: VRSketchingGeometry.Meshing
+  name: CrossSection
+  nameWithType: CrossSection
+  fullName: VRSketchingGeometry.Meshing.CrossSection
+- uid: VRSketchingGeometry.Meshing.SplineMesh.SetCrossSection*
+  commentId: Overload:VRSketchingGeometry.Meshing.SplineMesh.SetCrossSection
+  name: SetCrossSection
+  nameWithType: SplineMesh.SetCrossSection
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.SetCrossSection
+- uid: VRSketchingGeometry.Meshing.SplineMesh.RefineMesh*
+  commentId: Overload:VRSketchingGeometry.Meshing.SplineMesh.RefineMesh
+  name: RefineMesh
+  nameWithType: SplineMesh.RefineMesh
+  fullName: VRSketchingGeometry.Meshing.SplineMesh.RefineMesh

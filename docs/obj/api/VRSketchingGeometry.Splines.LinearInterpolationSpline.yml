@@ -1,0 +1,852 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline
+  commentId: T:VRSketchingGeometry.Splines.LinearInterpolationSpline
+  id: LinearInterpolationSpline
+  parent: VRSketchingGeometry.Splines
+  children:
+  - VRSketchingGeometry.Splines.LinearInterpolationSpline.#ctor
+  - VRSketchingGeometry.Splines.LinearInterpolationSpline.AddControlPoint(UnityEngine.Vector3)
+  - VRSketchingGeometry.Splines.LinearInterpolationSpline.DeleteControlPoint(System.Int32)
+  - VRSketchingGeometry.Splines.LinearInterpolationSpline.GetControlPoints
+  - VRSketchingGeometry.Splines.LinearInterpolationSpline.GetNumberOfControlPoints
+  - VRSketchingGeometry.Splines.LinearInterpolationSpline.InsertControlPoint(System.Int32,UnityEngine.Vector3)
+  - VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoint(System.Int32,UnityEngine.Vector3)
+  - VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoints(UnityEngine.Vector3[])
+  langs:
+  - csharp
+  - vb
+  name: LinearInterpolationSpline
+  nameWithType: LinearInterpolationSpline
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: LinearInterpolationSpline
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+    startLine: 15
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  summary: "\nSpline that directly represents the provided control points, does not perform any interpolation.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: 'public class LinearInterpolationSpline : Spline'
+    content.vb: >-
+      Public Class LinearInterpolationSpline
+
+          Inherits Spline
+  inheritance:
+  - System.Object
+  - VRSketchingGeometry.Splines.Spline
+  inheritedMembers:
+  - VRSketchingGeometry.Splines.Spline.InterpolatedPoints
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.#ctor
+  commentId: M:VRSketchingGeometry.Splines.LinearInterpolationSpline.#ctor
+  id: '#ctor'
+  parent: VRSketchingGeometry.Splines.LinearInterpolationSpline
+  langs:
+  - csharp
+  - vb
+  name: LinearInterpolationSpline()
+  nameWithType: LinearInterpolationSpline.LinearInterpolationSpline()
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.LinearInterpolationSpline()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: .ctor
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+    startLine: 19
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  syntax:
+    content: public LinearInterpolationSpline()
+    content.vb: Public Sub New
+  overload: VRSketchingGeometry.Splines.LinearInterpolationSpline.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoints(UnityEngine.Vector3[])
+  commentId: M:VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoints(UnityEngine.Vector3[])
+  id: SetControlPoints(UnityEngine.Vector3[])
+  parent: VRSketchingGeometry.Splines.LinearInterpolationSpline
+  langs:
+  - csharp
+  - vb
+  name: SetControlPoints(Vector3[])
+  nameWithType: LinearInterpolationSpline.SetControlPoints(Vector3[])
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoints(UnityEngine.Vector3[])
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetControlPoints
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+    startLine: 24
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  syntax:
+    content: public override void SetControlPoints(Vector3[] controlPoints)
+    parameters:
+    - id: controlPoints
+      type: UnityEngine.Vector3[]
+    content.vb: Public Overrides Sub SetControlPoints(controlPoints As Vector3())
+  overridden: VRSketchingGeometry.Splines.Spline.SetControlPoints(UnityEngine.Vector3[])
+  overload: VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoints*
+  nameWithType.vb: LinearInterpolationSpline.SetControlPoints(Vector3())
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoints(UnityEngine.Vector3())
+  name.vb: SetControlPoints(Vector3())
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoint(System.Int32,UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoint(System.Int32,UnityEngine.Vector3)
+  id: SetControlPoint(System.Int32,UnityEngine.Vector3)
+  parent: VRSketchingGeometry.Splines.LinearInterpolationSpline
+  langs:
+  - csharp
+  - vb
+  name: SetControlPoint(Int32, Vector3)
+  nameWithType: LinearInterpolationSpline.SetControlPoint(Int32, Vector3)
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoint(System.Int32, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetControlPoint
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+    startLine: 29
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  syntax:
+    content: public override SplineModificationInfo SetControlPoint(int index, Vector3 controlPoint)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: controlPoint
+      type: UnityEngine.Vector3
+    return:
+      type: VRSketchingGeometry.Splines.SplineModificationInfo
+    content.vb: Public Overrides Function SetControlPoint(index As Integer, controlPoint As Vector3) As SplineModificationInfo
+  overridden: VRSketchingGeometry.Splines.Spline.SetControlPoint(System.Int32,UnityEngine.Vector3)
+  overload: VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoint*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.DeleteControlPoint(System.Int32)
+  commentId: M:VRSketchingGeometry.Splines.LinearInterpolationSpline.DeleteControlPoint(System.Int32)
+  id: DeleteControlPoint(System.Int32)
+  parent: VRSketchingGeometry.Splines.LinearInterpolationSpline
+  langs:
+  - csharp
+  - vb
+  name: DeleteControlPoint(Int32)
+  nameWithType: LinearInterpolationSpline.DeleteControlPoint(Int32)
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.DeleteControlPoint(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: DeleteControlPoint
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+    startLine: 34
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  syntax:
+    content: public override SplineModificationInfo DeleteControlPoint(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: VRSketchingGeometry.Splines.SplineModificationInfo
+    content.vb: Public Overrides Function DeleteControlPoint(index As Integer) As SplineModificationInfo
+  overridden: VRSketchingGeometry.Splines.Spline.DeleteControlPoint(System.Int32)
+  overload: VRSketchingGeometry.Splines.LinearInterpolationSpline.DeleteControlPoint*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.AddControlPoint(UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.Splines.LinearInterpolationSpline.AddControlPoint(UnityEngine.Vector3)
+  id: AddControlPoint(UnityEngine.Vector3)
+  parent: VRSketchingGeometry.Splines.LinearInterpolationSpline
+  langs:
+  - csharp
+  - vb
+  name: AddControlPoint(Vector3)
+  nameWithType: LinearInterpolationSpline.AddControlPoint(Vector3)
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.AddControlPoint(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: AddControlPoint
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+    startLine: 49
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  syntax:
+    content: public override SplineModificationInfo AddControlPoint(Vector3 controlPoint)
+    parameters:
+    - id: controlPoint
+      type: UnityEngine.Vector3
+    return:
+      type: VRSketchingGeometry.Splines.SplineModificationInfo
+    content.vb: Public Overrides Function AddControlPoint(controlPoint As Vector3) As SplineModificationInfo
+  overridden: VRSketchingGeometry.Splines.Spline.AddControlPoint(UnityEngine.Vector3)
+  overload: VRSketchingGeometry.Splines.LinearInterpolationSpline.AddControlPoint*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.InsertControlPoint(System.Int32,UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.Splines.LinearInterpolationSpline.InsertControlPoint(System.Int32,UnityEngine.Vector3)
+  id: InsertControlPoint(System.Int32,UnityEngine.Vector3)
+  parent: VRSketchingGeometry.Splines.LinearInterpolationSpline
+  langs:
+  - csharp
+  - vb
+  name: InsertControlPoint(Int32, Vector3)
+  nameWithType: LinearInterpolationSpline.InsertControlPoint(Int32, Vector3)
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.InsertControlPoint(System.Int32, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: InsertControlPoint
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+    startLine: 59
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  syntax:
+    content: public override SplineModificationInfo InsertControlPoint(int index, Vector3 controlPoint)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: controlPoint
+      type: UnityEngine.Vector3
+    return:
+      type: VRSketchingGeometry.Splines.SplineModificationInfo
+    content.vb: Public Overrides Function InsertControlPoint(index As Integer, controlPoint As Vector3) As SplineModificationInfo
+  overridden: VRSketchingGeometry.Splines.Spline.InsertControlPoint(System.Int32,UnityEngine.Vector3)
+  overload: VRSketchingGeometry.Splines.LinearInterpolationSpline.InsertControlPoint*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.GetNumberOfControlPoints
+  commentId: M:VRSketchingGeometry.Splines.LinearInterpolationSpline.GetNumberOfControlPoints
+  id: GetNumberOfControlPoints
+  parent: VRSketchingGeometry.Splines.LinearInterpolationSpline
+  langs:
+  - csharp
+  - vb
+  name: GetNumberOfControlPoints()
+  nameWithType: LinearInterpolationSpline.GetNumberOfControlPoints()
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.GetNumberOfControlPoints()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetNumberOfControlPoints
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+    startLine: 73
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  syntax:
+    content: public override int GetNumberOfControlPoints()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetNumberOfControlPoints As Integer
+  overridden: VRSketchingGeometry.Splines.Spline.GetNumberOfControlPoints
+  overload: VRSketchingGeometry.Splines.LinearInterpolationSpline.GetNumberOfControlPoints*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.GetControlPoints
+  commentId: M:VRSketchingGeometry.Splines.LinearInterpolationSpline.GetControlPoints
+  id: GetControlPoints
+  parent: VRSketchingGeometry.Splines.LinearInterpolationSpline
+  langs:
+  - csharp
+  - vb
+  name: GetControlPoints()
+  nameWithType: LinearInterpolationSpline.GetControlPoints()
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.GetControlPoints()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetControlPoints
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/LinearInterpolationSpline.cs
+    startLine: 78
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  syntax:
+    content: public override List<Vector3> GetControlPoints()
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    content.vb: Public Overrides Function GetControlPoints As List(Of Vector3)
+  overridden: VRSketchingGeometry.Splines.Spline.GetControlPoints
+  overload: VRSketchingGeometry.Splines.LinearInterpolationSpline.GetControlPoints*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: VRSketchingGeometry.Splines
+  commentId: N:VRSketchingGeometry.Splines
+  name: VRSketchingGeometry.Splines
+  nameWithType: VRSketchingGeometry.Splines
+  fullName: VRSketchingGeometry.Splines
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: VRSketchingGeometry.Splines.Spline
+  commentId: T:VRSketchingGeometry.Splines.Spline
+  parent: VRSketchingGeometry.Splines
+  name: Spline
+  nameWithType: Spline
+  fullName: VRSketchingGeometry.Splines.Spline
+- uid: VRSketchingGeometry.Splines.Spline.InterpolatedPoints
+  commentId: P:VRSketchingGeometry.Splines.Spline.InterpolatedPoints
+  parent: VRSketchingGeometry.Splines.Spline
+  name: InterpolatedPoints
+  nameWithType: Spline.InterpolatedPoints
+  fullName: VRSketchingGeometry.Splines.Spline.InterpolatedPoints
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.#ctor*
+  commentId: Overload:VRSketchingGeometry.Splines.LinearInterpolationSpline.#ctor
+  name: LinearInterpolationSpline
+  nameWithType: LinearInterpolationSpline.LinearInterpolationSpline
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.LinearInterpolationSpline
+- uid: VRSketchingGeometry.Splines.Spline.SetControlPoints(UnityEngine.Vector3[])
+  commentId: M:VRSketchingGeometry.Splines.Spline.SetControlPoints(UnityEngine.Vector3[])
+  parent: VRSketchingGeometry.Splines.Spline
+  isExternal: true
+  name: SetControlPoints(Vector3[])
+  nameWithType: Spline.SetControlPoints(Vector3[])
+  fullName: VRSketchingGeometry.Splines.Spline.SetControlPoints(UnityEngine.Vector3[])
+  nameWithType.vb: Spline.SetControlPoints(Vector3())
+  fullName.vb: VRSketchingGeometry.Splines.Spline.SetControlPoints(UnityEngine.Vector3())
+  name.vb: SetControlPoints(Vector3())
+  spec.csharp:
+  - uid: VRSketchingGeometry.Splines.Spline.SetControlPoints(UnityEngine.Vector3[])
+    name: SetControlPoints
+    nameWithType: Spline.SetControlPoints
+    fullName: VRSketchingGeometry.Splines.Spline.SetControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Splines.Spline.SetControlPoints(UnityEngine.Vector3[])
+    name: SetControlPoints
+    nameWithType: Spline.SetControlPoints
+    fullName: VRSketchingGeometry.Splines.Spline.SetControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoints*
+  commentId: Overload:VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoints
+  name: SetControlPoints
+  nameWithType: LinearInterpolationSpline.SetControlPoints
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoints
+- uid: UnityEngine.Vector3[]
+  isExternal: true
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: UnityEngine.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: UnityEngine.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: VRSketchingGeometry.Splines.Spline.SetControlPoint(System.Int32,UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.Splines.Spline.SetControlPoint(System.Int32,UnityEngine.Vector3)
+  parent: VRSketchingGeometry.Splines.Spline
+  isExternal: true
+  name: SetControlPoint(Int32, Vector3)
+  nameWithType: Spline.SetControlPoint(Int32, Vector3)
+  fullName: VRSketchingGeometry.Splines.Spline.SetControlPoint(System.Int32, UnityEngine.Vector3)
+  spec.csharp:
+  - uid: VRSketchingGeometry.Splines.Spline.SetControlPoint(System.Int32,UnityEngine.Vector3)
+    name: SetControlPoint
+    nameWithType: Spline.SetControlPoint
+    fullName: VRSketchingGeometry.Splines.Spline.SetControlPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Splines.Spline.SetControlPoint(System.Int32,UnityEngine.Vector3)
+    name: SetControlPoint
+    nameWithType: Spline.SetControlPoint
+    fullName: VRSketchingGeometry.Splines.Spline.SetControlPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoint*
+  commentId: Overload:VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoint
+  name: SetControlPoint
+  nameWithType: LinearInterpolationSpline.SetControlPoint
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.SetControlPoint
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: VRSketchingGeometry.Splines.SplineModificationInfo
+  commentId: T:VRSketchingGeometry.Splines.SplineModificationInfo
+  parent: VRSketchingGeometry.Splines
+  name: SplineModificationInfo
+  nameWithType: SplineModificationInfo
+  fullName: VRSketchingGeometry.Splines.SplineModificationInfo
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: VRSketchingGeometry.Splines.Spline.DeleteControlPoint(System.Int32)
+  commentId: M:VRSketchingGeometry.Splines.Spline.DeleteControlPoint(System.Int32)
+  parent: VRSketchingGeometry.Splines.Spline
+  isExternal: true
+  name: DeleteControlPoint(Int32)
+  nameWithType: Spline.DeleteControlPoint(Int32)
+  fullName: VRSketchingGeometry.Splines.Spline.DeleteControlPoint(System.Int32)
+  spec.csharp:
+  - uid: VRSketchingGeometry.Splines.Spline.DeleteControlPoint(System.Int32)
+    name: DeleteControlPoint
+    nameWithType: Spline.DeleteControlPoint
+    fullName: VRSketchingGeometry.Splines.Spline.DeleteControlPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Splines.Spline.DeleteControlPoint(System.Int32)
+    name: DeleteControlPoint
+    nameWithType: Spline.DeleteControlPoint
+    fullName: VRSketchingGeometry.Splines.Spline.DeleteControlPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.DeleteControlPoint*
+  commentId: Overload:VRSketchingGeometry.Splines.LinearInterpolationSpline.DeleteControlPoint
+  name: DeleteControlPoint
+  nameWithType: LinearInterpolationSpline.DeleteControlPoint
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.DeleteControlPoint
+- uid: VRSketchingGeometry.Splines.Spline.AddControlPoint(UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.Splines.Spline.AddControlPoint(UnityEngine.Vector3)
+  parent: VRSketchingGeometry.Splines.Spline
+  isExternal: true
+  name: AddControlPoint(Vector3)
+  nameWithType: Spline.AddControlPoint(Vector3)
+  fullName: VRSketchingGeometry.Splines.Spline.AddControlPoint(UnityEngine.Vector3)
+  spec.csharp:
+  - uid: VRSketchingGeometry.Splines.Spline.AddControlPoint(UnityEngine.Vector3)
+    name: AddControlPoint
+    nameWithType: Spline.AddControlPoint
+    fullName: VRSketchingGeometry.Splines.Spline.AddControlPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Splines.Spline.AddControlPoint(UnityEngine.Vector3)
+    name: AddControlPoint
+    nameWithType: Spline.AddControlPoint
+    fullName: VRSketchingGeometry.Splines.Spline.AddControlPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.AddControlPoint*
+  commentId: Overload:VRSketchingGeometry.Splines.LinearInterpolationSpline.AddControlPoint
+  name: AddControlPoint
+  nameWithType: LinearInterpolationSpline.AddControlPoint
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.AddControlPoint
+- uid: VRSketchingGeometry.Splines.Spline.InsertControlPoint(System.Int32,UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.Splines.Spline.InsertControlPoint(System.Int32,UnityEngine.Vector3)
+  parent: VRSketchingGeometry.Splines.Spline
+  isExternal: true
+  name: InsertControlPoint(Int32, Vector3)
+  nameWithType: Spline.InsertControlPoint(Int32, Vector3)
+  fullName: VRSketchingGeometry.Splines.Spline.InsertControlPoint(System.Int32, UnityEngine.Vector3)
+  spec.csharp:
+  - uid: VRSketchingGeometry.Splines.Spline.InsertControlPoint(System.Int32,UnityEngine.Vector3)
+    name: InsertControlPoint
+    nameWithType: Spline.InsertControlPoint
+    fullName: VRSketchingGeometry.Splines.Spline.InsertControlPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Splines.Spline.InsertControlPoint(System.Int32,UnityEngine.Vector3)
+    name: InsertControlPoint
+    nameWithType: Spline.InsertControlPoint
+    fullName: VRSketchingGeometry.Splines.Spline.InsertControlPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.InsertControlPoint*
+  commentId: Overload:VRSketchingGeometry.Splines.LinearInterpolationSpline.InsertControlPoint
+  name: InsertControlPoint
+  nameWithType: LinearInterpolationSpline.InsertControlPoint
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.InsertControlPoint
+- uid: VRSketchingGeometry.Splines.Spline.GetNumberOfControlPoints
+  commentId: M:VRSketchingGeometry.Splines.Spline.GetNumberOfControlPoints
+  parent: VRSketchingGeometry.Splines.Spline
+  name: GetNumberOfControlPoints()
+  nameWithType: Spline.GetNumberOfControlPoints()
+  fullName: VRSketchingGeometry.Splines.Spline.GetNumberOfControlPoints()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Splines.Spline.GetNumberOfControlPoints
+    name: GetNumberOfControlPoints
+    nameWithType: Spline.GetNumberOfControlPoints
+    fullName: VRSketchingGeometry.Splines.Spline.GetNumberOfControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Splines.Spline.GetNumberOfControlPoints
+    name: GetNumberOfControlPoints
+    nameWithType: Spline.GetNumberOfControlPoints
+    fullName: VRSketchingGeometry.Splines.Spline.GetNumberOfControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.GetNumberOfControlPoints*
+  commentId: Overload:VRSketchingGeometry.Splines.LinearInterpolationSpline.GetNumberOfControlPoints
+  name: GetNumberOfControlPoints
+  nameWithType: LinearInterpolationSpline.GetNumberOfControlPoints
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.GetNumberOfControlPoints
+- uid: VRSketchingGeometry.Splines.Spline.GetControlPoints
+  commentId: M:VRSketchingGeometry.Splines.Spline.GetControlPoints
+  parent: VRSketchingGeometry.Splines.Spline
+  name: GetControlPoints()
+  nameWithType: Spline.GetControlPoints()
+  fullName: VRSketchingGeometry.Splines.Spline.GetControlPoints()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Splines.Spline.GetControlPoints
+    name: GetControlPoints
+    nameWithType: Spline.GetControlPoints
+    fullName: VRSketchingGeometry.Splines.Spline.GetControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Splines.Spline.GetControlPoints
+    name: GetControlPoints
+    nameWithType: Spline.GetControlPoints
+    fullName: VRSketchingGeometry.Splines.Spline.GetControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Splines.LinearInterpolationSpline.GetControlPoints*
+  commentId: Overload:VRSketchingGeometry.Splines.LinearInterpolationSpline.GetControlPoints
+  name: GetControlPoints
+  nameWithType: LinearInterpolationSpline.GetControlPoints
+  fullName: VRSketchingGeometry.Splines.LinearInterpolationSpline.GetControlPoints
+- uid: System.Collections.Generic.List{UnityEngine.Vector3}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector3>
+  nameWithType: List<Vector3>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector3>
+  nameWithType.vb: List(Of Vector3)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector3)
+  name.vb: List(Of Vector3)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

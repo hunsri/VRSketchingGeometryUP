@@ -1,0 +1,759 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SketchObject
+  id: SketchObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  children:
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  langs:
+  - csharp
+  - vb
+  name: SketchObject
+  nameWithType: SketchObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SketchObject
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 9
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nBase class for different kinds of SketchObjects.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: 'public abstract class SketchObject : SelectableObject, ISelectable, IGroupable, IHighlightable'
+    content.vb: >-
+      Public MustInherit Class SketchObject
+
+          Inherits SelectableObject
+
+          Implements ISelectable, IGroupable, IHighlightable
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  derivedClasses:
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  - VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  implements:
+  - VRSketchingGeometry.SketchObjectManagement.ISelectable
+  - VRSketchingGeometry.SketchObjectManagement.IGroupable
+  - VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+  id: Defaults
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  langs:
+  - csharp
+  - vb
+  name: Defaults
+  nameWithType: SketchObject.Defaults
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Defaults
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 11
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public DefaultReferences Defaults
+    return:
+      type: VRSketchingGeometry.DefaultReferences
+    content.vb: Public Defaults As DefaultReferences
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  commentId: P:VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  id: ParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  langs:
+  - csharp
+  - vb
+  name: ParentGroup
+  nameWithType: SketchObject.ParentGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  type: Property
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ParentGroup
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 15
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public override SketchObjectGroup ParentGroup { get; set; }
+    parameters: []
+    return:
+      type: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+    content.vb: Public Overrides Property ParentGroup As SketchObjectGroup
+  overridden: VRSketchingGeometry.SketchObjectManagement.SelectableObject.ParentGroup
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+  id: meshRenderer
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  langs:
+  - csharp
+  - vb
+  name: meshRenderer
+  nameWithType: SketchObject.meshRenderer
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: meshRenderer
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 17
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: protected MeshRenderer meshRenderer
+    return:
+      type: UnityEngine.MeshRenderer
+    content.vb: Protected meshRenderer As MeshRenderer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+  id: meshFilter
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  langs:
+  - csharp
+  - vb
+  name: meshFilter
+  nameWithType: SketchObject.meshFilter
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: meshFilter
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 18
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: protected MeshFilter meshFilter
+    return:
+      type: UnityEngine.MeshFilter
+    content.vb: Protected meshFilter As MeshFilter
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+  id: meshCollider
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  langs:
+  - csharp
+  - vb
+  name: meshCollider
+  nameWithType: SketchObject.meshCollider
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: meshCollider
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 19
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: protected MeshCollider meshCollider
+    return:
+      type: UnityEngine.MeshCollider
+    content.vb: Protected meshCollider As MeshCollider
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+  id: originalMaterial
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  langs:
+  - csharp
+  - vb
+  name: originalMaterial
+  nameWithType: SketchObject.originalMaterial
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: originalMaterial
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 21
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: protected Material originalMaterial
+    return:
+      type: UnityEngine.Material
+    content.vb: Protected originalMaterial As Material
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+  id: highlightMaterial
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  langs:
+  - csharp
+  - vb
+  name: highlightMaterial
+  nameWithType: SketchObject.highlightMaterial
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: highlightMaterial
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 24
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected Material highlightMaterial
+    return:
+      type: UnityEngine.Material
+    content.vb: >-
+      <SerializeField>
+
+      Protected highlightMaterial As Material
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  id: Awake
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  langs:
+  - csharp
+  - vb
+  name: Awake()
+  nameWithType: SketchObject.Awake()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Awake
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 26
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: protected virtual void Awake()
+    content.vb: Protected Overridable Sub Awake
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  id: resetToParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  langs:
+  - csharp
+  - vb
+  name: resetToParentGroup()
+  nameWithType: SketchObject.resetToParentGroup()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: resetToParentGroup
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 30
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public override void resetToParentGroup()
+    content.vb: Public Overrides Sub resetToParentGroup
+  overridden: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  id: setUpOriginalMaterialAndMeshRenderer
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  langs:
+  - csharp
+  - vb
+  name: setUpOriginalMaterialAndMeshRenderer()
+  nameWithType: SketchObject.setUpOriginalMaterialAndMeshRenderer()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: setUpOriginalMaterialAndMeshRenderer
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 35
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: protected void setUpOriginalMaterialAndMeshRenderer()
+    content.vb: Protected Sub setUpOriginalMaterialAndMeshRenderer
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  id: highlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  langs:
+  - csharp
+  - vb
+  name: highlight()
+  nameWithType: SketchObject.highlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: highlight
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 43
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public override void highlight()
+    content.vb: Public Overrides Sub highlight
+  overridden: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  id: revertHighlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  langs:
+  - csharp
+  - vb
+  name: revertHighlight()
+  nameWithType: SketchObject.revertHighlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: revertHighlight
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 48
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public override void revertHighlight()
+    content.vb: Public Overrides Sub revertHighlight
+  overridden: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  id: UpdateSceneMesh(UnityEngine.Mesh)
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  langs:
+  - csharp
+  - vb
+  name: UpdateSceneMesh(Mesh)
+  nameWithType: SketchObject.UpdateSceneMesh(Mesh)
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: UpdateSceneMesh
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObject.cs
+    startLine: 58
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nReplace both the renderer and collider mesh with a new one.\nThe old mesh is manually destroyed to prevent a memory leak.\n"
+  example: []
+  syntax:
+    content: protected virtual void UpdateSceneMesh(Mesh newMesh)
+    parameters:
+    - id: newMesh
+      type: UnityEngine.Mesh
+      description: The new mesh to replace the old one.
+    content.vb: Protected Overridable Sub UpdateSceneMesh(newMesh As Mesh)
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SelectableObject
+  nameWithType: SelectableObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+- uid: VRSketchingGeometry.SketchObjectManagement.ISelectable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.ISelectable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: ISelectable
+  nameWithType: ISelectable
+  fullName: VRSketchingGeometry.SketchObjectManagement.ISelectable
+- uid: VRSketchingGeometry.SketchObjectManagement.IGroupable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IGroupable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IGroupable
+  nameWithType: IGroupable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable
+- uid: VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IHighlightable
+  nameWithType: IHighlightable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IHighlightable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: VRSketchingGeometry.DefaultReferences
+  commentId: T:VRSketchingGeometry.DefaultReferences
+  parent: VRSketchingGeometry
+  name: DefaultReferences
+  nameWithType: DefaultReferences
+  fullName: VRSketchingGeometry.DefaultReferences
+- uid: VRSketchingGeometry
+  commentId: N:VRSketchingGeometry
+  name: VRSketchingGeometry
+  nameWithType: VRSketchingGeometry
+  fullName: VRSketchingGeometry
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.ParentGroup
+  commentId: P:VRSketchingGeometry.SketchObjectManagement.SelectableObject.ParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  name: ParentGroup
+  nameWithType: SelectableObject.ParentGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.ParentGroup
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  name: ParentGroup
+  nameWithType: SketchObject.ParentGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SketchObjectGroup
+  nameWithType: SketchObjectGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+- uid: UnityEngine.MeshRenderer
+  commentId: T:UnityEngine.MeshRenderer
+  parent: UnityEngine
+  isExternal: true
+  name: MeshRenderer
+  nameWithType: MeshRenderer
+  fullName: UnityEngine.MeshRenderer
+- uid: UnityEngine.MeshFilter
+  commentId: T:UnityEngine.MeshFilter
+  parent: UnityEngine
+  isExternal: true
+  name: MeshFilter
+  nameWithType: MeshFilter
+  fullName: UnityEngine.MeshFilter
+- uid: UnityEngine.MeshCollider
+  commentId: T:UnityEngine.MeshCollider
+  parent: UnityEngine
+  isExternal: true
+  name: MeshCollider
+  nameWithType: MeshCollider
+  fullName: UnityEngine.MeshCollider
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  name: Awake
+  nameWithType: SketchObject.Awake
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  name: resetToParentGroup()
+  nameWithType: SelectableObject.resetToParentGroup()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: SelectableObject.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: SelectableObject.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  name: resetToParentGroup
+  nameWithType: SketchObject.resetToParentGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  name: setUpOriginalMaterialAndMeshRenderer
+  nameWithType: SketchObject.setUpOriginalMaterialAndMeshRenderer
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  name: highlight()
+  nameWithType: SelectableObject.highlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+    name: highlight
+    nameWithType: SelectableObject.highlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+    name: highlight
+    nameWithType: SelectableObject.highlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  name: highlight
+  nameWithType: SketchObject.highlight
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  name: revertHighlight()
+  nameWithType: SelectableObject.revertHighlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+    name: revertHighlight
+    nameWithType: SelectableObject.revertHighlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+    name: revertHighlight
+    nameWithType: SelectableObject.revertHighlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  name: revertHighlight
+  nameWithType: SketchObject.revertHighlight
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh
+  name: UpdateSceneMesh
+  nameWithType: SketchObject.UpdateSceneMesh
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh
+- uid: UnityEngine.Mesh
+  commentId: T:UnityEngine.Mesh
+  parent: UnityEngine
+  isExternal: true
+  name: Mesh
+  nameWithType: Mesh
+  fullName: UnityEngine.Mesh

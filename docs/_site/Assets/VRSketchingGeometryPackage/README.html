@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>VRSketchingGeometry </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="VRSketchingGeometry ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../articles/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="vrsketchinggeometry">VRSketchingGeometry</h1>
+
+<p>Work in progress. Features may not be complete and the API may change.</p>
+<p>This is a framework for developing 3D sketching applications in Unity.</p>
+<h2 id="features">Features:</h2>
+<ul>
+<li>smoothly interpolated lines</li>
+<li>patch surfaces</li>
+<li>ribbon shaped lines</li>
+<li>organisation of sketch objects with groups</li>
+<li>undo and redo</li>
+<li>serialization of sketches</li>
+<li>OBJ export of sketches</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<h3 id="manually-from-a-local-folder">Manually from a local folder</h3>
+<ul>
+<li>open the Package Manager</li>
+<li>click on &quot;+&quot;</li>
+<li>choose &quot;Add package from disk...&quot;</li>
+<li>locate the downloaded package</li>
+<li>select the package.json file within the package</li>
+</ul>
+<h3 id="automatically-from-url">Automatically from URL</h3>
+<ul>
+<li>open the Package Manager</li>
+<li>click on &quot;+&quot;</li>
+<li>choose &quot;Add package from git URL...&quot;</li>
+<li>enter the URL 
+<code>https://github.com/hunsri/VRSketchingGeometryUP.git#0.1.0</code></li>
+</ul>
+<h2 id="import-the-examples">Import the examples</h2>
+<ul>
+<li>open the Package Manager</li>
+<li>locate the installed package</li>
+<li>click on &quot;Samples&quot;</li>
+<li>click on &quot;Import&quot;</li>
+<li>files will be imported under <code>Assets/Samples/</code></li>
+</ul>
+<h2 id="api-documentationhttpstterpigithubiovrsketchinggeometry"><a href="https://tterpi.github.io/VRSketchingGeometry/">API documentation</a></h2>
+<p>Read the <a href="https://tterpi.github.io/VRSketchingGeometry/articles/intro.html">developer guide</a> and <a href="https://tterpi.github.io/VRSketchingGeometry/api/index.html">API documentation</a> at the github pages site.</p>
+<h2 id="quick-start">Quick start</h2>
+<p>The following example script shows how to create a new line sketch object and add few control points to it using a command invoker.<br>
+At the end one command is undone.</br><br>
+You will have to reference a <code>DefaultReference</code> Scriptable Object in the inspector.</br>
+An example can be found under <code>SharedAssets/Assets/DefaultReferences.asset</code>.<br>
+To access <code>SharedAssets</code> you have to import it in the Package Manager (see <a href="README.html#import-the-examples">Import the examples</a>)</br></p>
+<pre><code class="lang-C#">    using UnityEngine;
+    using VRSketchingGeometry.SketchObjectManagement;
+    using VRSketchingGeometry;
+    using VRSketchingGeometry.Commands;
+    using VRSketchingGeometry.Commands.Line;
+
+    public class CreateLineSketchObject : MonoBehaviour
+    {
+        public DefaultReferences Defaults;
+        private LineSketchObject LineSketchObject;
+        private SketchWorld SketchWorld;
+        private CommandInvoker Invoker;
+
+        void Start()
+        {
+            SketchWorld = Instantiate(Defaults.SketchWorldPrefab).GetComponent&lt;SketchWorld&gt;();
+            LineSketchObject = Instantiate(Defaults.LineSketchObjectPrefab).GetComponent&lt;LineSketchObject&gt;();
+            Invoker = new CommandInvoker();
+            Invoker.ExecuteCommand(new AddObjectToSketchWorldRootCommand(LineSketchObject, SketchWorld));
+            Invoker.ExecuteCommand(new AddControlPointCommand(this.LineSketchObject, new Vector3(1, 2, 3)));
+            Invoker.ExecuteCommand(new AddControlPointCommand(this.LineSketchObject, new Vector3(1, 4, 2)));
+            Invoker.ExecuteCommand(new AddControlPointCommand(this.LineSketchObject, new Vector3(1, 5, 3)));
+            Invoker.ExecuteCommand(new AddControlPointCommand(this.LineSketchObject, new Vector3(1, 5, 2)));
+            Invoker.Undo();
+        }
+    }
+</code></pre><h2 id="workflow">Workflow</h2>
+<ol>
+<li>Instantiate a sketch world prefab. Easy access to prefabs is provided through the DefaultReferences asset at <code>SharedAssets/Assets/DefaultReferences.asset</code>.</li>
+<li>Create sketch objects and groups from prefabs and add them to the sketch object world. Execute commands using a CommandInvoker object for undo and redo functionality. All scripts are in the VRSketchingGeometry namespace.</li>
+<li>Serialize or export using methods of the sketch world script.</li>
+<li>Load serialized sketch world from the serialized xml file for further editing.</li>
+</ol>
+<p>The <a href="README.html#legacy-example">LegacyExample</a> also shows this process in practice.</p>
+<h2 id="samples">Samples</h2>
+<p>Various examples are provided under <code>VRSketchingGeometryPackage/Samples</code>.
+These can be imported via the Unity Package Manager.
+(see <a href="README.html#import-the-examples">Import the examples</a>)</p>
+<h3 id="shared-assets">Shared Assets</h3>
+<p>Contains all the assets required to run the examples.
+Can be used as a reference for the creation of own assets.</p>
+<h3 id="example-scenes">Example Scenes</h3>
+<p>Contains various examples. For further details please refer to <a href="Samples~/ExampleScenes/Scenes/README.html">this readme</a>.</p>
+<h3 id="legacy-example">Legacy Example</h3>
+<p>Contains a static scene with various messy test scripts and corresponding game objects.
+<img src="https://user-images.githubusercontent.com/51961152/192534926-2c6406b1-4556-4808-baf7-9f8eeab0bc5f.png" alt="sampleScene"></p>
+<h2 id="notes">Notes</h2>
+<p>This is a conversion from the plugin version (<a href="https://github.com/tterpi/VRSketchingGeometry">https://github.com/tterpi/VRSketchingGeometry</a>) to a package version.
+Originally based on code from: <a href="https://github.com/bittermanq/KochanekBartelsSplines">https://github.com/bittermanq/KochanekBartelsSplines</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/hunsri/VRSketchingGeometry/blob/fix/DocFXIntegration/Assets/VRSketchingGeometryPackage/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

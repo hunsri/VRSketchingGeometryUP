@@ -1,0 +1,516 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+  id: SketchObjectGroup
+  parent: VRSketchingGeometry.SketchObjectManagement
+  children:
+  - VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.AddToGroup(VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection)
+  - VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.defaults
+  - VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.highlight
+  - VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.ParentGroup
+  - VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.resetToParentGroup
+  - VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.revertHighlight
+  langs:
+  - csharp
+  - vb
+  name: SketchObjectGroup
+  nameWithType: SketchObjectGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SketchObjectGroup
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+    startLine: 11
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nRepresents a group of objects that implement IGroupable.\nSketchObjectGroups can contain SketchObjects and other SketchObjectGroups.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: 'public class SketchObjectGroup : SelectableObject, ISelectable, IHighlightable, IGroupable'
+    content.vb: >-
+      Public Class SketchObjectGroup
+
+          Inherits SelectableObject
+
+          Implements ISelectable, IHighlightable, IGroupable
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  implements:
+  - VRSketchingGeometry.SketchObjectManagement.ISelectable
+  - VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  - VRSketchingGeometry.SketchObjectManagement.IGroupable
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.defaults
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.defaults
+  id: defaults
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+  langs:
+  - csharp
+  - vb
+  name: defaults
+  nameWithType: SketchObjectGroup.defaults
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.defaults
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: defaults
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+    startLine: 15
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public DefaultReferences defaults
+    return:
+      type: VRSketchingGeometry.DefaultReferences
+    content.vb: Public defaults As DefaultReferences
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.ParentGroup
+  commentId: P:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.ParentGroup
+  id: ParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+  langs:
+  - csharp
+  - vb
+  name: ParentGroup
+  nameWithType: SketchObjectGroup.ParentGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.ParentGroup
+  type: Property
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ParentGroup
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+    startLine: 17
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public override SketchObjectGroup ParentGroup { get; set; }
+    parameters: []
+    return:
+      type: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+    content.vb: Public Overrides Property ParentGroup As SketchObjectGroup
+  overridden: VRSketchingGeometry.SketchObjectManagement.SelectableObject.ParentGroup
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.ParentGroup*
+  implements:
+  - VRSketchingGeometry.SketchObjectManagement.IGroupable.ParentGroup
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.AddToGroup(VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.AddToGroup(VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection)
+  id: AddToGroup(VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection)
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+  langs:
+  - csharp
+  - vb
+  name: AddToGroup(SketchObjectSelection)
+  nameWithType: SketchObjectGroup.AddToGroup(SketchObjectSelection)
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.AddToGroup(VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: AddToGroup
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+    startLine: 34
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nAdd all groupable objects of the selection to the group.\n"
+  example: []
+  syntax:
+    content: public void AddToGroup(SketchObjectSelection sketchObjectSelection)
+    parameters:
+    - id: sketchObjectSelection
+      type: VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection
+      description: ''
+    content.vb: Public Sub AddToGroup(sketchObjectSelection As SketchObjectSelection)
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.AddToGroup*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.resetToParentGroup
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.resetToParentGroup
+  id: resetToParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+  langs:
+  - csharp
+  - vb
+  name: resetToParentGroup()
+  nameWithType: SketchObjectGroup.resetToParentGroup()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.resetToParentGroup()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: resetToParentGroup
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+    startLine: 61
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public override void resetToParentGroup()
+    content.vb: Public Overrides Sub resetToParentGroup
+  overridden: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.resetToParentGroup*
+  implements:
+  - VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.highlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.highlight
+  id: highlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+  langs:
+  - csharp
+  - vb
+  name: highlight()
+  nameWithType: SketchObjectGroup.highlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.highlight()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: highlight
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+    startLine: 65
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public override void highlight()
+    content.vb: Public Overrides Sub highlight
+  overridden: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.highlight*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.revertHighlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.revertHighlight
+  id: revertHighlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+  langs:
+  - csharp
+  - vb
+  name: revertHighlight()
+  nameWithType: SketchObjectGroup.revertHighlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.revertHighlight()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: revertHighlight
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchObjectGroup.cs
+    startLine: 73
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public override void revertHighlight()
+    content.vb: Public Overrides Sub revertHighlight
+  overridden: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.revertHighlight*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SelectableObject
+  nameWithType: SelectableObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+- uid: VRSketchingGeometry.SketchObjectManagement.ISelectable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.ISelectable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: ISelectable
+  nameWithType: ISelectable
+  fullName: VRSketchingGeometry.SketchObjectManagement.ISelectable
+- uid: VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IHighlightable
+  nameWithType: IHighlightable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IHighlightable
+- uid: VRSketchingGeometry.SketchObjectManagement.IGroupable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IGroupable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IGroupable
+  nameWithType: IGroupable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: VRSketchingGeometry.DefaultReferences
+  commentId: T:VRSketchingGeometry.DefaultReferences
+  parent: VRSketchingGeometry
+  name: DefaultReferences
+  nameWithType: DefaultReferences
+  fullName: VRSketchingGeometry.DefaultReferences
+- uid: VRSketchingGeometry
+  commentId: N:VRSketchingGeometry
+  name: VRSketchingGeometry
+  nameWithType: VRSketchingGeometry
+  fullName: VRSketchingGeometry
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.ParentGroup
+  commentId: P:VRSketchingGeometry.SketchObjectManagement.SelectableObject.ParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  name: ParentGroup
+  nameWithType: SelectableObject.ParentGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.ParentGroup
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.ParentGroup*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.ParentGroup
+  name: ParentGroup
+  nameWithType: SketchObjectGroup.ParentGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.ParentGroup
+- uid: VRSketchingGeometry.SketchObjectManagement.IGroupable.ParentGroup
+  commentId: P:VRSketchingGeometry.SketchObjectManagement.IGroupable.ParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.IGroupable
+  name: ParentGroup
+  nameWithType: IGroupable.ParentGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable.ParentGroup
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SketchObjectGroup
+  nameWithType: SketchObjectGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.AddToGroup*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.AddToGroup
+  name: AddToGroup
+  nameWithType: SketchObjectGroup.AddToGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.AddToGroup
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SketchObjectSelection
+  nameWithType: SketchObjectSelection
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  name: resetToParentGroup()
+  nameWithType: SelectableObject.resetToParentGroup()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: SelectableObject.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: SelectableObject.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.resetToParentGroup*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.resetToParentGroup
+  name: resetToParentGroup
+  nameWithType: SketchObjectGroup.resetToParentGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.resetToParentGroup
+- uid: VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.IGroupable
+  name: resetToParentGroup()
+  nameWithType: IGroupable.resetToParentGroup()
+  fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: IGroupable.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: IGroupable.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  name: highlight()
+  nameWithType: SelectableObject.highlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+    name: highlight
+    nameWithType: SelectableObject.highlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+    name: highlight
+    nameWithType: SelectableObject.highlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.highlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.highlight*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.highlight
+  name: highlight
+  nameWithType: SketchObjectGroup.highlight
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.highlight
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  name: revertHighlight()
+  nameWithType: SelectableObject.revertHighlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+    name: revertHighlight
+    nameWithType: SelectableObject.revertHighlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+    name: revertHighlight
+    nameWithType: SelectableObject.revertHighlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject.revertHighlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.revertHighlight*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.revertHighlight
+  name: revertHighlight
+  nameWithType: SketchObjectGroup.revertHighlight
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectGroup.revertHighlight

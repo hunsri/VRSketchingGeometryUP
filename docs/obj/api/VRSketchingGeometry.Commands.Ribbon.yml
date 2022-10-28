@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Commands.Ribbon
+  commentId: N:VRSketchingGeometry.Commands.Ribbon
+  id: VRSketchingGeometry.Commands.Ribbon
+  children:
+  - VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+  - VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationContinuousCommand
+  - VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand
+  langs:
+  - csharp
+  - vb
+  name: VRSketchingGeometry.Commands.Ribbon
+  nameWithType: VRSketchingGeometry.Commands.Ribbon
+  fullName: VRSketchingGeometry.Commands.Ribbon
+  type: Namespace
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+references:
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+  commentId: T:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+  parent: VRSketchingGeometry.Commands.Ribbon
+  name: AddPointAndRotationCommand
+  nameWithType: AddPointAndRotationCommand
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationContinuousCommand
+  commentId: T:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationContinuousCommand
+  name: AddPointAndRotationContinuousCommand
+  nameWithType: AddPointAndRotationContinuousCommand
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationContinuousCommand
+- uid: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand
+  commentId: T:VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand
+  name: DeletePointAndRotationCommand
+  nameWithType: DeletePointAndRotationCommand
+  fullName: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand
+- uid: VRSketchingGeometry.Commands.Ribbon
+  commentId: N:VRSketchingGeometry.Commands.Ribbon
+  name: VRSketchingGeometry.Commands.Ribbon
+  nameWithType: VRSketchingGeometry.Commands.Ribbon
+  fullName: VRSketchingGeometry.Commands.Ribbon

@@ -1,0 +1,334 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand
+  commentId: T:VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand
+  id: DeletePointAndRotationCommand
+  parent: VRSketchingGeometry.Commands.Ribbon
+  children:
+  - VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject)
+  - VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Execute
+  - VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Redo
+  - VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Undo
+  langs:
+  - csharp
+  - vb
+  name: DeletePointAndRotationCommand
+  nameWithType: DeletePointAndRotationCommand
+  fullName: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/DeletePointAndRotationCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: DeletePointAndRotationCommand
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/DeletePointAndRotationCommand.cs
+    startLine: 10
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Ribbon
+  summary: "\nDelete the last control point of the ribbon.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: 'public class DeletePointAndRotationCommand : ICommand'
+    content.vb: >-
+      Public Class DeletePointAndRotationCommand
+
+          Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - VRSketchingGeometry.Commands.ICommand
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject)
+  commentId: M:VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject)
+  id: '#ctor(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject)'
+  parent: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand
+  langs:
+  - csharp
+  - vb
+  name: DeletePointAndRotationCommand(RibbonSketchObject)
+  nameWithType: DeletePointAndRotationCommand.DeletePointAndRotationCommand(RibbonSketchObject)
+  fullName: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.DeletePointAndRotationCommand(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/DeletePointAndRotationCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: .ctor
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/DeletePointAndRotationCommand.cs
+    startLine: 20
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Ribbon
+  summary: "\nCreate a command that represents deleting the last control point at the end of a ribbon sketch object.\n"
+  example: []
+  syntax:
+    content: public DeletePointAndRotationCommand(RibbonSketchObject ribbonSketchObject)
+    parameters:
+    - id: ribbonSketchObject
+      type: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+      description: The ribbon to add the control point to.
+    content.vb: Public Sub New(ribbonSketchObject As RibbonSketchObject)
+  overload: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Execute
+  commentId: M:VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Execute
+  id: Execute
+  parent: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: DeletePointAndRotationCommand.Execute()
+  fullName: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Execute()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/DeletePointAndRotationCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Execute
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/DeletePointAndRotationCommand.cs
+    startLine: 28
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Ribbon
+  syntax:
+    content: public bool Execute()
+    return:
+      type: System.Boolean
+    content.vb: Public Function Execute As Boolean
+  overload: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Execute*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Execute
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Redo
+  commentId: M:VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Redo
+  id: Redo
+  parent: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand
+  langs:
+  - csharp
+  - vb
+  name: Redo()
+  nameWithType: DeletePointAndRotationCommand.Redo()
+  fullName: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Redo()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/DeletePointAndRotationCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Redo
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/DeletePointAndRotationCommand.cs
+    startLine: 38
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Ribbon
+  syntax:
+    content: public void Redo()
+    content.vb: Public Sub Redo
+  overload: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Redo*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Redo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Undo
+  commentId: M:VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Undo
+  id: Undo
+  parent: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand
+  langs:
+  - csharp
+  - vb
+  name: Undo()
+  nameWithType: DeletePointAndRotationCommand.Undo()
+  fullName: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Undo()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/DeletePointAndRotationCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Undo
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/DeletePointAndRotationCommand.cs
+    startLine: 43
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Ribbon
+  syntax:
+    content: public void Undo()
+    content.vb: Public Sub Undo
+  overload: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Undo*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Undo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: VRSketchingGeometry.Commands.Ribbon
+  commentId: N:VRSketchingGeometry.Commands.Ribbon
+  name: VRSketchingGeometry.Commands.Ribbon
+  nameWithType: VRSketchingGeometry.Commands.Ribbon
+  fullName: VRSketchingGeometry.Commands.Ribbon
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: VRSketchingGeometry.Commands.ICommand
+  commentId: T:VRSketchingGeometry.Commands.ICommand
+  parent: VRSketchingGeometry.Commands
+  name: ICommand
+  nameWithType: ICommand
+  fullName: VRSketchingGeometry.Commands.ICommand
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Commands
+  commentId: N:VRSketchingGeometry.Commands
+  name: VRSketchingGeometry.Commands
+  nameWithType: VRSketchingGeometry.Commands
+  fullName: VRSketchingGeometry.Commands
+- uid: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.#ctor*
+  commentId: Overload:VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.#ctor
+  name: DeletePointAndRotationCommand
+  nameWithType: DeletePointAndRotationCommand.DeletePointAndRotationCommand
+  fullName: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.DeletePointAndRotationCommand
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: RibbonSketchObject
+  nameWithType: RibbonSketchObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Execute*
+  commentId: Overload:VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Execute
+  name: Execute
+  nameWithType: DeletePointAndRotationCommand.Execute
+  fullName: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Execute
+- uid: VRSketchingGeometry.Commands.ICommand.Execute
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Execute
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Execute()
+  nameWithType: ICommand.Execute()
+  fullName: VRSketchingGeometry.Commands.ICommand.Execute()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: VRSketchingGeometry.Commands.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: VRSketchingGeometry.Commands.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Redo*
+  commentId: Overload:VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Redo
+  name: Redo
+  nameWithType: DeletePointAndRotationCommand.Redo
+  fullName: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Redo
+- uid: VRSketchingGeometry.Commands.ICommand.Redo
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Redo
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Redo()
+  nameWithType: ICommand.Redo()
+  fullName: VRSketchingGeometry.Commands.ICommand.Redo()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Redo
+    name: Redo
+    nameWithType: ICommand.Redo
+    fullName: VRSketchingGeometry.Commands.ICommand.Redo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Redo
+    name: Redo
+    nameWithType: ICommand.Redo
+    fullName: VRSketchingGeometry.Commands.ICommand.Redo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Undo*
+  commentId: Overload:VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Undo
+  name: Undo
+  nameWithType: DeletePointAndRotationCommand.Undo
+  fullName: VRSketchingGeometry.Commands.Ribbon.DeletePointAndRotationCommand.Undo
+- uid: VRSketchingGeometry.Commands.ICommand.Undo
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Undo
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Undo()
+  nameWithType: ICommand.Undo()
+  fullName: VRSketchingGeometry.Commands.ICommand.Undo()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: VRSketchingGeometry.Commands.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: VRSketchingGeometry.Commands.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

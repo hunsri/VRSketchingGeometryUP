@@ -1,0 +1,478 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  commentId: T:VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  id: KochanekBartelsControlPoint
+  parent: VRSketchingGeometry.Splines
+  children:
+  - VRSketchingGeometry.Splines.KochanekBartelsControlPoint.#ctor
+  - VRSketchingGeometry.Splines.KochanekBartelsControlPoint.#ctor(UnityEngine.Vector3,System.Single,System.Single,System.Single)
+  - VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Bias
+  - VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateDestinationTangent(VRSketchingGeometry.Splines.KochanekBartelsControlPoint,VRSketchingGeometry.Splines.KochanekBartelsControlPoint)
+  - VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateSourceTangent(VRSketchingGeometry.Splines.KochanekBartelsControlPoint,VRSketchingGeometry.Splines.KochanekBartelsControlPoint)
+  - VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Continuity
+  - VRSketchingGeometry.Splines.KochanekBartelsControlPoint.op_Implicit(UnityEngine.Vector3)~VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  - VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Position
+  - VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Tension
+  langs:
+  - csharp
+  - vb
+  name: KochanekBartelsControlPoint
+  nameWithType: KochanekBartelsControlPoint
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: KochanekBartelsControlPoint
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+    startLine: 17
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  summary: "\nA control point for the Kochanek Bartels spline class.\nContains the position of the control point and the parameters tension, bias and continuity\nthat control the shape of the spline at the control point.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: public class KochanekBartelsControlPoint
+    content.vb: Public Class KochanekBartelsControlPoint
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.#ctor
+  commentId: M:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.#ctor
+  id: '#ctor'
+  parent: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  langs:
+  - csharp
+  - vb
+  name: KochanekBartelsControlPoint()
+  nameWithType: KochanekBartelsControlPoint.KochanekBartelsControlPoint()
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.KochanekBartelsControlPoint()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: .ctor
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+    startLine: 19
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  syntax:
+    content: public KochanekBartelsControlPoint()
+    content.vb: Public Sub New
+  overload: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Position
+  commentId: P:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Position
+  id: Position
+  parent: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: KochanekBartelsControlPoint.Position
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Position
+  type: Property
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Position
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+    startLine: 21
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  syntax:
+    content: public Vector3 Position { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Property Position As Vector3
+  overload: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Position*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Tension
+  commentId: P:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Tension
+  id: Tension
+  parent: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  langs:
+  - csharp
+  - vb
+  name: Tension
+  nameWithType: KochanekBartelsControlPoint.Tension
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Tension
+  type: Property
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Tension
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+    startLine: 23
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  syntax:
+    content: public float Tension { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Tension As Single
+  overload: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Tension*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Bias
+  commentId: P:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Bias
+  id: Bias
+  parent: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  langs:
+  - csharp
+  - vb
+  name: Bias
+  nameWithType: KochanekBartelsControlPoint.Bias
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Bias
+  type: Property
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Bias
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+    startLine: 24
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  syntax:
+    content: public float Bias { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Bias As Single
+  overload: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Bias*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Continuity
+  commentId: P:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Continuity
+  id: Continuity
+  parent: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  langs:
+  - csharp
+  - vb
+  name: Continuity
+  nameWithType: KochanekBartelsControlPoint.Continuity
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Continuity
+  type: Property
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Continuity
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+    startLine: 25
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  syntax:
+    content: public float Continuity { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Continuity As Single
+  overload: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Continuity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.op_Implicit(UnityEngine.Vector3)~VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  commentId: M:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.op_Implicit(UnityEngine.Vector3)~VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  id: op_Implicit(UnityEngine.Vector3)~VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  parent: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Vector3 to KochanekBartelsControlPoint)
+  nameWithType: KochanekBartelsControlPoint.Implicit(Vector3 to KochanekBartelsControlPoint)
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Implicit(UnityEngine.Vector3 to VRSketchingGeometry.Splines.KochanekBartelsControlPoint)
+  type: Operator
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: op_Implicit
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+    startLine: 31
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  summary: "\nImplicitly convert a Vector3 object to a <xref href=\"VRSketchingGeometry.Splines.KochanekBartelsControlPoint\" data-throw-if-not-resolved=\"false\"></xref> object with default values for tension, bias and continuity.\n"
+  example: []
+  syntax:
+    content: public static implicit operator KochanekBartelsControlPoint(Vector3 position)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector3
+      description: ''
+    return:
+      type: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+    content.vb: Public Shared Widening Operator CType(position As Vector3) As KochanekBartelsControlPoint
+  overload: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.op_Implicit*
+  nameWithType.vb: KochanekBartelsControlPoint.Widening(Vector3 to KochanekBartelsControlPoint)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Widening(UnityEngine.Vector3 to VRSketchingGeometry.Splines.KochanekBartelsControlPoint)
+  name.vb: Widening(Vector3 to KochanekBartelsControlPoint)
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateSourceTangent(VRSketchingGeometry.Splines.KochanekBartelsControlPoint,VRSketchingGeometry.Splines.KochanekBartelsControlPoint)
+  commentId: M:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateSourceTangent(VRSketchingGeometry.Splines.KochanekBartelsControlPoint,VRSketchingGeometry.Splines.KochanekBartelsControlPoint)
+  id: CalculateSourceTangent(VRSketchingGeometry.Splines.KochanekBartelsControlPoint,VRSketchingGeometry.Splines.KochanekBartelsControlPoint)
+  parent: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  langs:
+  - csharp
+  - vb
+  name: CalculateSourceTangent(KochanekBartelsControlPoint, KochanekBartelsControlPoint)
+  nameWithType: KochanekBartelsControlPoint.CalculateSourceTangent(KochanekBartelsControlPoint, KochanekBartelsControlPoint)
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateSourceTangent(VRSketchingGeometry.Splines.KochanekBartelsControlPoint, VRSketchingGeometry.Splines.KochanekBartelsControlPoint)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: CalculateSourceTangent
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+    startLine: 39
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  summary: "\nCalculate the incoming tangent.\n"
+  example: []
+  syntax:
+    content: public Vector3 CalculateSourceTangent(KochanekBartelsControlPoint previousControlPoint, KochanekBartelsControlPoint nextControlPoint)
+    parameters:
+    - id: previousControlPoint
+      type: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+      description: ''
+    - id: nextControlPoint
+      type: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+      description: ''
+    return:
+      type: UnityEngine.Vector3
+      description: ''
+    content.vb: Public Function CalculateSourceTangent(previousControlPoint As KochanekBartelsControlPoint, nextControlPoint As KochanekBartelsControlPoint) As Vector3
+  overload: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateSourceTangent*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateDestinationTangent(VRSketchingGeometry.Splines.KochanekBartelsControlPoint,VRSketchingGeometry.Splines.KochanekBartelsControlPoint)
+  commentId: M:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateDestinationTangent(VRSketchingGeometry.Splines.KochanekBartelsControlPoint,VRSketchingGeometry.Splines.KochanekBartelsControlPoint)
+  id: CalculateDestinationTangent(VRSketchingGeometry.Splines.KochanekBartelsControlPoint,VRSketchingGeometry.Splines.KochanekBartelsControlPoint)
+  parent: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  langs:
+  - csharp
+  - vb
+  name: CalculateDestinationTangent(KochanekBartelsControlPoint, KochanekBartelsControlPoint)
+  nameWithType: KochanekBartelsControlPoint.CalculateDestinationTangent(KochanekBartelsControlPoint, KochanekBartelsControlPoint)
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateDestinationTangent(VRSketchingGeometry.Splines.KochanekBartelsControlPoint, VRSketchingGeometry.Splines.KochanekBartelsControlPoint)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: CalculateDestinationTangent
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+    startLine: 52
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  summary: "\nCalculate the outgoing tangent.\n"
+  example: []
+  syntax:
+    content: public Vector3 CalculateDestinationTangent(KochanekBartelsControlPoint previousControlPoint, KochanekBartelsControlPoint nextControlPoint)
+    parameters:
+    - id: previousControlPoint
+      type: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+      description: ''
+    - id: nextControlPoint
+      type: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+      description: ''
+    return:
+      type: UnityEngine.Vector3
+      description: ''
+    content.vb: Public Function CalculateDestinationTangent(previousControlPoint As KochanekBartelsControlPoint, nextControlPoint As KochanekBartelsControlPoint) As Vector3
+  overload: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateDestinationTangent*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.#ctor(UnityEngine.Vector3,System.Single,System.Single,System.Single)
+  commentId: M:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.#ctor(UnityEngine.Vector3,System.Single,System.Single,System.Single)
+  id: '#ctor(UnityEngine.Vector3,System.Single,System.Single,System.Single)'
+  parent: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  langs:
+  - csharp
+  - vb
+  name: KochanekBartelsControlPoint(Vector3, Single, Single, Single)
+  nameWithType: KochanekBartelsControlPoint.KochanekBartelsControlPoint(Vector3, Single, Single, Single)
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.KochanekBartelsControlPoint(UnityEngine.Vector3, System.Single, System.Single, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: .ctor
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/KochanekBartelsControlPoint.cs
+    startLine: 67
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Splines
+  summary: "\nConstructor for the KochanekBartelsSpline.\n"
+  example: []
+  syntax:
+    content: public KochanekBartelsControlPoint(Vector3 position, float tension = 0F, float bias = 0F, float continuity = 0F)
+    parameters:
+    - id: position
+      type: UnityEngine.Vector3
+      description: Position of the control point.
+    - id: tension
+      type: System.Single
+      description: Controls how sharp or soft the curve is at the control point.
+    - id: bias
+      type: System.Single
+      description: Determines the influence of the previous and next control point on the tangent.
+    - id: continuity
+      type: System.Single
+      description: Determines the similarity between the source and destination tangent.
+    content.vb: Public Sub New(position As Vector3, tension As Single = 0F, bias As Single = 0F, continuity As Single = 0F)
+  overload: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: VRSketchingGeometry.Splines
+  commentId: N:VRSketchingGeometry.Splines
+  name: VRSketchingGeometry.Splines
+  nameWithType: VRSketchingGeometry.Splines
+  fullName: VRSketchingGeometry.Splines
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.#ctor*
+  commentId: Overload:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.#ctor
+  name: KochanekBartelsControlPoint
+  nameWithType: KochanekBartelsControlPoint.KochanekBartelsControlPoint
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.KochanekBartelsControlPoint
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Position*
+  commentId: Overload:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Position
+  name: Position
+  nameWithType: KochanekBartelsControlPoint.Position
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Position
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Tension*
+  commentId: Overload:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Tension
+  name: Tension
+  nameWithType: KochanekBartelsControlPoint.Tension
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Tension
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Bias*
+  commentId: Overload:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Bias
+  name: Bias
+  nameWithType: KochanekBartelsControlPoint.Bias
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Bias
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Continuity*
+  commentId: Overload:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Continuity
+  name: Continuity
+  nameWithType: KochanekBartelsControlPoint.Continuity
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Continuity
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  commentId: T:VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+  parent: VRSketchingGeometry.Splines
+  name: KochanekBartelsControlPoint
+  nameWithType: KochanekBartelsControlPoint
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.op_Implicit*
+  commentId: Overload:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.op_Implicit
+  name: Implicit
+  nameWithType: KochanekBartelsControlPoint.Implicit
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Implicit
+  nameWithType.vb: KochanekBartelsControlPoint.Widening
+  fullName.vb: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.Widening
+  name.vb: Widening
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateSourceTangent*
+  commentId: Overload:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateSourceTangent
+  name: CalculateSourceTangent
+  nameWithType: KochanekBartelsControlPoint.CalculateSourceTangent
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateSourceTangent
+- uid: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateDestinationTangent*
+  commentId: Overload:VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateDestinationTangent
+  name: CalculateDestinationTangent
+  nameWithType: KochanekBartelsControlPoint.CalculateDestinationTangent
+  fullName: VRSketchingGeometry.Splines.KochanekBartelsControlPoint.CalculateDestinationTangent

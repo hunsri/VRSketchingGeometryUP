@@ -1,0 +1,429 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+  commentId: T:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+  id: AddPointAndRotationCommand
+  parent: VRSketchingGeometry.Commands.Ribbon
+  children:
+  - VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject,UnityEngine.Vector3,UnityEngine.Quaternion)
+  - VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Execute
+  - VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.GetAddPointAndRotationCommandContinuous(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject,UnityEngine.Vector3,UnityEngine.Quaternion,System.Single)
+  - VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Redo
+  - VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Undo
+  langs:
+  - csharp
+  - vb
+  name: AddPointAndRotationCommand
+  nameWithType: AddPointAndRotationCommand
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/AddPointAndRotationCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: AddPointAndRotationCommand
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/AddPointAndRotationCommand.cs
+    startLine: 10
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Ribbon
+  summary: "\nAdd a new control point to the end of the ribbon.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: 'public class AddPointAndRotationCommand : ICommand'
+    content.vb: >-
+      Public Class AddPointAndRotationCommand
+
+          Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - VRSketchingGeometry.Commands.ICommand
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject,UnityEngine.Vector3,UnityEngine.Quaternion)
+  id: '#ctor(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject,UnityEngine.Vector3,UnityEngine.Quaternion)'
+  parent: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+  langs:
+  - csharp
+  - vb
+  name: AddPointAndRotationCommand(RibbonSketchObject, Vector3, Quaternion)
+  nameWithType: AddPointAndRotationCommand.AddPointAndRotationCommand(RibbonSketchObject, Vector3, Quaternion)
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.AddPointAndRotationCommand(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject, UnityEngine.Vector3, UnityEngine.Quaternion)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/AddPointAndRotationCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: .ctor
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/AddPointAndRotationCommand.cs
+    startLine: 22
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Ribbon
+  summary: "\nCreate a command that represents adding a new control point to the end of a ribbon sketch object.\n"
+  example: []
+  syntax:
+    content: public AddPointAndRotationCommand(RibbonSketchObject ribbonSketchObject, Vector3 point, Quaternion rotation)
+    parameters:
+    - id: ribbonSketchObject
+      type: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+      description: The ribbon to add the control point to.
+    - id: point
+      type: UnityEngine.Vector3
+      description: The point to add.
+    - id: rotation
+      type: UnityEngine.Quaternion
+      description: The rotation of the cross section at this point.
+    content.vb: Public Sub New(ribbonSketchObject As RibbonSketchObject, point As Vector3, rotation As Quaternion)
+  overload: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Execute
+  commentId: M:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Execute
+  id: Execute
+  parent: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: AddPointAndRotationCommand.Execute()
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Execute()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/AddPointAndRotationCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Execute
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/AddPointAndRotationCommand.cs
+    startLine: 28
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Ribbon
+  syntax:
+    content: public bool Execute()
+    return:
+      type: System.Boolean
+    content.vb: Public Function Execute As Boolean
+  overload: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Execute*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Execute
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Redo
+  commentId: M:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Redo
+  id: Redo
+  parent: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+  langs:
+  - csharp
+  - vb
+  name: Redo()
+  nameWithType: AddPointAndRotationCommand.Redo()
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Redo()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/AddPointAndRotationCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Redo
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/AddPointAndRotationCommand.cs
+    startLine: 34
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Ribbon
+  syntax:
+    content: public void Redo()
+    content.vb: Public Sub Redo
+  overload: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Redo*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Redo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Undo
+  commentId: M:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Undo
+  id: Undo
+  parent: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+  langs:
+  - csharp
+  - vb
+  name: Undo()
+  nameWithType: AddPointAndRotationCommand.Undo()
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Undo()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/AddPointAndRotationCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Undo
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/AddPointAndRotationCommand.cs
+    startLine: 42
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Ribbon
+  syntax:
+    content: public void Undo()
+    content.vb: Public Sub Undo
+  overload: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Undo*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Undo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.GetAddPointAndRotationCommandContinuous(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject,UnityEngine.Vector3,UnityEngine.Quaternion,System.Single)
+  commentId: M:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.GetAddPointAndRotationCommandContinuous(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject,UnityEngine.Vector3,UnityEngine.Quaternion,System.Single)
+  id: GetAddPointAndRotationCommandContinuous(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject,UnityEngine.Vector3,UnityEngine.Quaternion,System.Single)
+  parent: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+  langs:
+  - csharp
+  - vb
+  name: GetAddPointAndRotationCommandContinuous(RibbonSketchObject, Vector3, Quaternion, Single)
+  nameWithType: AddPointAndRotationCommand.GetAddPointAndRotationCommandContinuous(RibbonSketchObject, Vector3, Quaternion, Single)
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.GetAddPointAndRotationCommandContinuous(VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject, UnityEngine.Vector3, UnityEngine.Quaternion, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/AddPointAndRotationCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetAddPointAndRotationCommandContinuous
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Ribbon/AddPointAndRotationCommand.cs
+    startLine: 58
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Ribbon
+  summary: "\nThis will only return a command object if the distance between the previous and new control point is larger than minimumDistance.\n"
+  example: []
+  syntax:
+    content: public static AddPointAndRotationCommand GetAddPointAndRotationCommandContinuous(RibbonSketchObject ribbonSketchObject, Vector3 point, Quaternion rotation, float minimumDistanceToLastControlPoint)
+    parameters:
+    - id: ribbonSketchObject
+      type: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+      description: ''
+    - id: point
+      type: UnityEngine.Vector3
+      description: ''
+    - id: rotation
+      type: UnityEngine.Quaternion
+      description: ''
+    - id: minimumDistanceToLastControlPoint
+      type: System.Single
+      description: ''
+    return:
+      type: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+      description: A command or null if the distance is smaller than minimumDistance.
+    content.vb: Public Shared Function GetAddPointAndRotationCommandContinuous(ribbonSketchObject As RibbonSketchObject, point As Vector3, rotation As Quaternion, minimumDistanceToLastControlPoint As Single) As AddPointAndRotationCommand
+  overload: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.GetAddPointAndRotationCommandContinuous*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: VRSketchingGeometry.Commands.Ribbon
+  commentId: N:VRSketchingGeometry.Commands.Ribbon
+  name: VRSketchingGeometry.Commands.Ribbon
+  nameWithType: VRSketchingGeometry.Commands.Ribbon
+  fullName: VRSketchingGeometry.Commands.Ribbon
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: VRSketchingGeometry.Commands.ICommand
+  commentId: T:VRSketchingGeometry.Commands.ICommand
+  parent: VRSketchingGeometry.Commands
+  name: ICommand
+  nameWithType: ICommand
+  fullName: VRSketchingGeometry.Commands.ICommand
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Commands
+  commentId: N:VRSketchingGeometry.Commands
+  name: VRSketchingGeometry.Commands
+  nameWithType: VRSketchingGeometry.Commands
+  fullName: VRSketchingGeometry.Commands
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.#ctor*
+  commentId: Overload:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.#ctor
+  name: AddPointAndRotationCommand
+  nameWithType: AddPointAndRotationCommand.AddPointAndRotationCommand
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.AddPointAndRotationCommand
+- uid: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: RibbonSketchObject
+  nameWithType: RibbonSketchObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.RibbonSketchObject
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Execute*
+  commentId: Overload:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Execute
+  name: Execute
+  nameWithType: AddPointAndRotationCommand.Execute
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Execute
+- uid: VRSketchingGeometry.Commands.ICommand.Execute
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Execute
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Execute()
+  nameWithType: ICommand.Execute()
+  fullName: VRSketchingGeometry.Commands.ICommand.Execute()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: VRSketchingGeometry.Commands.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: VRSketchingGeometry.Commands.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Redo*
+  commentId: Overload:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Redo
+  name: Redo
+  nameWithType: AddPointAndRotationCommand.Redo
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Redo
+- uid: VRSketchingGeometry.Commands.ICommand.Redo
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Redo
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Redo()
+  nameWithType: ICommand.Redo()
+  fullName: VRSketchingGeometry.Commands.ICommand.Redo()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Redo
+    name: Redo
+    nameWithType: ICommand.Redo
+    fullName: VRSketchingGeometry.Commands.ICommand.Redo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Redo
+    name: Redo
+    nameWithType: ICommand.Redo
+    fullName: VRSketchingGeometry.Commands.ICommand.Redo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Undo*
+  commentId: Overload:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Undo
+  name: Undo
+  nameWithType: AddPointAndRotationCommand.Undo
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.Undo
+- uid: VRSketchingGeometry.Commands.ICommand.Undo
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Undo
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Undo()
+  nameWithType: ICommand.Undo()
+  fullName: VRSketchingGeometry.Commands.ICommand.Undo()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: VRSketchingGeometry.Commands.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: VRSketchingGeometry.Commands.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.GetAddPointAndRotationCommandContinuous*
+  commentId: Overload:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.GetAddPointAndRotationCommandContinuous
+  name: GetAddPointAndRotationCommandContinuous
+  nameWithType: AddPointAndRotationCommand.GetAddPointAndRotationCommandContinuous
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand.GetAddPointAndRotationCommandContinuous
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+  commentId: T:VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand
+  parent: VRSketchingGeometry.Commands.Ribbon
+  name: AddPointAndRotationCommand
+  nameWithType: AddPointAndRotationCommand
+  fullName: VRSketchingGeometry.Commands.Ribbon.AddPointAndRotationCommand

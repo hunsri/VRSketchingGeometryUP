@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Export
+  commentId: N:VRSketchingGeometry.Export
+  id: VRSketchingGeometry.Export
+  children:
+  - VRSketchingGeometry.Export.OBJExporter
+  langs:
+  - csharp
+  - vb
+  name: VRSketchingGeometry.Export
+  nameWithType: VRSketchingGeometry.Export
+  fullName: VRSketchingGeometry.Export
+  type: Namespace
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+references:
+- uid: VRSketchingGeometry.Export.OBJExporter
+  commentId: T:VRSketchingGeometry.Export.OBJExporter
+  name: OBJExporter
+  nameWithType: OBJExporter
+  fullName: VRSketchingGeometry.Export.OBJExporter

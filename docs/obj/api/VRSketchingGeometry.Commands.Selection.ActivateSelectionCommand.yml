@@ -1,0 +1,331 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand
+  commentId: T:VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand
+  id: ActivateSelectionCommand
+  parent: VRSketchingGeometry.Commands.Selection
+  children:
+  - VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection)
+  - VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Execute
+  - VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Redo
+  - VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Undo
+  langs:
+  - csharp
+  - vb
+  name: ActivateSelectionCommand
+  nameWithType: ActivateSelectionCommand
+  fullName: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Selection/ActivateSelectionCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ActivateSelectionCommand
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Selection/ActivateSelectionCommand.cs
+    startLine: 12
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Selection
+  summary: "\nActivate the selection.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: 'public class ActivateSelectionCommand : ICommand'
+    content.vb: >-
+      Public Class ActivateSelectionCommand
+
+          Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - VRSketchingGeometry.Commands.ICommand
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection)
+  commentId: M:VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection)
+  id: '#ctor(VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection)'
+  parent: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand
+  langs:
+  - csharp
+  - vb
+  name: ActivateSelectionCommand(SketchObjectSelection)
+  nameWithType: ActivateSelectionCommand.ActivateSelectionCommand(SketchObjectSelection)
+  fullName: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.ActivateSelectionCommand(VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Selection/ActivateSelectionCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: .ctor
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Selection/ActivateSelectionCommand.cs
+    startLine: 16
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Selection
+  syntax:
+    content: public ActivateSelectionCommand(SketchObjectSelection selection)
+    parameters:
+    - id: selection
+      type: VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection
+    content.vb: Public Sub New(selection As SketchObjectSelection)
+  overload: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Execute
+  commentId: M:VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Execute
+  id: Execute
+  parent: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: ActivateSelectionCommand.Execute()
+  fullName: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Execute()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Selection/ActivateSelectionCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Execute
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Selection/ActivateSelectionCommand.cs
+    startLine: 21
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Selection
+  syntax:
+    content: public bool Execute()
+    return:
+      type: System.Boolean
+    content.vb: Public Function Execute As Boolean
+  overload: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Execute*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Execute
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Redo
+  commentId: M:VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Redo
+  id: Redo
+  parent: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand
+  langs:
+  - csharp
+  - vb
+  name: Redo()
+  nameWithType: ActivateSelectionCommand.Redo()
+  fullName: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Redo()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Selection/ActivateSelectionCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Redo
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Selection/ActivateSelectionCommand.cs
+    startLine: 27
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Selection
+  syntax:
+    content: public void Redo()
+    content.vb: Public Sub Redo
+  overload: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Redo*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Redo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Undo
+  commentId: M:VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Undo
+  id: Undo
+  parent: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand
+  langs:
+  - csharp
+  - vb
+  name: Undo()
+  nameWithType: ActivateSelectionCommand.Undo()
+  fullName: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Undo()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Selection/ActivateSelectionCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Undo
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Selection/ActivateSelectionCommand.cs
+    startLine: 32
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Selection
+  syntax:
+    content: public void Undo()
+    content.vb: Public Sub Undo
+  overload: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Undo*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Undo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: VRSketchingGeometry.Commands.Selection
+  commentId: N:VRSketchingGeometry.Commands.Selection
+  name: VRSketchingGeometry.Commands.Selection
+  nameWithType: VRSketchingGeometry.Commands.Selection
+  fullName: VRSketchingGeometry.Commands.Selection
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: VRSketchingGeometry.Commands.ICommand
+  commentId: T:VRSketchingGeometry.Commands.ICommand
+  parent: VRSketchingGeometry.Commands
+  name: ICommand
+  nameWithType: ICommand
+  fullName: VRSketchingGeometry.Commands.ICommand
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Commands
+  commentId: N:VRSketchingGeometry.Commands
+  name: VRSketchingGeometry.Commands
+  nameWithType: VRSketchingGeometry.Commands
+  fullName: VRSketchingGeometry.Commands
+- uid: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.#ctor*
+  commentId: Overload:VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.#ctor
+  name: ActivateSelectionCommand
+  nameWithType: ActivateSelectionCommand.ActivateSelectionCommand
+  fullName: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.ActivateSelectionCommand
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SketchObjectSelection
+  nameWithType: SketchObjectSelection
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObjectSelection
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Execute*
+  commentId: Overload:VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Execute
+  name: Execute
+  nameWithType: ActivateSelectionCommand.Execute
+  fullName: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Execute
+- uid: VRSketchingGeometry.Commands.ICommand.Execute
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Execute
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Execute()
+  nameWithType: ICommand.Execute()
+  fullName: VRSketchingGeometry.Commands.ICommand.Execute()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: VRSketchingGeometry.Commands.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: VRSketchingGeometry.Commands.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Redo*
+  commentId: Overload:VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Redo
+  name: Redo
+  nameWithType: ActivateSelectionCommand.Redo
+  fullName: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Redo
+- uid: VRSketchingGeometry.Commands.ICommand.Redo
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Redo
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Redo()
+  nameWithType: ICommand.Redo()
+  fullName: VRSketchingGeometry.Commands.ICommand.Redo()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Redo
+    name: Redo
+    nameWithType: ICommand.Redo
+    fullName: VRSketchingGeometry.Commands.ICommand.Redo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Redo
+    name: Redo
+    nameWithType: ICommand.Redo
+    fullName: VRSketchingGeometry.Commands.ICommand.Redo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Undo*
+  commentId: Overload:VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Undo
+  name: Undo
+  nameWithType: ActivateSelectionCommand.Undo
+  fullName: VRSketchingGeometry.Commands.Selection.ActivateSelectionCommand.Undo
+- uid: VRSketchingGeometry.Commands.ICommand.Undo
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Undo
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Undo()
+  nameWithType: ICommand.Undo()
+  fullName: VRSketchingGeometry.Commands.ICommand.Undo()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: VRSketchingGeometry.Commands.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: VRSketchingGeometry.Commands.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

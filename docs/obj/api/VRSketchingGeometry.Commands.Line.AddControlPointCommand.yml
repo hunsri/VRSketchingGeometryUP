@@ -1,0 +1,346 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Commands.Line.AddControlPointCommand
+  commentId: T:VRSketchingGeometry.Commands.Line.AddControlPointCommand
+  id: AddControlPointCommand
+  parent: VRSketchingGeometry.Commands.Line
+  children:
+  - VRSketchingGeometry.Commands.Line.AddControlPointCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.LineSketchObject,UnityEngine.Vector3)
+  - VRSketchingGeometry.Commands.Line.AddControlPointCommand.Execute
+  - VRSketchingGeometry.Commands.Line.AddControlPointCommand.Redo
+  - VRSketchingGeometry.Commands.Line.AddControlPointCommand.Undo
+  langs:
+  - csharp
+  - vb
+  name: AddControlPointCommand
+  nameWithType: AddControlPointCommand
+  fullName: VRSketchingGeometry.Commands.Line.AddControlPointCommand
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Line/AddControlPointCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: AddControlPointCommand
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Line/AddControlPointCommand.cs
+    startLine: 10
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Line
+  summary: "\nAdd control point at the end of the spline.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: 'public class AddControlPointCommand : ICommand'
+    content.vb: >-
+      Public Class AddControlPointCommand
+
+          Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - VRSketchingGeometry.Commands.ICommand
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Commands.Line.AddControlPointCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.LineSketchObject,UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.Commands.Line.AddControlPointCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.LineSketchObject,UnityEngine.Vector3)
+  id: '#ctor(VRSketchingGeometry.SketchObjectManagement.LineSketchObject,UnityEngine.Vector3)'
+  parent: VRSketchingGeometry.Commands.Line.AddControlPointCommand
+  langs:
+  - csharp
+  - vb
+  name: AddControlPointCommand(LineSketchObject, Vector3)
+  nameWithType: AddControlPointCommand.AddControlPointCommand(LineSketchObject, Vector3)
+  fullName: VRSketchingGeometry.Commands.Line.AddControlPointCommand.AddControlPointCommand(VRSketchingGeometry.SketchObjectManagement.LineSketchObject, UnityEngine.Vector3)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Line/AddControlPointCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: .ctor
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Line/AddControlPointCommand.cs
+    startLine: 15
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Line
+  syntax:
+    content: public AddControlPointCommand(LineSketchObject lineSketchObject, Vector3 controlPoint)
+    parameters:
+    - id: lineSketchObject
+      type: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+    - id: controlPoint
+      type: UnityEngine.Vector3
+    content.vb: Public Sub New(lineSketchObject As LineSketchObject, controlPoint As Vector3)
+  overload: VRSketchingGeometry.Commands.Line.AddControlPointCommand.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Execute
+  commentId: M:VRSketchingGeometry.Commands.Line.AddControlPointCommand.Execute
+  id: Execute
+  parent: VRSketchingGeometry.Commands.Line.AddControlPointCommand
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: AddControlPointCommand.Execute()
+  fullName: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Execute()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Line/AddControlPointCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Execute
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Line/AddControlPointCommand.cs
+    startLine: 20
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Line
+  syntax:
+    content: public bool Execute()
+    return:
+      type: System.Boolean
+    content.vb: Public Function Execute As Boolean
+  overload: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Execute*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Execute
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Redo
+  commentId: M:VRSketchingGeometry.Commands.Line.AddControlPointCommand.Redo
+  id: Redo
+  parent: VRSketchingGeometry.Commands.Line.AddControlPointCommand
+  langs:
+  - csharp
+  - vb
+  name: Redo()
+  nameWithType: AddControlPointCommand.Redo()
+  fullName: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Redo()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Line/AddControlPointCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Redo
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Line/AddControlPointCommand.cs
+    startLine: 26
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Line
+  syntax:
+    content: public void Redo()
+    content.vb: Public Sub Redo
+  overload: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Redo*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Redo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Undo
+  commentId: M:VRSketchingGeometry.Commands.Line.AddControlPointCommand.Undo
+  id: Undo
+  parent: VRSketchingGeometry.Commands.Line.AddControlPointCommand
+  langs:
+  - csharp
+  - vb
+  name: Undo()
+  nameWithType: AddControlPointCommand.Undo()
+  fullName: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Undo()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Line/AddControlPointCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Undo
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Line/AddControlPointCommand.cs
+    startLine: 34
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Line
+  syntax:
+    content: public void Undo()
+    content.vb: Public Sub Undo
+  overload: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Undo*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Undo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: VRSketchingGeometry.Commands.Line
+  commentId: N:VRSketchingGeometry.Commands.Line
+  name: VRSketchingGeometry.Commands.Line
+  nameWithType: VRSketchingGeometry.Commands.Line
+  fullName: VRSketchingGeometry.Commands.Line
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: VRSketchingGeometry.Commands.ICommand
+  commentId: T:VRSketchingGeometry.Commands.ICommand
+  parent: VRSketchingGeometry.Commands
+  name: ICommand
+  nameWithType: ICommand
+  fullName: VRSketchingGeometry.Commands.ICommand
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Commands
+  commentId: N:VRSketchingGeometry.Commands
+  name: VRSketchingGeometry.Commands
+  nameWithType: VRSketchingGeometry.Commands
+  fullName: VRSketchingGeometry.Commands
+- uid: VRSketchingGeometry.Commands.Line.AddControlPointCommand.#ctor*
+  commentId: Overload:VRSketchingGeometry.Commands.Line.AddControlPointCommand.#ctor
+  name: AddControlPointCommand
+  nameWithType: AddControlPointCommand.AddControlPointCommand
+  fullName: VRSketchingGeometry.Commands.Line.AddControlPointCommand.AddControlPointCommand
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: LineSketchObject
+  nameWithType: LineSketchObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Execute*
+  commentId: Overload:VRSketchingGeometry.Commands.Line.AddControlPointCommand.Execute
+  name: Execute
+  nameWithType: AddControlPointCommand.Execute
+  fullName: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Execute
+- uid: VRSketchingGeometry.Commands.ICommand.Execute
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Execute
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Execute()
+  nameWithType: ICommand.Execute()
+  fullName: VRSketchingGeometry.Commands.ICommand.Execute()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: VRSketchingGeometry.Commands.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: VRSketchingGeometry.Commands.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Redo*
+  commentId: Overload:VRSketchingGeometry.Commands.Line.AddControlPointCommand.Redo
+  name: Redo
+  nameWithType: AddControlPointCommand.Redo
+  fullName: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Redo
+- uid: VRSketchingGeometry.Commands.ICommand.Redo
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Redo
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Redo()
+  nameWithType: ICommand.Redo()
+  fullName: VRSketchingGeometry.Commands.ICommand.Redo()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Redo
+    name: Redo
+    nameWithType: ICommand.Redo
+    fullName: VRSketchingGeometry.Commands.ICommand.Redo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Redo
+    name: Redo
+    nameWithType: ICommand.Redo
+    fullName: VRSketchingGeometry.Commands.ICommand.Redo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Undo*
+  commentId: Overload:VRSketchingGeometry.Commands.Line.AddControlPointCommand.Undo
+  name: Undo
+  nameWithType: AddControlPointCommand.Undo
+  fullName: VRSketchingGeometry.Commands.Line.AddControlPointCommand.Undo
+- uid: VRSketchingGeometry.Commands.ICommand.Undo
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Undo
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Undo()
+  nameWithType: ICommand.Undo()
+  fullName: VRSketchingGeometry.Commands.ICommand.Undo()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: VRSketchingGeometry.Commands.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: VRSketchingGeometry.Commands.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,462 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SketchWorld
+  id: SketchWorld
+  parent: VRSketchingGeometry.SketchObjectManagement
+  children:
+  - VRSketchingGeometry.SketchObjectManagement.SketchWorld.ActiveSketchWorld
+  - VRSketchingGeometry.SketchObjectManagement.SketchWorld.defaults
+  - VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorld(System.String)
+  - VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorldToDefaultPath
+  - VRSketchingGeometry.SketchObjectManagement.SketchWorld.IsObjectDeleted(VRSketchingGeometry.SketchObjectManagement.SelectableObject)
+  - VRSketchingGeometry.SketchObjectManagement.SketchWorld.LoadSketchWorld(System.String)
+  - VRSketchingGeometry.SketchObjectManagement.SketchWorld.RestoreObject(VRSketchingGeometry.SketchObjectManagement.SelectableObject)
+  - VRSketchingGeometry.SketchObjectManagement.SketchWorld.SaveSketchWorld(System.String)
+  langs:
+  - csharp
+  - vb
+  name: SketchWorld
+  nameWithType: SketchWorld
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SketchWorld
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+    startLine: 13
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nThe root of a sketch.\nThis is used to serialize, deserialize and export sketches.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: 'public class SketchWorld : MonoBehaviour'
+    content.vb: >-
+      Public Class SketchWorld
+
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ActiveSketchWorld
+  commentId: P:VRSketchingGeometry.SketchObjectManagement.SketchWorld.ActiveSketchWorld
+  id: ActiveSketchWorld
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchWorld
+  langs:
+  - csharp
+  - vb
+  name: ActiveSketchWorld
+  nameWithType: SketchWorld.ActiveSketchWorld
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ActiveSketchWorld
+  type: Property
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ActiveSketchWorld
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+    startLine: 17
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public static SketchWorld ActiveSketchWorld { get; set; }
+    parameters: []
+    return:
+      type: VRSketchingGeometry.SketchObjectManagement.SketchWorld
+    content.vb: Public Shared Property ActiveSketchWorld As SketchWorld
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ActiveSketchWorld*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.defaults
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchWorld.defaults
+  id: defaults
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchWorld
+  langs:
+  - csharp
+  - vb
+  name: defaults
+  nameWithType: SketchWorld.defaults
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.defaults
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: defaults
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+    startLine: 19
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public DefaultReferences defaults
+    return:
+      type: VRSketchingGeometry.DefaultReferences
+    content.vb: Public defaults As DefaultReferences
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.IsObjectDeleted(VRSketchingGeometry.SketchObjectManagement.SelectableObject)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchWorld.IsObjectDeleted(VRSketchingGeometry.SketchObjectManagement.SelectableObject)
+  id: IsObjectDeleted(VRSketchingGeometry.SketchObjectManagement.SelectableObject)
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchWorld
+  langs:
+  - csharp
+  - vb
+  name: IsObjectDeleted(SelectableObject)
+  nameWithType: SketchWorld.IsObjectDeleted(SelectableObject)
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.IsObjectDeleted(VRSketchingGeometry.SketchObjectManagement.SelectableObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: IsObjectDeleted
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+    startLine: 58
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nIs this object in the deleted bin of this sketch world?\n"
+  example: []
+  syntax:
+    content: public bool IsObjectDeleted(SelectableObject selectableObject)
+    parameters:
+    - id: selectableObject
+      type: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function IsObjectDeleted(selectableObject As SelectableObject) As Boolean
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchWorld.IsObjectDeleted*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.RestoreObject(VRSketchingGeometry.SketchObjectManagement.SelectableObject)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchWorld.RestoreObject(VRSketchingGeometry.SketchObjectManagement.SelectableObject)
+  id: RestoreObject(VRSketchingGeometry.SketchObjectManagement.SelectableObject)
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchWorld
+  langs:
+  - csharp
+  - vb
+  name: RestoreObject(SelectableObject)
+  nameWithType: SketchWorld.RestoreObject(SelectableObject)
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.RestoreObject(VRSketchingGeometry.SketchObjectManagement.SelectableObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: RestoreObject
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+    startLine: 77
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nRestores a previously deleted object.\n"
+  example: []
+  syntax:
+    content: public void RestoreObject(SelectableObject selectableObject)
+    parameters:
+    - id: selectableObject
+      type: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+      description: ''
+    content.vb: Public Sub RestoreObject(selectableObject As SelectableObject)
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchWorld.RestoreObject*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.SaveSketchWorld(System.String)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchWorld.SaveSketchWorld(System.String)
+  id: SaveSketchWorld(System.String)
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchWorld
+  langs:
+  - csharp
+  - vb
+  name: SaveSketchWorld(String)
+  nameWithType: SketchWorld.SaveSketchWorld(String)
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.SaveSketchWorld(System.String)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SaveSketchWorld
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+    startLine: 98
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nSerializes the sketching game objects that are children of this sketch world. \n"
+  example: []
+  syntax:
+    content: public void SaveSketchWorld(string path)
+    parameters:
+    - id: path
+      type: System.String
+    content.vb: Public Sub SaveSketchWorld(path As String)
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchWorld.SaveSketchWorld*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorld(System.String)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorld(System.String)
+  id: ExportSketchWorld(System.String)
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchWorld
+  langs:
+  - csharp
+  - vb
+  name: ExportSketchWorld(String)
+  nameWithType: SketchWorld.ExportSketchWorld(String)
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorld(System.String)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ExportSketchWorld
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+    startLine: 108
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nExport sketch world as .obj file.\n"
+  example: []
+  syntax:
+    content: public void ExportSketchWorld(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: Path of the exported .obj file including file name and file extension.
+    content.vb: Public Sub ExportSketchWorld(path As String)
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorld*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorldToDefaultPath
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorldToDefaultPath
+  id: ExportSketchWorldToDefaultPath
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchWorld
+  langs:
+  - csharp
+  - vb
+  name: ExportSketchWorldToDefaultPath()
+  nameWithType: SketchWorld.ExportSketchWorldToDefaultPath()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorldToDefaultPath()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ExportSketchWorldToDefaultPath
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+    startLine: 118
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nExports as .obj to UnityEngine.Application.dataPath/ExportedSketches.\n"
+  remarks: The folder is in the Assets folder when run in the editor and in the ***_Data folder in a build.
+  example: []
+  syntax:
+    content: public void ExportSketchWorldToDefaultPath()
+    content.vb: Public Sub ExportSketchWorldToDefaultPath
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorldToDefaultPath*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.LoadSketchWorld(System.String)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchWorld.LoadSketchWorld(System.String)
+  id: LoadSketchWorld(System.String)
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchWorld
+  langs:
+  - csharp
+  - vb
+  name: LoadSketchWorld(String)
+  nameWithType: SketchWorld.LoadSketchWorld(String)
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.LoadSketchWorld(System.String)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: LoadSketchWorld
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/SketchWorld.cs
+    startLine: 129
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nLoad sketch world from serialized file.\n"
+  example: []
+  syntax:
+    content: public void LoadSketchWorld(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: ''
+    content.vb: Public Sub LoadSketchWorld(path As String)
+  overload: VRSketchingGeometry.SketchObjectManagement.SketchWorld.LoadSketchWorld*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ActiveSketchWorld*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchWorld.ActiveSketchWorld
+  name: ActiveSketchWorld
+  nameWithType: SketchWorld.ActiveSketchWorld
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ActiveSketchWorld
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SketchWorld
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SketchWorld
+  nameWithType: SketchWorld
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld
+- uid: VRSketchingGeometry.DefaultReferences
+  commentId: T:VRSketchingGeometry.DefaultReferences
+  parent: VRSketchingGeometry
+  name: DefaultReferences
+  nameWithType: DefaultReferences
+  fullName: VRSketchingGeometry.DefaultReferences
+- uid: VRSketchingGeometry
+  commentId: N:VRSketchingGeometry
+  name: VRSketchingGeometry
+  nameWithType: VRSketchingGeometry
+  fullName: VRSketchingGeometry
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.IsObjectDeleted*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchWorld.IsObjectDeleted
+  name: IsObjectDeleted
+  nameWithType: SketchWorld.IsObjectDeleted
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.IsObjectDeleted
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SelectableObject
+  nameWithType: SelectableObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.RestoreObject*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchWorld.RestoreObject
+  name: RestoreObject
+  nameWithType: SketchWorld.RestoreObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.RestoreObject
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.SaveSketchWorld*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchWorld.SaveSketchWorld
+  name: SaveSketchWorld
+  nameWithType: SketchWorld.SaveSketchWorld
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.SaveSketchWorld
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorld*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorld
+  name: ExportSketchWorld
+  nameWithType: SketchWorld.ExportSketchWorld
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorld
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorldToDefaultPath*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorldToDefaultPath
+  name: ExportSketchWorldToDefaultPath
+  nameWithType: SketchWorld.ExportSketchWorldToDefaultPath
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.ExportSketchWorldToDefaultPath
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchWorld.LoadSketchWorld*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.SketchWorld.LoadSketchWorld
+  name: LoadSketchWorld
+  nameWithType: SketchWorld.LoadSketchWorld
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchWorld.LoadSketchWorld

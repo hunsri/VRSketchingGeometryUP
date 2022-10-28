@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.SketchObjectManagement.ISelectable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.ISelectable
+  id: ISelectable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ISelectable
+  nameWithType: ISelectable
+  fullName: VRSketchingGeometry.SketchObjectManagement.ISelectable
+  type: Interface
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/ISelectable.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ISelectable
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/ISelectable.cs
+    startLine: 10
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nThis interface combines IGroupable and IHighlightable.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: 'public interface ISelectable : IGroupable, IHighlightable'
+    content.vb: >-
+      Public Interface ISelectable
+
+          Inherits IGroupable, IHighlightable
+  inheritedMembers:
+  - VRSketchingGeometry.SketchObjectManagement.IGroupable.ParentGroup
+  - VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+  - VRSketchingGeometry.SketchObjectManagement.IHighlightable.highlight
+  - VRSketchingGeometry.SketchObjectManagement.IHighlightable.revertHighlight
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: VRSketchingGeometry.SketchObjectManagement.IGroupable.ParentGroup
+  commentId: P:VRSketchingGeometry.SketchObjectManagement.IGroupable.ParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.IGroupable
+  name: ParentGroup
+  nameWithType: IGroupable.ParentGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable.ParentGroup
+- uid: VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.IGroupable
+  name: resetToParentGroup()
+  nameWithType: IGroupable.resetToParentGroup()
+  fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: IGroupable.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: IGroupable.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.IHighlightable.highlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.IHighlightable.highlight
+  parent: VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  name: highlight()
+  nameWithType: IHighlightable.highlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.IHighlightable.highlight()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IHighlightable.highlight
+    name: highlight
+    nameWithType: IHighlightable.highlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.IHighlightable.highlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IHighlightable.highlight
+    name: highlight
+    nameWithType: IHighlightable.highlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.IHighlightable.highlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.IHighlightable.revertHighlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.IHighlightable.revertHighlight
+  parent: VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  name: revertHighlight()
+  nameWithType: IHighlightable.revertHighlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.IHighlightable.revertHighlight()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IHighlightable.revertHighlight
+    name: revertHighlight
+    nameWithType: IHighlightable.revertHighlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.IHighlightable.revertHighlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IHighlightable.revertHighlight
+    name: revertHighlight
+    nameWithType: IHighlightable.revertHighlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.IHighlightable.revertHighlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.IGroupable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IGroupable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IGroupable
+  nameWithType: IGroupable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable
+- uid: VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IHighlightable
+  nameWithType: IHighlightable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IHighlightable

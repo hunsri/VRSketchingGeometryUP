@@ -1,0 +1,489 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Export.OBJExporter
+  commentId: T:VRSketchingGeometry.Export.OBJExporter
+  id: OBJExporter
+  parent: VRSketchingGeometry.Export
+  children:
+  - VRSketchingGeometry.Export.OBJExporter.applyPosition
+  - VRSketchingGeometry.Export.OBJExporter.applyRotation
+  - VRSketchingGeometry.Export.OBJExporter.applyScale
+  - VRSketchingGeometry.Export.OBJExporter.ExportGameObject(UnityEngine.GameObject,System.String)
+  - VRSketchingGeometry.Export.OBJExporter.exportTextures
+  - VRSketchingGeometry.Export.OBJExporter.generateMaterials
+  - VRSketchingGeometry.Export.OBJExporter.GetDefaultExportPath
+  - VRSketchingGeometry.Export.OBJExporter.GetObjFileContent(System.String,UnityEngine.MeshFilter[],System.Text.StringBuilder@,System.Text.StringBuilder@)
+  - VRSketchingGeometry.Export.OBJExporter.objNameAddIdNum
+  - VRSketchingGeometry.Export.OBJExporter.splitObjects
+  langs:
+  - csharp
+  - vb
+  name: OBJExporter
+  nameWithType: OBJExporter
+  fullName: VRSketchingGeometry.Export.OBJExporter
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: OBJExporter
+    path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+    startLine: 24
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Export
+  summary: "\nExport game objects as OBJ files at runtime.\n"
+  example: []
+  syntax:
+    content: public class OBJExporter
+    content.vb: Public Class OBJExporter
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Export.OBJExporter.applyPosition
+  commentId: F:VRSketchingGeometry.Export.OBJExporter.applyPosition
+  id: applyPosition
+  parent: VRSketchingGeometry.Export.OBJExporter
+  langs:
+  - csharp
+  - vb
+  name: applyPosition
+  nameWithType: OBJExporter.applyPosition
+  fullName: VRSketchingGeometry.Export.OBJExporter.applyPosition
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: applyPosition
+    path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+    startLine: 26
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Export
+  syntax:
+    content: public bool applyPosition
+    return:
+      type: System.Boolean
+    content.vb: Public applyPosition As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Export.OBJExporter.applyRotation
+  commentId: F:VRSketchingGeometry.Export.OBJExporter.applyRotation
+  id: applyRotation
+  parent: VRSketchingGeometry.Export.OBJExporter
+  langs:
+  - csharp
+  - vb
+  name: applyRotation
+  nameWithType: OBJExporter.applyRotation
+  fullName: VRSketchingGeometry.Export.OBJExporter.applyRotation
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: applyRotation
+    path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+    startLine: 27
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Export
+  syntax:
+    content: public bool applyRotation
+    return:
+      type: System.Boolean
+    content.vb: Public applyRotation As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Export.OBJExporter.applyScale
+  commentId: F:VRSketchingGeometry.Export.OBJExporter.applyScale
+  id: applyScale
+  parent: VRSketchingGeometry.Export.OBJExporter
+  langs:
+  - csharp
+  - vb
+  name: applyScale
+  nameWithType: OBJExporter.applyScale
+  fullName: VRSketchingGeometry.Export.OBJExporter.applyScale
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: applyScale
+    path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+    startLine: 28
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Export
+  syntax:
+    content: public bool applyScale
+    return:
+      type: System.Boolean
+    content.vb: Public applyScale As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Export.OBJExporter.generateMaterials
+  commentId: F:VRSketchingGeometry.Export.OBJExporter.generateMaterials
+  id: generateMaterials
+  parent: VRSketchingGeometry.Export.OBJExporter
+  langs:
+  - csharp
+  - vb
+  name: generateMaterials
+  nameWithType: OBJExporter.generateMaterials
+  fullName: VRSketchingGeometry.Export.OBJExporter.generateMaterials
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: generateMaterials
+    path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+    startLine: 29
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Export
+  syntax:
+    content: public bool generateMaterials
+    return:
+      type: System.Boolean
+    content.vb: Public generateMaterials As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Export.OBJExporter.exportTextures
+  commentId: F:VRSketchingGeometry.Export.OBJExporter.exportTextures
+  id: exportTextures
+  parent: VRSketchingGeometry.Export.OBJExporter
+  langs:
+  - csharp
+  - vb
+  name: exportTextures
+  nameWithType: OBJExporter.exportTextures
+  fullName: VRSketchingGeometry.Export.OBJExporter.exportTextures
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: exportTextures
+    path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+    startLine: 30
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Export
+  syntax:
+    content: public bool exportTextures
+    return:
+      type: System.Boolean
+    content.vb: Public exportTextures As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Export.OBJExporter.splitObjects
+  commentId: F:VRSketchingGeometry.Export.OBJExporter.splitObjects
+  id: splitObjects
+  parent: VRSketchingGeometry.Export.OBJExporter
+  langs:
+  - csharp
+  - vb
+  name: splitObjects
+  nameWithType: OBJExporter.splitObjects
+  fullName: VRSketchingGeometry.Export.OBJExporter.splitObjects
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: splitObjects
+    path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+    startLine: 31
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Export
+  syntax:
+    content: public bool splitObjects
+    return:
+      type: System.Boolean
+    content.vb: Public splitObjects As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Export.OBJExporter.objNameAddIdNum
+  commentId: F:VRSketchingGeometry.Export.OBJExporter.objNameAddIdNum
+  id: objNameAddIdNum
+  parent: VRSketchingGeometry.Export.OBJExporter
+  langs:
+  - csharp
+  - vb
+  name: objNameAddIdNum
+  nameWithType: OBJExporter.objNameAddIdNum
+  fullName: VRSketchingGeometry.Export.OBJExporter.objNameAddIdNum
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: objNameAddIdNum
+    path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+    startLine: 32
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Export
+  syntax:
+    content: public bool objNameAddIdNum
+    return:
+      type: System.Boolean
+    content.vb: Public objNameAddIdNum As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Export.OBJExporter.GetDefaultExportPath
+  commentId: M:VRSketchingGeometry.Export.OBJExporter.GetDefaultExportPath
+  id: GetDefaultExportPath
+  parent: VRSketchingGeometry.Export.OBJExporter
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultExportPath()
+  nameWithType: OBJExporter.GetDefaultExportPath()
+  fullName: VRSketchingGeometry.Export.OBJExporter.GetDefaultExportPath()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetDefaultExportPath
+    path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+    startLine: 53
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Export
+  summary: "\nGet a file path for an exported sketch inside UnityEngine.Application.dataPath.\nThe default folder is created if it doesn&apos;t exist.\nA file name that doesn&apos;t exist is chosen.\n"
+  example: []
+  syntax:
+    content: public static string GetDefaultExportPath()
+    return:
+      type: System.String
+      description: file path
+    content.vb: Public Shared Function GetDefaultExportPath As String
+  overload: VRSketchingGeometry.Export.OBJExporter.GetDefaultExportPath*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VRSketchingGeometry.Export.OBJExporter.ExportGameObject(UnityEngine.GameObject,System.String)
+  commentId: M:VRSketchingGeometry.Export.OBJExporter.ExportGameObject(UnityEngine.GameObject,System.String)
+  id: ExportGameObject(UnityEngine.GameObject,System.String)
+  parent: VRSketchingGeometry.Export.OBJExporter
+  langs:
+  - csharp
+  - vb
+  name: ExportGameObject(GameObject, String)
+  nameWithType: OBJExporter.ExportGameObject(GameObject, String)
+  fullName: VRSketchingGeometry.Export.OBJExporter.ExportGameObject(UnityEngine.GameObject, System.String)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ExportGameObject
+    path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+    startLine: 85
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Export
+  summary: "\nExport all meshes that are part of this gameObject or it&apos;s children to a .obj file.\nIf enabled, a material file will also be created.\n"
+  example: []
+  syntax:
+    content: public void ExportGameObject(GameObject gameObject, string exportPath)
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+      description: The game object to be exported.
+    - id: exportPath
+      type: System.String
+      description: Full path that contains file name and extension.
+    content.vb: Public Sub ExportGameObject(gameObject As GameObject, exportPath As String)
+  overload: VRSketchingGeometry.Export.OBJExporter.ExportGameObject*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Export.OBJExporter.GetObjFileContent(System.String,UnityEngine.MeshFilter[],System.Text.StringBuilder@,System.Text.StringBuilder@)
+  commentId: M:VRSketchingGeometry.Export.OBJExporter.GetObjFileContent(System.String,UnityEngine.MeshFilter[],System.Text.StringBuilder@,System.Text.StringBuilder@)
+  id: GetObjFileContent(System.String,UnityEngine.MeshFilter[],System.Text.StringBuilder@,System.Text.StringBuilder@)
+  parent: VRSketchingGeometry.Export.OBJExporter
+  langs:
+  - csharp
+  - vb
+  name: GetObjFileContent(String, MeshFilter[], out StringBuilder, out StringBuilder)
+  nameWithType: OBJExporter.GetObjFileContent(String, MeshFilter[], out StringBuilder, out StringBuilder)
+  fullName: VRSketchingGeometry.Export.OBJExporter.GetObjFileContent(System.String, UnityEngine.MeshFilter[], out System.Text.StringBuilder, out System.Text.StringBuilder)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetObjFileContent
+    path: Assets/VRSketchingGeometryPackage/Runtime/OBJExport/OBJExporter.cs
+    startLine: 135
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Export
+  summary: "\nGet the contents of the obj and mtl file as StringBuilders.\n"
+  example: []
+  syntax:
+    content: public void GetObjFileContent(string baseFileName, MeshFilter[] sceneMeshes, out StringBuilder meshStringBuilder, out StringBuilder materialStringBuilder)
+    parameters:
+    - id: baseFileName
+      type: System.String
+      description: ''
+    - id: sceneMeshes
+      type: UnityEngine.MeshFilter[]
+      description: ''
+    - id: meshStringBuilder
+      type: System.Text.StringBuilder
+      description: ''
+    - id: materialStringBuilder
+      type: System.Text.StringBuilder
+      description: ''
+    content.vb: Public Sub GetObjFileContent(baseFileName As String, sceneMeshes As MeshFilter(), ByRef meshStringBuilder As StringBuilder, ByRef materialStringBuilder As StringBuilder)
+  overload: VRSketchingGeometry.Export.OBJExporter.GetObjFileContent*
+  nameWithType.vb: OBJExporter.GetObjFileContent(String, MeshFilter(), ByRef StringBuilder, ByRef StringBuilder)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VRSketchingGeometry.Export.OBJExporter.GetObjFileContent(System.String, UnityEngine.MeshFilter(), ByRef System.Text.StringBuilder, ByRef System.Text.StringBuilder)
+  name.vb: GetObjFileContent(String, MeshFilter(), ByRef StringBuilder, ByRef StringBuilder)
+references:
+- uid: VRSketchingGeometry.Export
+  commentId: N:VRSketchingGeometry.Export
+  name: VRSketchingGeometry.Export
+  nameWithType: VRSketchingGeometry.Export
+  fullName: VRSketchingGeometry.Export
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: VRSketchingGeometry.Export.OBJExporter.GetDefaultExportPath*
+  commentId: Overload:VRSketchingGeometry.Export.OBJExporter.GetDefaultExportPath
+  name: GetDefaultExportPath
+  nameWithType: OBJExporter.GetDefaultExportPath
+  fullName: VRSketchingGeometry.Export.OBJExporter.GetDefaultExportPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: VRSketchingGeometry.Export.OBJExporter.ExportGameObject*
+  commentId: Overload:VRSketchingGeometry.Export.OBJExporter.ExportGameObject
+  name: ExportGameObject
+  nameWithType: OBJExporter.ExportGameObject
+  fullName: VRSketchingGeometry.Export.OBJExporter.ExportGameObject
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: VRSketchingGeometry.Export.OBJExporter.GetObjFileContent*
+  commentId: Overload:VRSketchingGeometry.Export.OBJExporter.GetObjFileContent
+  name: GetObjFileContent
+  nameWithType: OBJExporter.GetObjFileContent
+  fullName: VRSketchingGeometry.Export.OBJExporter.GetObjFileContent
+- uid: UnityEngine.MeshFilter[]
+  isExternal: true
+  name: MeshFilter[]
+  nameWithType: MeshFilter[]
+  fullName: UnityEngine.MeshFilter[]
+  nameWithType.vb: MeshFilter()
+  fullName.vb: UnityEngine.MeshFilter()
+  name.vb: MeshFilter()
+  spec.csharp:
+  - uid: UnityEngine.MeshFilter
+    name: MeshFilter
+    nameWithType: MeshFilter
+    fullName: UnityEngine.MeshFilter
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: UnityEngine.MeshFilter
+    name: MeshFilter
+    nameWithType: MeshFilter
+    fullName: UnityEngine.MeshFilter
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text

@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Meshing.ITubeMesh
+  commentId: T:VRSketchingGeometry.Meshing.ITubeMesh
+  id: ITubeMesh
+  parent: VRSketchingGeometry.Meshing
+  children:
+  - VRSketchingGeometry.Meshing.ITubeMesh.GenerateMesh(System.Collections.Generic.List{UnityEngine.Vector3})
+  - VRSketchingGeometry.Meshing.ITubeMesh.GetCrossSection
+  - VRSketchingGeometry.Meshing.ITubeMesh.ReplacePoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32,System.Int32,System.Int32)
+  - VRSketchingGeometry.Meshing.ITubeMesh.SetCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},VRSketchingGeometry.Meshing.CrossSection)
+  langs:
+  - csharp
+  - vb
+  name: ITubeMesh
+  nameWithType: ITubeMesh
+  fullName: VRSketchingGeometry.Meshing.ITubeMesh
+  type: Interface
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/ITubeMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ITubeMesh
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/ITubeMesh.cs
+    startLine: 6
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  syntax:
+    content: public interface ITubeMesh
+    content.vb: Public Interface ITubeMesh
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: VRSketchingGeometry.Meshing.ITubeMesh.GenerateMesh(System.Collections.Generic.List{UnityEngine.Vector3})
+  commentId: M:VRSketchingGeometry.Meshing.ITubeMesh.GenerateMesh(System.Collections.Generic.List{UnityEngine.Vector3})
+  id: GenerateMesh(System.Collections.Generic.List{UnityEngine.Vector3})
+  parent: VRSketchingGeometry.Meshing.ITubeMesh
+  langs:
+  - csharp
+  - vb
+  name: GenerateMesh(List<Vector3>)
+  nameWithType: ITubeMesh.GenerateMesh(List<Vector3>)
+  fullName: VRSketchingGeometry.Meshing.ITubeMesh.GenerateMesh(System.Collections.Generic.List<UnityEngine.Vector3>)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/ITubeMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GenerateMesh
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/ITubeMesh.cs
+    startLine: 8
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  syntax:
+    content: Mesh GenerateMesh(List<Vector3> points)
+    parameters:
+    - id: points
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    return:
+      type: UnityEngine.Mesh
+    content.vb: Function GenerateMesh(points As List(Of Vector3)) As Mesh
+  overload: VRSketchingGeometry.Meshing.ITubeMesh.GenerateMesh*
+  nameWithType.vb: ITubeMesh.GenerateMesh(List(Of Vector3))
+  fullName.vb: VRSketchingGeometry.Meshing.ITubeMesh.GenerateMesh(System.Collections.Generic.List(Of UnityEngine.Vector3))
+  name.vb: GenerateMesh(List(Of Vector3))
+- uid: VRSketchingGeometry.Meshing.ITubeMesh.ReplacePoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32,System.Int32,System.Int32)
+  commentId: M:VRSketchingGeometry.Meshing.ITubeMesh.ReplacePoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32,System.Int32,System.Int32)
+  id: ReplacePoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32,System.Int32,System.Int32)
+  parent: VRSketchingGeometry.Meshing.ITubeMesh
+  langs:
+  - csharp
+  - vb
+  name: ReplacePoints(List<Vector3>, Int32, Int32, Int32)
+  nameWithType: ITubeMesh.ReplacePoints(List<Vector3>, Int32, Int32, Int32)
+  fullName: VRSketchingGeometry.Meshing.ITubeMesh.ReplacePoints(System.Collections.Generic.List<UnityEngine.Vector3>, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/ITubeMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ReplacePoints
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/ITubeMesh.cs
+    startLine: 9
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  syntax:
+    content: Mesh ReplacePoints(List<Vector3> points, int index, int addCount, int removeCount)
+    parameters:
+    - id: points
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    - id: index
+      type: System.Int32
+    - id: addCount
+      type: System.Int32
+    - id: removeCount
+      type: System.Int32
+    return:
+      type: UnityEngine.Mesh
+    content.vb: Function ReplacePoints(points As List(Of Vector3), index As Integer, addCount As Integer, removeCount As Integer) As Mesh
+  overload: VRSketchingGeometry.Meshing.ITubeMesh.ReplacePoints*
+  nameWithType.vb: ITubeMesh.ReplacePoints(List(Of Vector3), Int32, Int32, Int32)
+  fullName.vb: VRSketchingGeometry.Meshing.ITubeMesh.ReplacePoints(System.Collections.Generic.List(Of UnityEngine.Vector3), System.Int32, System.Int32, System.Int32)
+  name.vb: ReplacePoints(List(Of Vector3), Int32, Int32, Int32)
+- uid: VRSketchingGeometry.Meshing.ITubeMesh.SetCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},VRSketchingGeometry.Meshing.CrossSection)
+  commentId: M:VRSketchingGeometry.Meshing.ITubeMesh.SetCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},VRSketchingGeometry.Meshing.CrossSection)
+  id: SetCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},VRSketchingGeometry.Meshing.CrossSection)
+  parent: VRSketchingGeometry.Meshing.ITubeMesh
+  langs:
+  - csharp
+  - vb
+  name: SetCrossSection(List<Vector3>, CrossSection)
+  nameWithType: ITubeMesh.SetCrossSection(List<Vector3>, CrossSection)
+  fullName: VRSketchingGeometry.Meshing.ITubeMesh.SetCrossSection(System.Collections.Generic.List<UnityEngine.Vector3>, VRSketchingGeometry.Meshing.CrossSection)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/ITubeMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetCrossSection
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/ITubeMesh.cs
+    startLine: 10
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  syntax:
+    content: Mesh SetCrossSection(List<Vector3> points, CrossSection crossSection)
+    parameters:
+    - id: points
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    - id: crossSection
+      type: VRSketchingGeometry.Meshing.CrossSection
+    return:
+      type: UnityEngine.Mesh
+    content.vb: Function SetCrossSection(points As List(Of Vector3), crossSection As CrossSection) As Mesh
+  overload: VRSketchingGeometry.Meshing.ITubeMesh.SetCrossSection*
+  nameWithType.vb: ITubeMesh.SetCrossSection(List(Of Vector3), CrossSection)
+  fullName.vb: VRSketchingGeometry.Meshing.ITubeMesh.SetCrossSection(System.Collections.Generic.List(Of UnityEngine.Vector3), VRSketchingGeometry.Meshing.CrossSection)
+  name.vb: SetCrossSection(List(Of Vector3), CrossSection)
+- uid: VRSketchingGeometry.Meshing.ITubeMesh.GetCrossSection
+  commentId: M:VRSketchingGeometry.Meshing.ITubeMesh.GetCrossSection
+  id: GetCrossSection
+  parent: VRSketchingGeometry.Meshing.ITubeMesh
+  langs:
+  - csharp
+  - vb
+  name: GetCrossSection()
+  nameWithType: ITubeMesh.GetCrossSection()
+  fullName: VRSketchingGeometry.Meshing.ITubeMesh.GetCrossSection()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/ITubeMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetCrossSection
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/ITubeMesh.cs
+    startLine: 11
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  syntax:
+    content: CrossSection GetCrossSection()
+    return:
+      type: VRSketchingGeometry.Meshing.CrossSection
+    content.vb: Function GetCrossSection As CrossSection
+  overload: VRSketchingGeometry.Meshing.ITubeMesh.GetCrossSection*
+references:
+- uid: VRSketchingGeometry.Meshing
+  commentId: N:VRSketchingGeometry.Meshing
+  name: VRSketchingGeometry.Meshing
+  nameWithType: VRSketchingGeometry.Meshing
+  fullName: VRSketchingGeometry.Meshing
+- uid: VRSketchingGeometry.Meshing.ITubeMesh.GenerateMesh*
+  commentId: Overload:VRSketchingGeometry.Meshing.ITubeMesh.GenerateMesh
+  name: GenerateMesh
+  nameWithType: ITubeMesh.GenerateMesh
+  fullName: VRSketchingGeometry.Meshing.ITubeMesh.GenerateMesh
+- uid: System.Collections.Generic.List{UnityEngine.Vector3}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector3>
+  nameWithType: List<Vector3>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector3>
+  nameWithType.vb: List(Of Vector3)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector3)
+  name.vb: List(Of Vector3)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Mesh
+  commentId: T:UnityEngine.Mesh
+  parent: UnityEngine
+  isExternal: true
+  name: Mesh
+  nameWithType: Mesh
+  fullName: UnityEngine.Mesh
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: VRSketchingGeometry.Meshing.ITubeMesh.ReplacePoints*
+  commentId: Overload:VRSketchingGeometry.Meshing.ITubeMesh.ReplacePoints
+  name: ReplacePoints
+  nameWithType: ITubeMesh.ReplacePoints
+  fullName: VRSketchingGeometry.Meshing.ITubeMesh.ReplacePoints
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Meshing.ITubeMesh.SetCrossSection*
+  commentId: Overload:VRSketchingGeometry.Meshing.ITubeMesh.SetCrossSection
+  name: SetCrossSection
+  nameWithType: ITubeMesh.SetCrossSection
+  fullName: VRSketchingGeometry.Meshing.ITubeMesh.SetCrossSection
+- uid: VRSketchingGeometry.Meshing.CrossSection
+  commentId: T:VRSketchingGeometry.Meshing.CrossSection
+  parent: VRSketchingGeometry.Meshing
+  name: CrossSection
+  nameWithType: CrossSection
+  fullName: VRSketchingGeometry.Meshing.CrossSection
+- uid: VRSketchingGeometry.Meshing.ITubeMesh.GetCrossSection*
+  commentId: Overload:VRSketchingGeometry.Meshing.ITubeMesh.GetCrossSection
+  name: GetCrossSection
+  nameWithType: ITubeMesh.GetCrossSection
+  fullName: VRSketchingGeometry.Meshing.ITubeMesh.GetCrossSection

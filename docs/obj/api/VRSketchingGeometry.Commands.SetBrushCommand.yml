@@ -1,0 +1,339 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Commands.SetBrushCommand
+  commentId: T:VRSketchingGeometry.Commands.SetBrushCommand
+  id: SetBrushCommand
+  parent: VRSketchingGeometry.Commands
+  children:
+  - VRSketchingGeometry.Commands.SetBrushCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.IBrushable,VRSketchingGeometry.Serialization.Brush)
+  - VRSketchingGeometry.Commands.SetBrushCommand.Execute
+  - VRSketchingGeometry.Commands.SetBrushCommand.Redo
+  - VRSketchingGeometry.Commands.SetBrushCommand.Undo
+  langs:
+  - csharp
+  - vb
+  name: SetBrushCommand
+  nameWithType: SetBrushCommand
+  fullName: VRSketchingGeometry.Commands.SetBrushCommand
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/SetBrushCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetBrushCommand
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/SetBrushCommand.cs
+    startLine: 11
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands
+  summary: "\nSet the brush of the sketch object.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: 'public class SetBrushCommand : ICommand'
+    content.vb: >-
+      Public Class SetBrushCommand
+
+          Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - VRSketchingGeometry.Commands.ICommand
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Commands.SetBrushCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.IBrushable,VRSketchingGeometry.Serialization.Brush)
+  commentId: M:VRSketchingGeometry.Commands.SetBrushCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.IBrushable,VRSketchingGeometry.Serialization.Brush)
+  id: '#ctor(VRSketchingGeometry.SketchObjectManagement.IBrushable,VRSketchingGeometry.Serialization.Brush)'
+  parent: VRSketchingGeometry.Commands.SetBrushCommand
+  langs:
+  - csharp
+  - vb
+  name: SetBrushCommand(IBrushable, Brush)
+  nameWithType: SetBrushCommand.SetBrushCommand(IBrushable, Brush)
+  fullName: VRSketchingGeometry.Commands.SetBrushCommand.SetBrushCommand(VRSketchingGeometry.SketchObjectManagement.IBrushable, VRSketchingGeometry.Serialization.Brush)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/SetBrushCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: .ctor
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/SetBrushCommand.cs
+    startLine: 18
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands
+  syntax:
+    content: public SetBrushCommand(IBrushable sketchObject, Brush brush)
+    parameters:
+    - id: sketchObject
+      type: VRSketchingGeometry.SketchObjectManagement.IBrushable
+    - id: brush
+      type: VRSketchingGeometry.Serialization.Brush
+    content.vb: Public Sub New(sketchObject As IBrushable, brush As Brush)
+  overload: VRSketchingGeometry.Commands.SetBrushCommand.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.SetBrushCommand.Execute
+  commentId: M:VRSketchingGeometry.Commands.SetBrushCommand.Execute
+  id: Execute
+  parent: VRSketchingGeometry.Commands.SetBrushCommand
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: SetBrushCommand.Execute()
+  fullName: VRSketchingGeometry.Commands.SetBrushCommand.Execute()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/SetBrushCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Execute
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/SetBrushCommand.cs
+    startLine: 23
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands
+  syntax:
+    content: public bool Execute()
+    return:
+      type: System.Boolean
+    content.vb: Public Function Execute As Boolean
+  overload: VRSketchingGeometry.Commands.SetBrushCommand.Execute*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Execute
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.SetBrushCommand.Redo
+  commentId: M:VRSketchingGeometry.Commands.SetBrushCommand.Redo
+  id: Redo
+  parent: VRSketchingGeometry.Commands.SetBrushCommand
+  langs:
+  - csharp
+  - vb
+  name: Redo()
+  nameWithType: SetBrushCommand.Redo()
+  fullName: VRSketchingGeometry.Commands.SetBrushCommand.Redo()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/SetBrushCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Redo
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/SetBrushCommand.cs
+    startLine: 30
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands
+  syntax:
+    content: public void Redo()
+    content.vb: Public Sub Redo
+  overload: VRSketchingGeometry.Commands.SetBrushCommand.Redo*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Redo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.SetBrushCommand.Undo
+  commentId: M:VRSketchingGeometry.Commands.SetBrushCommand.Undo
+  id: Undo
+  parent: VRSketchingGeometry.Commands.SetBrushCommand
+  langs:
+  - csharp
+  - vb
+  name: Undo()
+  nameWithType: SetBrushCommand.Undo()
+  fullName: VRSketchingGeometry.Commands.SetBrushCommand.Undo()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/SetBrushCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Undo
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/SetBrushCommand.cs
+    startLine: 35
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands
+  syntax:
+    content: public void Undo()
+    content.vb: Public Sub Undo
+  overload: VRSketchingGeometry.Commands.SetBrushCommand.Undo*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Undo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: VRSketchingGeometry.Commands
+  commentId: N:VRSketchingGeometry.Commands
+  name: VRSketchingGeometry.Commands
+  nameWithType: VRSketchingGeometry.Commands
+  fullName: VRSketchingGeometry.Commands
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: VRSketchingGeometry.Commands.ICommand
+  commentId: T:VRSketchingGeometry.Commands.ICommand
+  parent: VRSketchingGeometry.Commands
+  name: ICommand
+  nameWithType: ICommand
+  fullName: VRSketchingGeometry.Commands.ICommand
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Commands.SetBrushCommand.#ctor*
+  commentId: Overload:VRSketchingGeometry.Commands.SetBrushCommand.#ctor
+  name: SetBrushCommand
+  nameWithType: SetBrushCommand.SetBrushCommand
+  fullName: VRSketchingGeometry.Commands.SetBrushCommand.SetBrushCommand
+- uid: VRSketchingGeometry.SketchObjectManagement.IBrushable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IBrushable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IBrushable
+  nameWithType: IBrushable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable
+- uid: VRSketchingGeometry.Serialization.Brush
+  commentId: T:VRSketchingGeometry.Serialization.Brush
+  parent: VRSketchingGeometry.Serialization
+  name: Brush
+  nameWithType: Brush
+  fullName: VRSketchingGeometry.Serialization.Brush
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: VRSketchingGeometry.Serialization
+  commentId: N:VRSketchingGeometry.Serialization
+  name: VRSketchingGeometry.Serialization
+  nameWithType: VRSketchingGeometry.Serialization
+  fullName: VRSketchingGeometry.Serialization
+- uid: VRSketchingGeometry.Commands.SetBrushCommand.Execute*
+  commentId: Overload:VRSketchingGeometry.Commands.SetBrushCommand.Execute
+  name: Execute
+  nameWithType: SetBrushCommand.Execute
+  fullName: VRSketchingGeometry.Commands.SetBrushCommand.Execute
+- uid: VRSketchingGeometry.Commands.ICommand.Execute
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Execute
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Execute()
+  nameWithType: ICommand.Execute()
+  fullName: VRSketchingGeometry.Commands.ICommand.Execute()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: VRSketchingGeometry.Commands.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: VRSketchingGeometry.Commands.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: VRSketchingGeometry.Commands.SetBrushCommand.Redo*
+  commentId: Overload:VRSketchingGeometry.Commands.SetBrushCommand.Redo
+  name: Redo
+  nameWithType: SetBrushCommand.Redo
+  fullName: VRSketchingGeometry.Commands.SetBrushCommand.Redo
+- uid: VRSketchingGeometry.Commands.ICommand.Redo
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Redo
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Redo()
+  nameWithType: ICommand.Redo()
+  fullName: VRSketchingGeometry.Commands.ICommand.Redo()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Redo
+    name: Redo
+    nameWithType: ICommand.Redo
+    fullName: VRSketchingGeometry.Commands.ICommand.Redo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Redo
+    name: Redo
+    nameWithType: ICommand.Redo
+    fullName: VRSketchingGeometry.Commands.ICommand.Redo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Commands.SetBrushCommand.Undo*
+  commentId: Overload:VRSketchingGeometry.Commands.SetBrushCommand.Undo
+  name: Undo
+  nameWithType: SetBrushCommand.Undo
+  fullName: VRSketchingGeometry.Commands.SetBrushCommand.Undo
+- uid: VRSketchingGeometry.Commands.ICommand.Undo
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Undo
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Undo()
+  nameWithType: ICommand.Undo()
+  fullName: VRSketchingGeometry.Commands.ICommand.Undo()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: VRSketchingGeometry.Commands.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: VRSketchingGeometry.Commands.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

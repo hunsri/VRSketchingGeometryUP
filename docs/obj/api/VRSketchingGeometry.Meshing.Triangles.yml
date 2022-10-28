@@ -1,0 +1,191 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Meshing.Triangles
+  commentId: T:VRSketchingGeometry.Meshing.Triangles
+  id: Triangles
+  parent: VRSketchingGeometry.Meshing
+  children:
+  - VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesClockwise(System.Int32,System.Int32)
+  - VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesCounterclockwise(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: Triangles
+  nameWithType: Triangles
+  fullName: VRSketchingGeometry.Meshing.Triangles
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/Triangles.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Triangles
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/Triangles.cs
+    startLine: 12
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nMethods for generating triangle index arrays for Mesh objects. \n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: public class Triangles
+    content.vb: Public Class Triangles
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesClockwise(System.Int32,System.Int32)
+  commentId: M:VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesClockwise(System.Int32,System.Int32)
+  id: GenerateTrianglesClockwise(System.Int32,System.Int32)
+  parent: VRSketchingGeometry.Meshing.Triangles
+  langs:
+  - csharp
+  - vb
+  name: GenerateTrianglesClockwise(Int32, Int32)
+  nameWithType: Triangles.GenerateTrianglesClockwise(Int32, Int32)
+  fullName: VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesClockwise(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/Triangles.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GenerateTrianglesClockwise
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/Triangles.cs
+    startLine: 21
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nGenerate an indices array that defines a quadrilateral triangle topology.\nThe order of the vertices of a triangle is clockwise when the vertices are ordered left to right, top to bottom.\n"
+  example: []
+  syntax:
+    content: public static int[] GenerateTrianglesClockwise(int numOfVerticalVertices, int numOfHorizontalVertices)
+    parameters:
+    - id: numOfVerticalVertices
+      type: System.Int32
+      description: ''
+    - id: numOfHorizontalVertices
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Int32[]
+      description: ''
+    content.vb: Public Shared Function GenerateTrianglesClockwise(numOfVerticalVertices As Integer, numOfHorizontalVertices As Integer) As Integer()
+  overload: VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesClockwise*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesCounterclockwise(System.Int32,System.Int32)
+  commentId: M:VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesCounterclockwise(System.Int32,System.Int32)
+  id: GenerateTrianglesCounterclockwise(System.Int32,System.Int32)
+  parent: VRSketchingGeometry.Meshing.Triangles
+  langs:
+  - csharp
+  - vb
+  name: GenerateTrianglesCounterclockwise(Int32, Int32)
+  nameWithType: Triangles.GenerateTrianglesCounterclockwise(Int32, Int32)
+  fullName: VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesCounterclockwise(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/Triangles.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GenerateTrianglesCounterclockwise
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/Triangles.cs
+    startLine: 49
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nGenerate an indices array that defines a quadrilateral triangle topology.\nThe order of the vertices of a triangle is counter-clockwise when the vertices are ordered left to right, top to bottom.\n"
+  example: []
+  syntax:
+    content: public static int[] GenerateTrianglesCounterclockwise(int numOfVerticalVertices, int numOfHorizontalVertices)
+    parameters:
+    - id: numOfVerticalVertices
+      type: System.Int32
+      description: ''
+    - id: numOfHorizontalVertices
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Int32[]
+      description: ''
+    content.vb: Public Shared Function GenerateTrianglesCounterclockwise(numOfVerticalVertices As Integer, numOfHorizontalVertices As Integer) As Integer()
+  overload: VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesCounterclockwise*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: VRSketchingGeometry.Meshing
+  commentId: N:VRSketchingGeometry.Meshing
+  name: VRSketchingGeometry.Meshing
+  nameWithType: VRSketchingGeometry.Meshing
+  fullName: VRSketchingGeometry.Meshing
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesClockwise*
+  commentId: Overload:VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesClockwise
+  name: GenerateTrianglesClockwise
+  nameWithType: Triangles.GenerateTrianglesClockwise
+  fullName: VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesClockwise
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Int32[]
+  isExternal: true
+  name: Int32[]
+  nameWithType: Int32[]
+  fullName: System.Int32[]
+  nameWithType.vb: Int32()
+  fullName.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesCounterclockwise*
+  commentId: Overload:VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesCounterclockwise
+  name: GenerateTrianglesCounterclockwise
+  nameWithType: Triangles.GenerateTrianglesCounterclockwise
+  fullName: VRSketchingGeometry.Meshing.Triangles.GenerateTrianglesCounterclockwise

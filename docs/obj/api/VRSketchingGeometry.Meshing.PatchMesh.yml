@@ -1,0 +1,317 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Meshing.PatchMesh
+  commentId: T:VRSketchingGeometry.Meshing.PatchMesh
+  id: PatchMesh
+  parent: VRSketchingGeometry.Meshing
+  children:
+  - VRSketchingGeometry.Meshing.PatchMesh.GeneratePatchMesh(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32,System.Int32,System.Int32,System.Int32)
+  - VRSketchingGeometry.Meshing.PatchMesh.GenerateVerticesOfPatch(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32,System.Int32,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: PatchMesh
+  nameWithType: PatchMesh
+  fullName: VRSketchingGeometry.Meshing.PatchMesh
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/PatchMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: PatchMesh
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/PatchMesh.cs
+    startLine: 14
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nSmoothly interpolated patch surface mesh controlled by a 2D grid of control points.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: public class PatchMesh
+    content.vb: Public Class PatchMesh
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Meshing.PatchMesh.GenerateVerticesOfPatch(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:VRSketchingGeometry.Meshing.PatchMesh.GenerateVerticesOfPatch(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32,System.Int32,System.Int32,System.Int32)
+  id: GenerateVerticesOfPatch(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: VRSketchingGeometry.Meshing.PatchMesh
+  langs:
+  - csharp
+  - vb
+  name: GenerateVerticesOfPatch(List<Vector3>, Int32, Int32, Int32, Int32)
+  nameWithType: PatchMesh.GenerateVerticesOfPatch(List<Vector3>, Int32, Int32, Int32, Int32)
+  fullName: VRSketchingGeometry.Meshing.PatchMesh.GenerateVerticesOfPatch(System.Collections.Generic.List<UnityEngine.Vector3>, System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/PatchMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GenerateVerticesOfPatch
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/PatchMesh.cs
+    startLine: 25
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nGenerate the vertices of a patch surface from a grid of control points.\n"
+  example: []
+  syntax:
+    content: public static Vector3[] GenerateVerticesOfPatch(List<Vector3> controlPoints, int width, int height, int resolutionWidth, int resolutionHeight)
+    parameters:
+    - id: controlPoints
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: ''
+    - id: width
+      type: System.Int32
+      description: Number of control points horizontally
+    - id: height
+      type: System.Int32
+      description: Number of control point vertically
+    - id: resolutionWidth
+      type: System.Int32
+      description: Number of points to generate between two control points horizontally
+    - id: resolutionHeight
+      type: System.Int32
+      description: Number of points to generate between two control points vertically
+    return:
+      type: UnityEngine.Vector3[]
+      description: ''
+    content.vb: Public Shared Function GenerateVerticesOfPatch(controlPoints As List(Of Vector3), width As Integer, height As Integer, resolutionWidth As Integer, resolutionHeight As Integer) As Vector3()
+  overload: VRSketchingGeometry.Meshing.PatchMesh.GenerateVerticesOfPatch*
+  nameWithType.vb: PatchMesh.GenerateVerticesOfPatch(List(Of Vector3), Int32, Int32, Int32, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: VRSketchingGeometry.Meshing.PatchMesh.GenerateVerticesOfPatch(System.Collections.Generic.List(Of UnityEngine.Vector3), System.Int32, System.Int32, System.Int32, System.Int32)
+  name.vb: GenerateVerticesOfPatch(List(Of Vector3), Int32, Int32, Int32, Int32)
+- uid: VRSketchingGeometry.Meshing.PatchMesh.GeneratePatchMesh(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:VRSketchingGeometry.Meshing.PatchMesh.GeneratePatchMesh(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32,System.Int32,System.Int32,System.Int32)
+  id: GeneratePatchMesh(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: VRSketchingGeometry.Meshing.PatchMesh
+  langs:
+  - csharp
+  - vb
+  name: GeneratePatchMesh(List<Vector3>, Int32, Int32, Int32, Int32)
+  nameWithType: PatchMesh.GeneratePatchMesh(List<Vector3>, Int32, Int32, Int32, Int32)
+  fullName: VRSketchingGeometry.Meshing.PatchMesh.GeneratePatchMesh(System.Collections.Generic.List<UnityEngine.Vector3>, System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/PatchMesh.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GeneratePatchMesh
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/PatchMesh.cs
+    startLine: 168
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nGenerates a patch surface mesh from a grid of control points.\n"
+  example: []
+  syntax:
+    content: public static Mesh GeneratePatchMesh(List<Vector3> controlPoints, int width, int height, int resolutionWidth, int resolutionHeight)
+    parameters:
+    - id: controlPoints
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: Flattened list of control points grid.
+    - id: width
+      type: System.Int32
+      description: Number of control points horizontally.
+    - id: height
+      type: System.Int32
+      description: Number of control points vertically.
+    - id: resolutionWidth
+      type: System.Int32
+      description: Vertices between two control points horizontally.
+    - id: resolutionHeight
+      type: System.Int32
+      description: Vertices between two control points vertically.
+    return:
+      type: UnityEngine.Mesh
+      description: ''
+    content.vb: Public Shared Function GeneratePatchMesh(controlPoints As List(Of Vector3), width As Integer, height As Integer, resolutionWidth As Integer, resolutionHeight As Integer) As Mesh
+  overload: VRSketchingGeometry.Meshing.PatchMesh.GeneratePatchMesh*
+  nameWithType.vb: PatchMesh.GeneratePatchMesh(List(Of Vector3), Int32, Int32, Int32, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: VRSketchingGeometry.Meshing.PatchMesh.GeneratePatchMesh(System.Collections.Generic.List(Of UnityEngine.Vector3), System.Int32, System.Int32, System.Int32, System.Int32)
+  name.vb: GeneratePatchMesh(List(Of Vector3), Int32, Int32, Int32, Int32)
+references:
+- uid: VRSketchingGeometry.Meshing
+  commentId: N:VRSketchingGeometry.Meshing
+  name: VRSketchingGeometry.Meshing
+  nameWithType: VRSketchingGeometry.Meshing
+  fullName: VRSketchingGeometry.Meshing
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Meshing.PatchMesh.GenerateVerticesOfPatch*
+  commentId: Overload:VRSketchingGeometry.Meshing.PatchMesh.GenerateVerticesOfPatch
+  name: GenerateVerticesOfPatch
+  nameWithType: PatchMesh.GenerateVerticesOfPatch
+  fullName: VRSketchingGeometry.Meshing.PatchMesh.GenerateVerticesOfPatch
+- uid: System.Collections.Generic.List{UnityEngine.Vector3}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector3>
+  nameWithType: List<Vector3>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector3>
+  nameWithType.vb: List(Of Vector3)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector3)
+  name.vb: List(Of Vector3)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: UnityEngine.Vector3[]
+  isExternal: true
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: UnityEngine.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: UnityEngine.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: VRSketchingGeometry.Meshing.PatchMesh.GeneratePatchMesh*
+  commentId: Overload:VRSketchingGeometry.Meshing.PatchMesh.GeneratePatchMesh
+  name: GeneratePatchMesh
+  nameWithType: PatchMesh.GeneratePatchMesh
+  fullName: VRSketchingGeometry.Meshing.PatchMesh.GeneratePatchMesh
+- uid: UnityEngine.Mesh
+  commentId: T:UnityEngine.Mesh
+  parent: UnityEngine
+  isExternal: true
+  name: Mesh
+  nameWithType: Mesh
+  fullName: UnityEngine.Mesh
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

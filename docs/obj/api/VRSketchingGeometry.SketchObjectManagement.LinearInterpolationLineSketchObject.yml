@@ -1,0 +1,1141 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.SketchObjectManagement.LinearInterpolationLineSketchObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.LinearInterpolationLineSketchObject
+  id: LinearInterpolationLineSketchObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  children:
+  - VRSketchingGeometry.SketchObjectManagement.LinearInterpolationLineSketchObject.MakeSplineMesh(System.Int32,UnityEngine.Vector3)
+  langs:
+  - csharp
+  - vb
+  name: LinearInterpolationLineSketchObject
+  nameWithType: LinearInterpolationLineSketchObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.LinearInterpolationLineSketchObject
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/LinearInterpolationLineSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: LinearInterpolationLineSketchObject
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/LinearInterpolationLineSketchObject.cs
+    startLine: 13
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nA line sketch object with no smooth interpolation between control point.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: 'public class LinearInterpolationLineSketchObject : LineSketchObject, ISelectable, IHighlightable, IBrushable, IGroupable'
+    content.vb: >-
+      Public Class LinearInterpolationLineSketchObject
+
+          Inherits LineSketchObject
+
+          Implements ISelectable, IHighlightable, IBrushable, IGroupable
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  implements:
+  - VRSketchingGeometry.SketchObjectManagement.ISelectable
+  - VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  - VRSketchingGeometry.SketchObjectManagement.IBrushable
+  - VRSketchingGeometry.SketchObjectManagement.IGroupable
+  inheritedMembers:
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SplineMesh
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.LinearSplineMesh
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.sphereObject
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.minimumControlPointDistance
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.lineDiameter
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.Awake
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List{UnityEngine.Vector3})
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPoints(System.Collections.Generic.List{UnityEngine.Vector3})
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineDiameter(System.Single)
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Vector3},System.Single)
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetInterpolationSteps(System.Int32)
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.DeleteControlPoints(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.getNumberOfControlPoints
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetControlPoints
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.ChooseDisplayMethod(UnityEngine.Mesh)
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetBrush
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  - VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetData
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.SketchObjectManagement.LinearInterpolationLineSketchObject.MakeSplineMesh(System.Int32,UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LinearInterpolationLineSketchObject.MakeSplineMesh(System.Int32,UnityEngine.Vector3)
+  id: MakeSplineMesh(System.Int32,UnityEngine.Vector3)
+  parent: VRSketchingGeometry.SketchObjectManagement.LinearInterpolationLineSketchObject
+  langs:
+  - csharp
+  - vb
+  name: MakeSplineMesh(Int32, Vector3)
+  nameWithType: LinearInterpolationLineSketchObject.MakeSplineMesh(Int32, Vector3)
+  fullName: VRSketchingGeometry.SketchObjectManagement.LinearInterpolationLineSketchObject.MakeSplineMesh(System.Int32, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/LinearInterpolationLineSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: MakeSplineMesh
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/LinearInterpolationLineSketchObject.cs
+    startLine: 15
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: protected override SplineMesh MakeSplineMesh(int interpolationSteps, Vector3 lineDiameter)
+    parameters:
+    - id: interpolationSteps
+      type: System.Int32
+    - id: lineDiameter
+      type: UnityEngine.Vector3
+    return:
+      type: VRSketchingGeometry.Meshing.SplineMesh
+    content.vb: Protected Overrides Function MakeSplineMesh(interpolationSteps As Integer, lineDiameter As Vector3) As SplineMesh
+  overridden: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.MakeSplineMesh(System.Int32,UnityEngine.Vector3)
+  overload: VRSketchingGeometry.SketchObjectManagement.LinearInterpolationLineSketchObject.MakeSplineMesh*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SelectableObject
+  nameWithType: SelectableObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SketchObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SketchObject
+  nameWithType: SketchObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: LineSketchObject
+  nameWithType: LineSketchObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+- uid: VRSketchingGeometry.SketchObjectManagement.ISelectable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.ISelectable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: ISelectable
+  nameWithType: ISelectable
+  fullName: VRSketchingGeometry.SketchObjectManagement.ISelectable
+- uid: VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IHighlightable
+  nameWithType: IHighlightable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IHighlightable
+- uid: VRSketchingGeometry.SketchObjectManagement.IBrushable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IBrushable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IBrushable
+  nameWithType: IBrushable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable
+- uid: VRSketchingGeometry.SketchObjectManagement.IGroupable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IGroupable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IGroupable
+  nameWithType: IGroupable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SplineMesh
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SplineMesh
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  name: SplineMesh
+  nameWithType: LineSketchObject.SplineMesh
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SplineMesh
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.LinearSplineMesh
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.LinearSplineMesh
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  name: LinearSplineMesh
+  nameWithType: LineSketchObject.LinearSplineMesh
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.LinearSplineMesh
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.sphereObject
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.sphereObject
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  name: sphereObject
+  nameWithType: LineSketchObject.sphereObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.sphereObject
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.minimumControlPointDistance
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.minimumControlPointDistance
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  name: minimumControlPointDistance
+  nameWithType: LineSketchObject.minimumControlPointDistance
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.minimumControlPointDistance
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.lineDiameter
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.lineDiameter
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  name: lineDiameter
+  nameWithType: LineSketchObject.lineDiameter
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.lineDiameter
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.Awake
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.Awake
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  name: Awake()
+  nameWithType: LineSketchObject.Awake()
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.Awake()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.Awake
+    name: Awake
+    nameWithType: LineSketchObject.Awake
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.Awake
+    name: Awake
+    nameWithType: LineSketchObject.Awake
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List{UnityEngine.Vector3})
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List{UnityEngine.Vector3})
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  isExternal: true
+  name: SetControlPointsLocalSpace(List<Vector3>)
+  nameWithType: LineSketchObject.SetControlPointsLocalSpace(List<Vector3>)
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List<UnityEngine.Vector3>)
+  nameWithType.vb: LineSketchObject.SetControlPointsLocalSpace(List(Of Vector3))
+  fullName.vb: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List(Of UnityEngine.Vector3))
+  name.vb: SetControlPointsLocalSpace(List(Of Vector3))
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List{UnityEngine.Vector3})
+    name: SetControlPointsLocalSpace
+    nameWithType: LineSketchObject.SetControlPointsLocalSpace
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPointsLocalSpace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List{UnityEngine.Vector3})
+    name: SetControlPointsLocalSpace
+    nameWithType: LineSketchObject.SetControlPointsLocalSpace
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPointsLocalSpace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPoints(System.Collections.Generic.List{UnityEngine.Vector3})
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPoints(System.Collections.Generic.List{UnityEngine.Vector3})
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  isExternal: true
+  name: SetControlPoints(List<Vector3>)
+  nameWithType: LineSketchObject.SetControlPoints(List<Vector3>)
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPoints(System.Collections.Generic.List<UnityEngine.Vector3>)
+  nameWithType.vb: LineSketchObject.SetControlPoints(List(Of Vector3))
+  fullName.vb: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPoints(System.Collections.Generic.List(Of UnityEngine.Vector3))
+  name.vb: SetControlPoints(List(Of Vector3))
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPoints(System.Collections.Generic.List{UnityEngine.Vector3})
+    name: SetControlPoints
+    nameWithType: LineSketchObject.SetControlPoints
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPoints(System.Collections.Generic.List{UnityEngine.Vector3})
+    name: SetControlPoints
+    nameWithType: LineSketchObject.SetControlPoints
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineDiameter(System.Single)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineDiameter(System.Single)
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  isExternal: true
+  name: SetLineDiameter(Single)
+  nameWithType: LineSketchObject.SetLineDiameter(Single)
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineDiameter(System.Single)
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineDiameter(System.Single)
+    name: SetLineDiameter
+    nameWithType: LineSketchObject.SetLineDiameter
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineDiameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineDiameter(System.Single)
+    name: SetLineDiameter
+    nameWithType: LineSketchObject.SetLineDiameter
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineDiameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Vector3},System.Single)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Vector3},System.Single)
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  isExternal: true
+  name: SetLineCrossSection(List<Vector3>, List<Vector3>, Single)
+  nameWithType: LineSketchObject.SetLineCrossSection(List<Vector3>, List<Vector3>, Single)
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineCrossSection(System.Collections.Generic.List<UnityEngine.Vector3>, System.Collections.Generic.List<UnityEngine.Vector3>, System.Single)
+  nameWithType.vb: LineSketchObject.SetLineCrossSection(List(Of Vector3), List(Of Vector3), Single)
+  fullName.vb: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineCrossSection(System.Collections.Generic.List(Of UnityEngine.Vector3), System.Collections.Generic.List(Of UnityEngine.Vector3), System.Single)
+  name.vb: SetLineCrossSection(List(Of Vector3), List(Of Vector3), Single)
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Vector3},System.Single)
+    name: SetLineCrossSection
+    nameWithType: LineSketchObject.SetLineCrossSection
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineCrossSection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineCrossSection(System.Collections.Generic.List{UnityEngine.Vector3},System.Collections.Generic.List{UnityEngine.Vector3},System.Single)
+    name: SetLineCrossSection
+    nameWithType: LineSketchObject.SetLineCrossSection
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetLineCrossSection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetInterpolationSteps(System.Int32)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetInterpolationSteps(System.Int32)
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  isExternal: true
+  name: SetInterpolationSteps(Int32)
+  nameWithType: LineSketchObject.SetInterpolationSteps(Int32)
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetInterpolationSteps(System.Int32)
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetInterpolationSteps(System.Int32)
+    name: SetInterpolationSteps
+    nameWithType: LineSketchObject.SetInterpolationSteps
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetInterpolationSteps
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetInterpolationSteps(System.Int32)
+    name: SetInterpolationSteps
+    nameWithType: LineSketchObject.SetInterpolationSteps
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetInterpolationSteps
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.DeleteControlPoints(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.DeleteControlPoints(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  isExternal: true
+  name: DeleteControlPoints(GameObject, Vector3, Single)
+  nameWithType: LineSketchObject.DeleteControlPoints(GameObject, Vector3, Single)
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.DeleteControlPoints(UnityEngine.GameObject, UnityEngine.Vector3, System.Single)
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.DeleteControlPoints(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)
+    name: DeleteControlPoints
+    nameWithType: LineSketchObject.DeleteControlPoints
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.DeleteControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    nameWithType: GameObject
+    fullName: UnityEngine.GameObject
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.DeleteControlPoints(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)
+    name: DeleteControlPoints
+    nameWithType: LineSketchObject.DeleteControlPoints
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.DeleteControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    nameWithType: GameObject
+    fullName: UnityEngine.GameObject
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.getNumberOfControlPoints
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.getNumberOfControlPoints
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  name: getNumberOfControlPoints()
+  nameWithType: LineSketchObject.getNumberOfControlPoints()
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.getNumberOfControlPoints()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.getNumberOfControlPoints
+    name: getNumberOfControlPoints
+    nameWithType: LineSketchObject.getNumberOfControlPoints
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.getNumberOfControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.getNumberOfControlPoints
+    name: getNumberOfControlPoints
+    nameWithType: LineSketchObject.getNumberOfControlPoints
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.getNumberOfControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetControlPoints
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetControlPoints
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  name: GetControlPoints()
+  nameWithType: LineSketchObject.GetControlPoints()
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetControlPoints()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetControlPoints
+    name: GetControlPoints
+    nameWithType: LineSketchObject.GetControlPoints
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetControlPoints
+    name: GetControlPoints
+    nameWithType: LineSketchObject.GetControlPoints
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetControlPoints
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.ChooseDisplayMethod(UnityEngine.Mesh)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.ChooseDisplayMethod(UnityEngine.Mesh)
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  isExternal: true
+  name: ChooseDisplayMethod(Mesh)
+  nameWithType: LineSketchObject.ChooseDisplayMethod(Mesh)
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.ChooseDisplayMethod(UnityEngine.Mesh)
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.ChooseDisplayMethod(UnityEngine.Mesh)
+    name: ChooseDisplayMethod
+    nameWithType: LineSketchObject.ChooseDisplayMethod
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.ChooseDisplayMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Mesh
+    name: Mesh
+    nameWithType: Mesh
+    fullName: UnityEngine.Mesh
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.ChooseDisplayMethod(UnityEngine.Mesh)
+    name: ChooseDisplayMethod
+    nameWithType: LineSketchObject.ChooseDisplayMethod
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.ChooseDisplayMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Mesh
+    name: Mesh
+    nameWithType: Mesh
+    fullName: UnityEngine.Mesh
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetBrush
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetBrush
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  name: GetBrush()
+  nameWithType: LineSketchObject.GetBrush()
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetBrush()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetBrush
+    name: GetBrush
+    nameWithType: LineSketchObject.GetBrush
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetBrush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetBrush
+    name: GetBrush
+    nameWithType: LineSketchObject.GetBrush
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetBrush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  name: SetBrush(Brush)
+  nameWithType: LineSketchObject.SetBrush(Brush)
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+    name: SetBrush
+    nameWithType: LineSketchObject.SetBrush
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetBrush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: VRSketchingGeometry.Serialization.Brush
+    name: Brush
+    nameWithType: Brush
+    fullName: VRSketchingGeometry.Serialization.Brush
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+    name: SetBrush
+    nameWithType: LineSketchObject.SetBrush
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.SetBrush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: VRSketchingGeometry.Serialization.Brush
+    name: Brush
+    nameWithType: Brush
+    fullName: VRSketchingGeometry.Serialization.Brush
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetData
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetData
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  name: GetData()
+  nameWithType: LineSketchObject.GetData()
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetData()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetData
+    name: GetData
+    nameWithType: LineSketchObject.GetData
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetData
+    name: GetData
+    nameWithType: LineSketchObject.GetData
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.GetData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: Defaults
+  nameWithType: SketchObject.Defaults
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  commentId: P:VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: ParentGroup
+  nameWithType: SketchObject.ParentGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: meshRenderer
+  nameWithType: SketchObject.meshRenderer
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: meshFilter
+  nameWithType: SketchObject.meshFilter
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: meshCollider
+  nameWithType: SketchObject.meshCollider
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: originalMaterial
+  nameWithType: SketchObject.originalMaterial
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: highlightMaterial
+  nameWithType: SketchObject.highlightMaterial
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: resetToParentGroup()
+  nameWithType: SketchObject.resetToParentGroup()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: SketchObject.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: SketchObject.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: setUpOriginalMaterialAndMeshRenderer()
+  nameWithType: SketchObject.setUpOriginalMaterialAndMeshRenderer()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+    name: setUpOriginalMaterialAndMeshRenderer
+    nameWithType: SketchObject.setUpOriginalMaterialAndMeshRenderer
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+    name: setUpOriginalMaterialAndMeshRenderer
+    nameWithType: SketchObject.setUpOriginalMaterialAndMeshRenderer
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: highlight()
+  nameWithType: SketchObject.highlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+    name: highlight
+    nameWithType: SketchObject.highlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+    name: highlight
+    nameWithType: SketchObject.highlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: revertHighlight()
+  nameWithType: SketchObject.revertHighlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+    name: revertHighlight
+    nameWithType: SketchObject.revertHighlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+    name: revertHighlight
+    nameWithType: SketchObject.revertHighlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  isExternal: true
+  name: UpdateSceneMesh(Mesh)
+  nameWithType: SketchObject.UpdateSceneMesh(Mesh)
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+    name: UpdateSceneMesh
+    nameWithType: SketchObject.UpdateSceneMesh
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Mesh
+    name: Mesh
+    nameWithType: Mesh
+    fullName: UnityEngine.Mesh
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+    name: UpdateSceneMesh
+    nameWithType: SketchObject.UpdateSceneMesh
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Mesh
+    name: Mesh
+    nameWithType: Mesh
+    fullName: UnityEngine.Mesh
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.MakeSplineMesh(System.Int32,UnityEngine.Vector3)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.LineSketchObject.MakeSplineMesh(System.Int32,UnityEngine.Vector3)
+  parent: VRSketchingGeometry.SketchObjectManagement.LineSketchObject
+  isExternal: true
+  name: MakeSplineMesh(Int32, Vector3)
+  nameWithType: LineSketchObject.MakeSplineMesh(Int32, Vector3)
+  fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.MakeSplineMesh(System.Int32, UnityEngine.Vector3)
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.MakeSplineMesh(System.Int32,UnityEngine.Vector3)
+    name: MakeSplineMesh
+    nameWithType: LineSketchObject.MakeSplineMesh
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.MakeSplineMesh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.MakeSplineMesh(System.Int32,UnityEngine.Vector3)
+    name: MakeSplineMesh
+    nameWithType: LineSketchObject.MakeSplineMesh
+    fullName: VRSketchingGeometry.SketchObjectManagement.LineSketchObject.MakeSplineMesh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.LinearInterpolationLineSketchObject.MakeSplineMesh*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.LinearInterpolationLineSketchObject.MakeSplineMesh
+  name: MakeSplineMesh
+  nameWithType: LinearInterpolationLineSketchObject.MakeSplineMesh
+  fullName: VRSketchingGeometry.SketchObjectManagement.LinearInterpolationLineSketchObject.MakeSplineMesh
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: VRSketchingGeometry.Meshing.SplineMesh
+  commentId: T:VRSketchingGeometry.Meshing.SplineMesh
+  parent: VRSketchingGeometry.Meshing
+  name: SplineMesh
+  nameWithType: SplineMesh
+  fullName: VRSketchingGeometry.Meshing.SplineMesh
+- uid: VRSketchingGeometry.Meshing
+  commentId: N:VRSketchingGeometry.Meshing
+  name: VRSketchingGeometry.Meshing
+  nameWithType: VRSketchingGeometry.Meshing
+  fullName: VRSketchingGeometry.Meshing

@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Commands
+  commentId: N:VRSketchingGeometry.Commands
+  id: VRSketchingGeometry.Commands
+  children:
+  - VRSketchingGeometry.Commands.AddObjectToSketchWorldRootCommand
+  - VRSketchingGeometry.Commands.CommandInvoker
+  - VRSketchingGeometry.Commands.DeleteObjectCommand
+  - VRSketchingGeometry.Commands.ICommand
+  - VRSketchingGeometry.Commands.SetBrushCommand
+  langs:
+  - csharp
+  - vb
+  name: VRSketchingGeometry.Commands
+  nameWithType: VRSketchingGeometry.Commands
+  fullName: VRSketchingGeometry.Commands
+  type: Namespace
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+references:
+- uid: VRSketchingGeometry.Commands.AddObjectToSketchWorldRootCommand
+  commentId: T:VRSketchingGeometry.Commands.AddObjectToSketchWorldRootCommand
+  name: AddObjectToSketchWorldRootCommand
+  nameWithType: AddObjectToSketchWorldRootCommand
+  fullName: VRSketchingGeometry.Commands.AddObjectToSketchWorldRootCommand
+- uid: VRSketchingGeometry.Commands.CommandInvoker
+  commentId: T:VRSketchingGeometry.Commands.CommandInvoker
+  name: CommandInvoker
+  nameWithType: CommandInvoker
+  fullName: VRSketchingGeometry.Commands.CommandInvoker
+- uid: VRSketchingGeometry.Commands.DeleteObjectCommand
+  commentId: T:VRSketchingGeometry.Commands.DeleteObjectCommand
+  name: DeleteObjectCommand
+  nameWithType: DeleteObjectCommand
+  fullName: VRSketchingGeometry.Commands.DeleteObjectCommand
+- uid: VRSketchingGeometry.Commands.ICommand
+  commentId: T:VRSketchingGeometry.Commands.ICommand
+  parent: VRSketchingGeometry.Commands
+  name: ICommand
+  nameWithType: ICommand
+  fullName: VRSketchingGeometry.Commands.ICommand
+- uid: VRSketchingGeometry.Commands.SetBrushCommand
+  commentId: T:VRSketchingGeometry.Commands.SetBrushCommand
+  name: SetBrushCommand
+  nameWithType: SetBrushCommand
+  fullName: VRSketchingGeometry.Commands.SetBrushCommand
+- uid: VRSketchingGeometry.Commands
+  commentId: N:VRSketchingGeometry.Commands
+  name: VRSketchingGeometry.Commands
+  nameWithType: VRSketchingGeometry.Commands
+  fullName: VRSketchingGeometry.Commands

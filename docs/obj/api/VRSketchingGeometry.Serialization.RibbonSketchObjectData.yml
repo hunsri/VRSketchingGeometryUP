@@ -1,0 +1,500 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Serialization.RibbonSketchObjectData
+  commentId: T:VRSketchingGeometry.Serialization.RibbonSketchObjectData
+  id: RibbonSketchObjectData
+  parent: VRSketchingGeometry.Serialization
+  children:
+  - VRSketchingGeometry.Serialization.RibbonSketchObjectData.ControlPointOrientations
+  - VRSketchingGeometry.Serialization.RibbonSketchObjectData.ControlPoints
+  - VRSketchingGeometry.Serialization.RibbonSketchObjectData.CrossSectionScale
+  - VRSketchingGeometry.Serialization.RibbonSketchObjectData.CrossSectionVertices
+  - VRSketchingGeometry.Serialization.RibbonSketchObjectData.SketchMaterial
+  langs:
+  - csharp
+  - vb
+  name: RibbonSketchObjectData
+  nameWithType: RibbonSketchObjectData
+  fullName: VRSketchingGeometry.Serialization.RibbonSketchObjectData
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/RibbonSketchObjectData.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: RibbonSketchObjectData
+    path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/RibbonSketchObjectData.cs
+    startLine: 12
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Serialization
+  summary: "\nContains the serialization data of a <xref href=\"VRSketchingGeometry.SketchObjectManagement.PatchSketchObject\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: 'public class RibbonSketchObjectData : SketchObjectData'
+    content.vb: >-
+      Public Class RibbonSketchObjectData
+
+          Inherits SketchObjectData
+  inheritance:
+  - System.Object
+  - VRSketchingGeometry.Serialization.SerializableComponentData
+  - VRSketchingGeometry.Serialization.SketchObjectData
+  inheritedMembers:
+  - VRSketchingGeometry.Serialization.SerializableComponentData.Position
+  - VRSketchingGeometry.Serialization.SerializableComponentData.Rotation
+  - VRSketchingGeometry.Serialization.SerializableComponentData.Scale
+  - VRSketchingGeometry.Serialization.SerializableComponentData.ApplyDataToTransform(UnityEngine.Transform)
+  - VRSketchingGeometry.Serialization.SerializableComponentData.SetDataFromTransform(UnityEngine.Transform)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Serialization.RibbonSketchObjectData.ControlPoints
+  commentId: F:VRSketchingGeometry.Serialization.RibbonSketchObjectData.ControlPoints
+  id: ControlPoints
+  parent: VRSketchingGeometry.Serialization.RibbonSketchObjectData
+  langs:
+  - csharp
+  - vb
+  name: ControlPoints
+  nameWithType: RibbonSketchObjectData.ControlPoints
+  fullName: VRSketchingGeometry.Serialization.RibbonSketchObjectData.ControlPoints
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/RibbonSketchObjectData.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ControlPoints
+    path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/RibbonSketchObjectData.cs
+    startLine: 14
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Serialization
+  syntax:
+    content: public List<Vector3> ControlPoints
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    content.vb: Public ControlPoints As List(Of Vector3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Serialization.RibbonSketchObjectData.ControlPointOrientations
+  commentId: F:VRSketchingGeometry.Serialization.RibbonSketchObjectData.ControlPointOrientations
+  id: ControlPointOrientations
+  parent: VRSketchingGeometry.Serialization.RibbonSketchObjectData
+  langs:
+  - csharp
+  - vb
+  name: ControlPointOrientations
+  nameWithType: RibbonSketchObjectData.ControlPointOrientations
+  fullName: VRSketchingGeometry.Serialization.RibbonSketchObjectData.ControlPointOrientations
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/RibbonSketchObjectData.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ControlPointOrientations
+    path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/RibbonSketchObjectData.cs
+    startLine: 15
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Serialization
+  syntax:
+    content: public List<Quaternion> ControlPointOrientations
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Quaternion}
+    content.vb: Public ControlPointOrientations As List(Of Quaternion)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Serialization.RibbonSketchObjectData.CrossSectionVertices
+  commentId: F:VRSketchingGeometry.Serialization.RibbonSketchObjectData.CrossSectionVertices
+  id: CrossSectionVertices
+  parent: VRSketchingGeometry.Serialization.RibbonSketchObjectData
+  langs:
+  - csharp
+  - vb
+  name: CrossSectionVertices
+  nameWithType: RibbonSketchObjectData.CrossSectionVertices
+  fullName: VRSketchingGeometry.Serialization.RibbonSketchObjectData.CrossSectionVertices
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/RibbonSketchObjectData.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: CrossSectionVertices
+    path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/RibbonSketchObjectData.cs
+    startLine: 16
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Serialization
+  syntax:
+    content: public List<Vector3> CrossSectionVertices
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    content.vb: Public CrossSectionVertices As List(Of Vector3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Serialization.RibbonSketchObjectData.CrossSectionScale
+  commentId: F:VRSketchingGeometry.Serialization.RibbonSketchObjectData.CrossSectionScale
+  id: CrossSectionScale
+  parent: VRSketchingGeometry.Serialization.RibbonSketchObjectData
+  langs:
+  - csharp
+  - vb
+  name: CrossSectionScale
+  nameWithType: RibbonSketchObjectData.CrossSectionScale
+  fullName: VRSketchingGeometry.Serialization.RibbonSketchObjectData.CrossSectionScale
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/RibbonSketchObjectData.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: CrossSectionScale
+    path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/RibbonSketchObjectData.cs
+    startLine: 17
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Serialization
+  syntax:
+    content: public Vector3 CrossSectionScale
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public CrossSectionScale As Vector3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Serialization.RibbonSketchObjectData.SketchMaterial
+  commentId: F:VRSketchingGeometry.Serialization.RibbonSketchObjectData.SketchMaterial
+  id: SketchMaterial
+  parent: VRSketchingGeometry.Serialization.RibbonSketchObjectData
+  langs:
+  - csharp
+  - vb
+  name: SketchMaterial
+  nameWithType: RibbonSketchObjectData.SketchMaterial
+  fullName: VRSketchingGeometry.Serialization.RibbonSketchObjectData.SketchMaterial
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/RibbonSketchObjectData.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SketchMaterial
+    path: Assets/VRSketchingGeometryPackage/Runtime/Serialization/RibbonSketchObjectData.cs
+    startLine: 18
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Serialization
+  syntax:
+    content: public SketchMaterialData SketchMaterial
+    return:
+      type: VRSketchingGeometry.Serialization.SketchMaterialData
+    content.vb: Public SketchMaterial As SketchMaterialData
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: PatchSketchObject
+  nameWithType: PatchSketchObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+- uid: VRSketchingGeometry.Serialization
+  commentId: N:VRSketchingGeometry.Serialization
+  name: VRSketchingGeometry.Serialization
+  nameWithType: VRSketchingGeometry.Serialization
+  fullName: VRSketchingGeometry.Serialization
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: VRSketchingGeometry.Serialization.SerializableComponentData
+  commentId: T:VRSketchingGeometry.Serialization.SerializableComponentData
+  parent: VRSketchingGeometry.Serialization
+  name: SerializableComponentData
+  nameWithType: SerializableComponentData
+  fullName: VRSketchingGeometry.Serialization.SerializableComponentData
+- uid: VRSketchingGeometry.Serialization.SketchObjectData
+  commentId: T:VRSketchingGeometry.Serialization.SketchObjectData
+  parent: VRSketchingGeometry.Serialization
+  name: SketchObjectData
+  nameWithType: SketchObjectData
+  fullName: VRSketchingGeometry.Serialization.SketchObjectData
+- uid: VRSketchingGeometry.Serialization.SerializableComponentData.Position
+  commentId: F:VRSketchingGeometry.Serialization.SerializableComponentData.Position
+  parent: VRSketchingGeometry.Serialization.SerializableComponentData
+  name: Position
+  nameWithType: SerializableComponentData.Position
+  fullName: VRSketchingGeometry.Serialization.SerializableComponentData.Position
+- uid: VRSketchingGeometry.Serialization.SerializableComponentData.Rotation
+  commentId: F:VRSketchingGeometry.Serialization.SerializableComponentData.Rotation
+  parent: VRSketchingGeometry.Serialization.SerializableComponentData
+  name: Rotation
+  nameWithType: SerializableComponentData.Rotation
+  fullName: VRSketchingGeometry.Serialization.SerializableComponentData.Rotation
+- uid: VRSketchingGeometry.Serialization.SerializableComponentData.Scale
+  commentId: F:VRSketchingGeometry.Serialization.SerializableComponentData.Scale
+  parent: VRSketchingGeometry.Serialization.SerializableComponentData
+  name: Scale
+  nameWithType: SerializableComponentData.Scale
+  fullName: VRSketchingGeometry.Serialization.SerializableComponentData.Scale
+- uid: VRSketchingGeometry.Serialization.SerializableComponentData.ApplyDataToTransform(UnityEngine.Transform)
+  commentId: M:VRSketchingGeometry.Serialization.SerializableComponentData.ApplyDataToTransform(UnityEngine.Transform)
+  parent: VRSketchingGeometry.Serialization.SerializableComponentData
+  isExternal: true
+  name: ApplyDataToTransform(Transform)
+  nameWithType: SerializableComponentData.ApplyDataToTransform(Transform)
+  fullName: VRSketchingGeometry.Serialization.SerializableComponentData.ApplyDataToTransform(UnityEngine.Transform)
+  spec.csharp:
+  - uid: VRSketchingGeometry.Serialization.SerializableComponentData.ApplyDataToTransform(UnityEngine.Transform)
+    name: ApplyDataToTransform
+    nameWithType: SerializableComponentData.ApplyDataToTransform
+    fullName: VRSketchingGeometry.Serialization.SerializableComponentData.ApplyDataToTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Serialization.SerializableComponentData.ApplyDataToTransform(UnityEngine.Transform)
+    name: ApplyDataToTransform
+    nameWithType: SerializableComponentData.ApplyDataToTransform
+    fullName: VRSketchingGeometry.Serialization.SerializableComponentData.ApplyDataToTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Serialization.SerializableComponentData.SetDataFromTransform(UnityEngine.Transform)
+  commentId: M:VRSketchingGeometry.Serialization.SerializableComponentData.SetDataFromTransform(UnityEngine.Transform)
+  parent: VRSketchingGeometry.Serialization.SerializableComponentData
+  isExternal: true
+  name: SetDataFromTransform(Transform)
+  nameWithType: SerializableComponentData.SetDataFromTransform(Transform)
+  fullName: VRSketchingGeometry.Serialization.SerializableComponentData.SetDataFromTransform(UnityEngine.Transform)
+  spec.csharp:
+  - uid: VRSketchingGeometry.Serialization.SerializableComponentData.SetDataFromTransform(UnityEngine.Transform)
+    name: SetDataFromTransform
+    nameWithType: SerializableComponentData.SetDataFromTransform
+    fullName: VRSketchingGeometry.Serialization.SerializableComponentData.SetDataFromTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Serialization.SerializableComponentData.SetDataFromTransform(UnityEngine.Transform)
+    name: SetDataFromTransform
+    nameWithType: SerializableComponentData.SetDataFromTransform
+    fullName: VRSketchingGeometry.Serialization.SerializableComponentData.SetDataFromTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{UnityEngine.Vector3}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector3>
+  nameWithType: List<Vector3>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector3>
+  nameWithType.vb: List(Of Vector3)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector3)
+  name.vb: List(Of Vector3)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.List{UnityEngine.Quaternion}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Quaternion}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Quaternion>
+  nameWithType: List<Quaternion>
+  fullName: System.Collections.Generic.List<UnityEngine.Quaternion>
+  nameWithType.vb: List(Of Quaternion)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Quaternion)
+  name.vb: List(Of Quaternion)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: VRSketchingGeometry.Serialization.SketchMaterialData
+  commentId: T:VRSketchingGeometry.Serialization.SketchMaterialData
+  parent: VRSketchingGeometry.Serialization
+  name: SketchMaterialData
+  nameWithType: SketchMaterialData
+  fullName: VRSketchingGeometry.Serialization.SketchMaterialData

@@ -1,0 +1,211 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Meshing.CircularCrossSection
+  commentId: T:VRSketchingGeometry.Meshing.CircularCrossSection
+  id: CircularCrossSection
+  parent: VRSketchingGeometry.Meshing
+  children:
+  - VRSketchingGeometry.Meshing.CircularCrossSection.GenerateVertices(System.Int32,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: CircularCrossSection
+  nameWithType: CircularCrossSection
+  fullName: VRSketchingGeometry.Meshing.CircularCrossSection
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/CircularCrossSection.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: CircularCrossSection
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/CircularCrossSection.cs
+    startLine: 13
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nGenerate vertices that approximate a circle.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: public class CircularCrossSection
+    content.vb: Public Class CircularCrossSection
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Meshing.CircularCrossSection.GenerateVertices(System.Int32,System.Single)
+  commentId: M:VRSketchingGeometry.Meshing.CircularCrossSection.GenerateVertices(System.Int32,System.Single)
+  id: GenerateVertices(System.Int32,System.Single)
+  parent: VRSketchingGeometry.Meshing.CircularCrossSection
+  langs:
+  - csharp
+  - vb
+  name: GenerateVertices(Int32, Single)
+  nameWithType: CircularCrossSection.GenerateVertices(Int32, Single)
+  fullName: VRSketchingGeometry.Meshing.CircularCrossSection.GenerateVertices(System.Int32, System.Single)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/CircularCrossSection.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GenerateVertices
+    path: Assets/VRSketchingGeometryPackage/Runtime/ModelingKernel/CircularCrossSection.cs
+    startLine: 22
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Meshing
+  summary: "\nGet vertices that approximate a circle.\nThe cross section will have resolution + 1 vertices.\n"
+  example: []
+  syntax:
+    content: public static List<Vector3> GenerateVertices(int resolution, float scale = 0.5F)
+    parameters:
+    - id: resolution
+      type: System.Int32
+      description: Number of vertices of the circle.
+    - id: scale
+      type: System.Single
+      description: Radius of the cross section.
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: ''
+    content.vb: Public Shared Function GenerateVertices(resolution As Integer, scale As Single = 0.5F) As List(Of Vector3)
+  overload: VRSketchingGeometry.Meshing.CircularCrossSection.GenerateVertices*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: VRSketchingGeometry.Meshing
+  commentId: N:VRSketchingGeometry.Meshing
+  name: VRSketchingGeometry.Meshing
+  nameWithType: VRSketchingGeometry.Meshing
+  fullName: VRSketchingGeometry.Meshing
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Meshing.CircularCrossSection.GenerateVertices*
+  commentId: Overload:VRSketchingGeometry.Meshing.CircularCrossSection.GenerateVertices
+  name: GenerateVertices
+  nameWithType: CircularCrossSection.GenerateVertices
+  fullName: VRSketchingGeometry.Meshing.CircularCrossSection.GenerateVertices
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Collections.Generic.List{UnityEngine.Vector3}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector3>
+  nameWithType: List<Vector3>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector3>
+  nameWithType.vb: List(Of Vector3)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector3)
+  name.vb: List(Of Vector3)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

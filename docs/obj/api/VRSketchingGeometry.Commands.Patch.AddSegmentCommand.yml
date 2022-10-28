@@ -1,0 +1,425 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Commands.Patch.AddSegmentCommand
+  commentId: T:VRSketchingGeometry.Commands.Patch.AddSegmentCommand
+  id: AddSegmentCommand
+  parent: VRSketchingGeometry.Commands.Patch
+  children:
+  - VRSketchingGeometry.Commands.Patch.AddSegmentCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.PatchSketchObject,System.Collections.Generic.List{UnityEngine.Vector3})
+  - VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Execute
+  - VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Redo
+  - VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Undo
+  langs:
+  - csharp
+  - vb
+  name: AddSegmentCommand
+  nameWithType: AddSegmentCommand
+  fullName: VRSketchingGeometry.Commands.Patch.AddSegmentCommand
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Patch/AddSegmentCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: AddSegmentCommand
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Patch/AddSegmentCommand.cs
+    startLine: 10
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Patch
+  summary: "\nAdd a segment at the end of the patch.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: 'public class AddSegmentCommand : ICommand'
+    content.vb: >-
+      Public Class AddSegmentCommand
+
+          Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - VRSketchingGeometry.Commands.ICommand
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.PatchSketchObject,System.Collections.Generic.List{UnityEngine.Vector3})
+  commentId: M:VRSketchingGeometry.Commands.Patch.AddSegmentCommand.#ctor(VRSketchingGeometry.SketchObjectManagement.PatchSketchObject,System.Collections.Generic.List{UnityEngine.Vector3})
+  id: '#ctor(VRSketchingGeometry.SketchObjectManagement.PatchSketchObject,System.Collections.Generic.List{UnityEngine.Vector3})'
+  parent: VRSketchingGeometry.Commands.Patch.AddSegmentCommand
+  langs:
+  - csharp
+  - vb
+  name: AddSegmentCommand(PatchSketchObject, List<Vector3>)
+  nameWithType: AddSegmentCommand.AddSegmentCommand(PatchSketchObject, List<Vector3>)
+  fullName: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.AddSegmentCommand(VRSketchingGeometry.SketchObjectManagement.PatchSketchObject, System.Collections.Generic.List<UnityEngine.Vector3>)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Patch/AddSegmentCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: .ctor
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Patch/AddSegmentCommand.cs
+    startLine: 15
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Patch
+  syntax:
+    content: public AddSegmentCommand(PatchSketchObject patchSketchObject, List<Vector3> newSegment)
+    parameters:
+    - id: patchSketchObject
+      type: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+    - id: newSegment
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+    content.vb: Public Sub New(patchSketchObject As PatchSketchObject, newSegment As List(Of Vector3))
+  overload: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.#ctor*
+  nameWithType.vb: AddSegmentCommand.AddSegmentCommand(PatchSketchObject, List(Of Vector3))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.AddSegmentCommand(VRSketchingGeometry.SketchObjectManagement.PatchSketchObject, System.Collections.Generic.List(Of UnityEngine.Vector3))
+  name.vb: AddSegmentCommand(PatchSketchObject, List(Of Vector3))
+- uid: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Execute
+  commentId: M:VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Execute
+  id: Execute
+  parent: VRSketchingGeometry.Commands.Patch.AddSegmentCommand
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: AddSegmentCommand.Execute()
+  fullName: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Execute()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Patch/AddSegmentCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Execute
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Patch/AddSegmentCommand.cs
+    startLine: 20
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Patch
+  syntax:
+    content: public bool Execute()
+    return:
+      type: System.Boolean
+    content.vb: Public Function Execute As Boolean
+  overload: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Execute*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Execute
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Redo
+  commentId: M:VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Redo
+  id: Redo
+  parent: VRSketchingGeometry.Commands.Patch.AddSegmentCommand
+  langs:
+  - csharp
+  - vb
+  name: Redo()
+  nameWithType: AddSegmentCommand.Redo()
+  fullName: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Redo()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Patch/AddSegmentCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Redo
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Patch/AddSegmentCommand.cs
+    startLine: 26
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Patch
+  syntax:
+    content: public void Redo()
+    content.vb: Public Sub Redo
+  overload: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Redo*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Redo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Undo
+  commentId: M:VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Undo
+  id: Undo
+  parent: VRSketchingGeometry.Commands.Patch.AddSegmentCommand
+  langs:
+  - csharp
+  - vb
+  name: Undo()
+  nameWithType: AddSegmentCommand.Undo()
+  fullName: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Undo()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Patch/AddSegmentCommand.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Undo
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/Commands/Patch/AddSegmentCommand.cs
+    startLine: 35
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.Commands.Patch
+  syntax:
+    content: public void Undo()
+    content.vb: Public Sub Undo
+  overload: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Undo*
+  implements:
+  - VRSketchingGeometry.Commands.ICommand.Undo
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: VRSketchingGeometry.Commands.Patch
+  commentId: N:VRSketchingGeometry.Commands.Patch
+  name: VRSketchingGeometry.Commands.Patch
+  nameWithType: VRSketchingGeometry.Commands.Patch
+  fullName: VRSketchingGeometry.Commands.Patch
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: VRSketchingGeometry.Commands.ICommand
+  commentId: T:VRSketchingGeometry.Commands.ICommand
+  parent: VRSketchingGeometry.Commands
+  name: ICommand
+  nameWithType: ICommand
+  fullName: VRSketchingGeometry.Commands.ICommand
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VRSketchingGeometry.Commands
+  commentId: N:VRSketchingGeometry.Commands
+  name: VRSketchingGeometry.Commands
+  nameWithType: VRSketchingGeometry.Commands
+  fullName: VRSketchingGeometry.Commands
+- uid: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.#ctor*
+  commentId: Overload:VRSketchingGeometry.Commands.Patch.AddSegmentCommand.#ctor
+  name: AddSegmentCommand
+  nameWithType: AddSegmentCommand.AddSegmentCommand
+  fullName: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.AddSegmentCommand
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: PatchSketchObject
+  nameWithType: PatchSketchObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+- uid: System.Collections.Generic.List{UnityEngine.Vector3}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector3>
+  nameWithType: List<Vector3>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector3>
+  nameWithType.vb: List(Of Vector3)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector3)
+  name.vb: List(Of Vector3)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Execute*
+  commentId: Overload:VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Execute
+  name: Execute
+  nameWithType: AddSegmentCommand.Execute
+  fullName: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Execute
+- uid: VRSketchingGeometry.Commands.ICommand.Execute
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Execute
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Execute()
+  nameWithType: ICommand.Execute()
+  fullName: VRSketchingGeometry.Commands.ICommand.Execute()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: VRSketchingGeometry.Commands.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Execute
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: VRSketchingGeometry.Commands.ICommand.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Redo*
+  commentId: Overload:VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Redo
+  name: Redo
+  nameWithType: AddSegmentCommand.Redo
+  fullName: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Redo
+- uid: VRSketchingGeometry.Commands.ICommand.Redo
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Redo
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Redo()
+  nameWithType: ICommand.Redo()
+  fullName: VRSketchingGeometry.Commands.ICommand.Redo()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Redo
+    name: Redo
+    nameWithType: ICommand.Redo
+    fullName: VRSketchingGeometry.Commands.ICommand.Redo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Redo
+    name: Redo
+    nameWithType: ICommand.Redo
+    fullName: VRSketchingGeometry.Commands.ICommand.Redo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Undo*
+  commentId: Overload:VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Undo
+  name: Undo
+  nameWithType: AddSegmentCommand.Undo
+  fullName: VRSketchingGeometry.Commands.Patch.AddSegmentCommand.Undo
+- uid: VRSketchingGeometry.Commands.ICommand.Undo
+  commentId: M:VRSketchingGeometry.Commands.ICommand.Undo
+  parent: VRSketchingGeometry.Commands.ICommand
+  name: Undo()
+  nameWithType: ICommand.Undo()
+  fullName: VRSketchingGeometry.Commands.ICommand.Undo()
+  spec.csharp:
+  - uid: VRSketchingGeometry.Commands.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: VRSketchingGeometry.Commands.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.Commands.ICommand.Undo
+    name: Undo
+    nameWithType: ICommand.Undo
+    fullName: VRSketchingGeometry.Commands.ICommand.Undo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

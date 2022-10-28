@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.Commands.Group
+  commentId: N:VRSketchingGeometry.Commands.Group
+  id: VRSketchingGeometry.Commands.Group
+  children:
+  - VRSketchingGeometry.Commands.Group.AddToGroupCommand
+  - VRSketchingGeometry.Commands.Group.RemoveFromGroupCommand
+  langs:
+  - csharp
+  - vb
+  name: VRSketchingGeometry.Commands.Group
+  nameWithType: VRSketchingGeometry.Commands.Group
+  fullName: VRSketchingGeometry.Commands.Group
+  type: Namespace
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+references:
+- uid: VRSketchingGeometry.Commands.Group.AddToGroupCommand
+  commentId: T:VRSketchingGeometry.Commands.Group.AddToGroupCommand
+  name: AddToGroupCommand
+  nameWithType: AddToGroupCommand
+  fullName: VRSketchingGeometry.Commands.Group.AddToGroupCommand
+- uid: VRSketchingGeometry.Commands.Group.RemoveFromGroupCommand
+  commentId: T:VRSketchingGeometry.Commands.Group.RemoveFromGroupCommand
+  name: RemoveFromGroupCommand
+  nameWithType: RemoveFromGroupCommand
+  fullName: VRSketchingGeometry.Commands.Group.RemoveFromGroupCommand

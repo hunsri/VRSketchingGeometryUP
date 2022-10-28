@@ -1,0 +1,1102 @@
+### YamlMime:ManagedReference
+items:
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  id: PatchSketchObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  children:
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetBrush
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPoints
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPointsCount
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetLastSegment
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetSegment(System.Int32)
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.Height
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.MinimumDistanceToLastSegment
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.ResolutionHeight
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.ResolutionWidth
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32)
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32)
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.UpdatePatchMesh
+  - VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.Width
+  langs:
+  - csharp
+  - vb
+  name: PatchSketchObject
+  nameWithType: PatchSketchObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  type: Class
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: PatchSketchObject
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 14
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nPatch surface sketch object using a grid of control points.\n"
+  remarks: 'Original author: tterpi'
+  example: []
+  syntax:
+    content: >-
+      [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer), typeof(MeshCollider))]
+
+      public class PatchSketchObject : SketchObject, ISelectable, IHighlightable, IGroupable, IBrushable
+    content.vb: >-
+      <RequireComponent(GetType(MeshFilter), GetType(MeshRenderer), GetType(MeshCollider))>
+
+      Public Class PatchSketchObject
+
+          Inherits SketchObject
+
+          Implements ISelectable, IHighlightable, IGroupable, IBrushable
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject
+  implements:
+  - VRSketchingGeometry.SketchObjectManagement.ISelectable
+  - VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  - VRSketchingGeometry.SketchObjectManagement.IGroupable
+  - VRSketchingGeometry.SketchObjectManagement.IBrushable
+  inheritedMembers:
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  - VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.Width
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.Width
+  id: Width
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: PatchSketchObject.Width
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.Width
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Width
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 17
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public int Width
+    return:
+      type: System.Int32
+    content.vb: Public Width As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.Height
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.Height
+  id: Height
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: PatchSketchObject.Height
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.Height
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: Height
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 18
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public int Height
+    return:
+      type: System.Int32
+    content.vb: Public Height As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.ResolutionWidth
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.ResolutionWidth
+  id: ResolutionWidth
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: ResolutionWidth
+  nameWithType: PatchSketchObject.ResolutionWidth
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.ResolutionWidth
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ResolutionWidth
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 19
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public int ResolutionWidth
+    return:
+      type: System.Int32
+    content.vb: Public ResolutionWidth As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.ResolutionHeight
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.ResolutionHeight
+  id: ResolutionHeight
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: ResolutionHeight
+  nameWithType: PatchSketchObject.ResolutionHeight
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.ResolutionHeight
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: ResolutionHeight
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 20
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public int ResolutionHeight
+    return:
+      type: System.Int32
+    content.vb: Public ResolutionHeight As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.MinimumDistanceToLastSegment
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.MinimumDistanceToLastSegment
+  id: MinimumDistanceToLastSegment
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: MinimumDistanceToLastSegment
+  nameWithType: PatchSketchObject.MinimumDistanceToLastSegment
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.MinimumDistanceToLastSegment
+  type: Field
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: MinimumDistanceToLastSegment
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 22
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public float MinimumDistanceToLastSegment
+    return:
+      type: System.Single
+    content.vb: Public MinimumDistanceToLastSegment As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.UpdatePatchMesh
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.UpdatePatchMesh
+  id: UpdatePatchMesh
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: UpdatePatchMesh()
+  nameWithType: PatchSketchObject.UpdatePatchMesh()
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.UpdatePatchMesh()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: UpdatePatchMesh
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 51
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nRegenerates the mesh from the currently set control points.\n"
+  example: []
+  syntax:
+    content: public void UpdatePatchMesh()
+    content.vb: Public Sub UpdatePatchMesh
+  overload: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.UpdatePatchMesh*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32)
+  id: SetControlPoints(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32)
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: SetControlPoints(List<Vector3>, Int32)
+  nameWithType: PatchSketchObject.SetControlPoints(List<Vector3>, Int32)
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPoints(System.Collections.Generic.List<UnityEngine.Vector3>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetControlPoints
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 62
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nSets the control points.\nControl points have to be at least 3x3. \nControl points are expected to be in world space.\n"
+  example: []
+  syntax:
+    content: public void SetControlPoints(List<Vector3> controlPoints, int width)
+    parameters:
+    - id: controlPoints
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: ''
+    - id: width
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub SetControlPoints(controlPoints As List(Of Vector3), width As Integer)
+  overload: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPoints*
+  nameWithType.vb: PatchSketchObject.SetControlPoints(List(Of Vector3), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPoints(System.Collections.Generic.List(Of UnityEngine.Vector3), System.Int32)
+  name.vb: SetControlPoints(List(Of Vector3), Int32)
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32)
+  id: SetControlPointsLocalSpace(System.Collections.Generic.List{UnityEngine.Vector3},System.Int32)
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: SetControlPointsLocalSpace(List<Vector3>, Int32)
+  nameWithType: PatchSketchObject.SetControlPointsLocalSpace(List<Vector3>, Int32)
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List<UnityEngine.Vector3>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetControlPointsLocalSpace
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 74
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nSets the control points.\nControl points have to be at least 3x3. \nControl points are expected to be in local space.\n"
+  example: []
+  syntax:
+    content: public void SetControlPointsLocalSpace(List<Vector3> controlPoints, int width)
+    parameters:
+    - id: controlPoints
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: ''
+    - id: width
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub SetControlPointsLocalSpace(controlPoints As List(Of Vector3), width As Integer)
+  overload: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPointsLocalSpace*
+  nameWithType.vb: PatchSketchObject.SetControlPointsLocalSpace(List(Of Vector3), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPointsLocalSpace(System.Collections.Generic.List(Of UnityEngine.Vector3), System.Int32)
+  name.vb: SetControlPointsLocalSpace(List(Of Vector3), Int32)
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPoints
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPoints
+  id: GetControlPoints
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: GetControlPoints()
+  nameWithType: PatchSketchObject.GetControlPoints()
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPoints()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetControlPoints
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 145
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nReturns a copy of the control points in local space.\n"
+  example: []
+  syntax:
+    content: public List<Vector3> GetControlPoints()
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: ''
+    content.vb: Public Function GetControlPoints As List(Of Vector3)
+  overload: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPoints*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPointsCount
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPointsCount
+  id: GetControlPointsCount
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: GetControlPointsCount()
+  nameWithType: PatchSketchObject.GetControlPointsCount()
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPointsCount()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetControlPointsCount
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 149
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public int GetControlPointsCount()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetControlPointsCount As Integer
+  overload: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPointsCount*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetSegment(System.Int32)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetSegment(System.Int32)
+  id: GetSegment(System.Int32)
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: GetSegment(Int32)
+  nameWithType: PatchSketchObject.GetSegment(Int32)
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetSegment(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetSegment
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 159
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nGet a segment of control points of length Width.\nPoints are in local space.\n"
+  example: []
+  syntax:
+    content: public List<Vector3> GetSegment(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: ''
+    content.vb: Public Function GetSegment(index As Integer) As List(Of Vector3)
+  overload: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetSegment*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetLastSegment
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetLastSegment
+  id: GetLastSegment
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: GetLastSegment()
+  nameWithType: PatchSketchObject.GetLastSegment()
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetLastSegment()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetLastSegment
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 168
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  summary: "\nGet the last segment of control points of length width.\nPoints are in local space.\n"
+  example: []
+  syntax:
+    content: public List<Vector3> GetLastSegment()
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector3}
+      description: ''
+    content.vb: Public Function GetLastSegment As List(Of Vector3)
+  overload: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetLastSegment*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetBrush
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetBrush
+  id: GetBrush
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: GetBrush()
+  nameWithType: PatchSketchObject.GetBrush()
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetBrush()
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: GetBrush
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 172
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public Brush GetBrush()
+    return:
+      type: VRSketchingGeometry.Serialization.Brush
+    content.vb: Public Function GetBrush As Brush
+  overload: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetBrush*
+  implements:
+  - VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  id: SetBrush(VRSketchingGeometry.Serialization.Brush)
+  parent: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject
+  langs:
+  - csharp
+  - vb
+  name: SetBrush(Brush)
+  nameWithType: PatchSketchObject.SetBrush(Brush)
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  type: Method
+  source:
+    remote:
+      path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+      branch: fix/DocFXIntegration
+      repo: git@github.com:hunsri/VRSketchingGeometry.git
+    id: SetBrush
+    path: Assets/VRSketchingGeometryPackage/Runtime/Interaction/PatchSketchObject.cs
+    startLine: 178
+  assemblies:
+  - HTWBerlin.FKI.VRSketchingGeometry.Runtime
+  namespace: VRSketchingGeometry.SketchObjectManagement
+  syntax:
+    content: public void SetBrush(Brush brush)
+    parameters:
+    - id: brush
+      type: VRSketchingGeometry.Serialization.Brush
+    content.vb: Public Sub SetBrush(brush As Brush)
+  overload: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetBrush*
+  implements:
+  - VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: VRSketchingGeometry.SketchObjectManagement
+  commentId: N:VRSketchingGeometry.SketchObjectManagement
+  name: VRSketchingGeometry.SketchObjectManagement
+  nameWithType: VRSketchingGeometry.SketchObjectManagement
+  fullName: VRSketchingGeometry.SketchObjectManagement
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SelectableObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SelectableObject
+  nameWithType: SelectableObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.SelectableObject
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.SketchObject
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: SketchObject
+  nameWithType: SketchObject
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject
+- uid: VRSketchingGeometry.SketchObjectManagement.ISelectable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.ISelectable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: ISelectable
+  nameWithType: ISelectable
+  fullName: VRSketchingGeometry.SketchObjectManagement.ISelectable
+- uid: VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IHighlightable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IHighlightable
+  nameWithType: IHighlightable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IHighlightable
+- uid: VRSketchingGeometry.SketchObjectManagement.IGroupable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IGroupable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IGroupable
+  nameWithType: IGroupable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IGroupable
+- uid: VRSketchingGeometry.SketchObjectManagement.IBrushable
+  commentId: T:VRSketchingGeometry.SketchObjectManagement.IBrushable
+  parent: VRSketchingGeometry.SketchObjectManagement
+  name: IBrushable
+  nameWithType: IBrushable
+  fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: Defaults
+  nameWithType: SketchObject.Defaults
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.Defaults
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  commentId: P:VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: ParentGroup
+  nameWithType: SketchObject.ParentGroup
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.ParentGroup
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: meshRenderer
+  nameWithType: SketchObject.meshRenderer
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshRenderer
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: meshFilter
+  nameWithType: SketchObject.meshFilter
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshFilter
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: meshCollider
+  nameWithType: SketchObject.meshCollider
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.meshCollider
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: originalMaterial
+  nameWithType: SketchObject.originalMaterial
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.originalMaterial
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+  commentId: F:VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: highlightMaterial
+  nameWithType: SketchObject.highlightMaterial
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlightMaterial
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: Awake()
+  nameWithType: SketchObject.Awake()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+    name: Awake
+    nameWithType: SketchObject.Awake
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+    name: Awake
+    nameWithType: SketchObject.Awake
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.Awake
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: resetToParentGroup()
+  nameWithType: SketchObject.resetToParentGroup()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: SketchObject.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+    name: resetToParentGroup
+    nameWithType: SketchObject.resetToParentGroup
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.resetToParentGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: setUpOriginalMaterialAndMeshRenderer()
+  nameWithType: SketchObject.setUpOriginalMaterialAndMeshRenderer()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+    name: setUpOriginalMaterialAndMeshRenderer
+    nameWithType: SketchObject.setUpOriginalMaterialAndMeshRenderer
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+    name: setUpOriginalMaterialAndMeshRenderer
+    nameWithType: SketchObject.setUpOriginalMaterialAndMeshRenderer
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.setUpOriginalMaterialAndMeshRenderer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: highlight()
+  nameWithType: SketchObject.highlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+    name: highlight
+    nameWithType: SketchObject.highlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+    name: highlight
+    nameWithType: SketchObject.highlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.highlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  name: revertHighlight()
+  nameWithType: SketchObject.revertHighlight()
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+    name: revertHighlight
+    nameWithType: SketchObject.revertHighlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+    name: revertHighlight
+    nameWithType: SketchObject.revertHighlight
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.revertHighlight
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  parent: VRSketchingGeometry.SketchObjectManagement.SketchObject
+  isExternal: true
+  name: UpdateSceneMesh(Mesh)
+  nameWithType: SketchObject.UpdateSceneMesh(Mesh)
+  fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+    name: UpdateSceneMesh
+    nameWithType: SketchObject.UpdateSceneMesh
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Mesh
+    name: Mesh
+    nameWithType: Mesh
+    fullName: UnityEngine.Mesh
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh(UnityEngine.Mesh)
+    name: UpdateSceneMesh
+    nameWithType: SketchObject.UpdateSceneMesh
+    fullName: VRSketchingGeometry.SketchObjectManagement.SketchObject.UpdateSceneMesh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Mesh
+    name: Mesh
+    nameWithType: Mesh
+    fullName: UnityEngine.Mesh
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.UpdatePatchMesh*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.UpdatePatchMesh
+  name: UpdatePatchMesh
+  nameWithType: PatchSketchObject.UpdatePatchMesh
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.UpdatePatchMesh
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPoints*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPoints
+  name: SetControlPoints
+  nameWithType: PatchSketchObject.SetControlPoints
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPoints
+- uid: System.Collections.Generic.List{UnityEngine.Vector3}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Vector3>
+  nameWithType: List<Vector3>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector3>
+  nameWithType.vb: List(Of Vector3)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector3)
+  name.vb: List(Of Vector3)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPointsLocalSpace*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPointsLocalSpace
+  name: SetControlPointsLocalSpace
+  nameWithType: PatchSketchObject.SetControlPointsLocalSpace
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetControlPointsLocalSpace
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPoints*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPoints
+  name: GetControlPoints
+  nameWithType: PatchSketchObject.GetControlPoints
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPoints
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPointsCount*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPointsCount
+  name: GetControlPointsCount
+  nameWithType: PatchSketchObject.GetControlPointsCount
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetControlPointsCount
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetSegment*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetSegment
+  name: GetSegment
+  nameWithType: PatchSketchObject.GetSegment
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetSegment
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetLastSegment*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetLastSegment
+  name: GetLastSegment
+  nameWithType: PatchSketchObject.GetLastSegment
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetLastSegment
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetBrush*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetBrush
+  name: GetBrush
+  nameWithType: PatchSketchObject.GetBrush
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.GetBrush
+- uid: VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+  parent: VRSketchingGeometry.SketchObjectManagement.IBrushable
+  name: GetBrush()
+  nameWithType: IBrushable.GetBrush()
+  fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush()
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+    name: GetBrush
+    nameWithType: IBrushable.GetBrush
+    fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+    name: GetBrush
+    nameWithType: IBrushable.GetBrush
+    fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable.GetBrush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VRSketchingGeometry.Serialization.Brush
+  commentId: T:VRSketchingGeometry.Serialization.Brush
+  parent: VRSketchingGeometry.Serialization
+  name: Brush
+  nameWithType: Brush
+  fullName: VRSketchingGeometry.Serialization.Brush
+- uid: VRSketchingGeometry.Serialization
+  commentId: N:VRSketchingGeometry.Serialization
+  name: VRSketchingGeometry.Serialization
+  nameWithType: VRSketchingGeometry.Serialization
+  fullName: VRSketchingGeometry.Serialization
+- uid: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetBrush*
+  commentId: Overload:VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetBrush
+  name: SetBrush
+  nameWithType: PatchSketchObject.SetBrush
+  fullName: VRSketchingGeometry.SketchObjectManagement.PatchSketchObject.SetBrush
+- uid: VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  commentId: M:VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  parent: VRSketchingGeometry.SketchObjectManagement.IBrushable
+  name: SetBrush(Brush)
+  nameWithType: IBrushable.SetBrush(Brush)
+  fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush(VRSketchingGeometry.Serialization.Brush)
+  spec.csharp:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush(VRSketchingGeometry.Serialization.Brush)
+    name: SetBrush
+    nameWithType: IBrushable.SetBrush
+    fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: VRSketchingGeometry.Serialization.Brush
+    name: Brush
+    nameWithType: Brush
+    fullName: VRSketchingGeometry.Serialization.Brush
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush(VRSketchingGeometry.Serialization.Brush)
+    name: SetBrush
+    nameWithType: IBrushable.SetBrush
+    fullName: VRSketchingGeometry.SketchObjectManagement.IBrushable.SetBrush
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: VRSketchingGeometry.Serialization.Brush
+    name: Brush
+    nameWithType: Brush
+    fullName: VRSketchingGeometry.Serialization.Brush
+  - name: )
+    nameWithType: )
+    fullName: )

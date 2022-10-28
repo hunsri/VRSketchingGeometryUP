@@ -11,7 +11,8 @@
           "exclude": [
             "**/obj/**",
             "**/bin/**",
-            "_site/**"
+            "_site/**",
+            "docs/**"
           ]
         }
       ],
@@ -32,13 +33,15 @@
           "api/*.md",
           "articles/**.md",
           "toc.yml",
+          "articles/toc.yml",
           "*.md",
           "Assets/VRSketchingGeometryPackage/README.md",
           "Assets/VRSketchingGeometryPackage/Samples~/ExampleScenes/Scenes/README.md"
         ],
         "exclude": [
           "obj/**",
-          "_site/**"
+          "_site/**",
+          "docs/**"
         ]
       }
     ],
@@ -49,7 +52,8 @@
         ],
         "exclude": [
           "obj/**",
-          "_site/**"
+          "_site/**",
+          "docs/**"
         ]
       }
     ],
@@ -60,7 +64,8 @@
         ],
         "exclude": [
           "obj/**",
-          "_site/**"
+          "_site/**",
+          "docs/**"
         ]
       }
     ],

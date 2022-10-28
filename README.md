@@ -5,8 +5,9 @@ This is a framework for developing 3D sketching applications in Unity.
 
 ## Overview
 
-The Unity project that holds the package and the project configuration lays on the `master` branch.</br>
-The version of the package that can be used to import it into Unity lays on the `upm` branch.
+The Unity project that holds the package and the project configuration lays on the `master` branch. </br>
+The version of the package that can be used to import it into Unity lays on the `upm` branch. </br>
+The files for the documentation can be found on the `docs` branch.
 
 ## Installation and user guide
 
@@ -45,6 +46,15 @@ If the wrong tag is already pushed:
 ```
 git push origin :tagName
 ```
+
+### Pushing a new documentation to the doc branch
+
+**IMPORTANT**</br>
+Check that the `Samples` folder located under `Assets/` is renamed to `Samples~` before creating the documentation!
+
+To release a new version of the documentation the files have to be pushed to the `docs` branch.
+For that you can create a new branch for the new version like `docs-0.1.0` and then merge onto the `docs` branch.
+You can find more about the creation of the documentation [here](Docs.md)
 
 ## Tests
 

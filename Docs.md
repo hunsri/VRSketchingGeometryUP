@@ -60,6 +60,3 @@ Note that you will have to specify that the `docs` folder should be used as the 
 **IMPORTANT** </br>
 The docs folder should never be pushed to the `master` or `upm` branch.
 Ideally it should only exist on the `docs` branch.
-
-
-

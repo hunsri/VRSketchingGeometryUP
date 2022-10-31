@@ -37,8 +37,10 @@ https://github.com/hunsri/VRSketchingGeometryUP.git#0.1.0
 - click on "Import"
 - files will be imported under `Assets/Samples/`
 
-## [API documentation](https://tterpi.github.io/VRSketchingGeometry/)
-Read the [developer guide](https://tterpi.github.io/VRSketchingGeometry/articles/intro.html) and [API documentation](https://tterpi.github.io/VRSketchingGeometry/api/index.html) at the github pages site.
+## API documentation
+Read the **developer guide** and **API documentation** at the GitHub pages site. </br>
+Alternatively, you can host these yourself too,
+check out the [Docs Reference](../../Docs.md) for further details!
 
 ## Quick start
 The following example script shows how to create a new line sketch object and add few control points to it using a command invoker.</br>
@@ -94,7 +96,7 @@ These can be imported via the Unity Package Manager.
 Contains all the assets required to run the examples.
 Can be used as a reference for the creation of own assets.
 
-### Example Scenes
+### [Example Scenes](./Samples/ExampleScenes/Scenes/README.md)
 Contains various examples. For further details please refer to [this readme](./Samples/ExampleScenes/Scenes/README.md).
 
 ### Legacy Example

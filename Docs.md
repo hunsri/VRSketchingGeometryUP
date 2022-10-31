@@ -1,6 +1,6 @@
 ﻿# Documentation Reference
 
-**IMPORTANT**</br>
+**IMPORTANT** </br>
 All provided commands have to be executed from the root of the project. </br>
 To make the commands easier to read the path to the executable gets replaced with the command name.</br>
 For example: </br>
@@ -30,21 +30,35 @@ This will create the `obj` and `_site` directories at the root of the project, w
 **Afterwards, to host and view the documentation locally append the `serve` flag**
 ```docfx docfx.json --serve```
 
-**Troubleshooting**
+**Troubleshooting** </br>
 Sometimes it can be necessary to clear the generated files before creating new ones. </br>
 This can be due to conflicting metadata, but can easily be resolved by deleting the `obj` directory.
 
 ## How to create a remote public documentation (e.g. for GitHub pages)
 
 The documentation can also be remotely hosted via GitHub pages. </br>
+Before you start, make sure that there are no documentation files under directories with a `~`. </br>
+That breaks links on GH-pages.
+
 Once a new release has been made, the remote public documentation should be updated as well. </br>
-For that we generate the documentation in a new `docs` directory. </br>
-```docfx docfx.json -o ./docs```
+For that we create a new branch.
+```git checkout -b doc/yourVersionHere```
 
-This directory can then be used for the remote documentation pages.
+Next, generate the documentation in a new `docs` directory, instead of the standard `_site`. </br>
+To do that, you have to change the destination in `docfx.json`. </br>
+Change `"dest": "_site",` into `"dest": "docs",` 
 
-**IMPORTANT**
-The docs folder has to be removed before pushing to the `master` or `upm` branch.
+Finally **add and commit the changes** to git and push the changes onto the branch that you created previously.
+```git push origin doc/yourVersionHere```
+
+Once you are done, you can return to developing on another branch. </br>
+Also you can now set the newly pushed branch as the base of your GH-pages. </br>
+Or alternatively, merge it with a `doc` branch that holds the latest version of the documentation.
+
+Note that you will have to specify that the `docs` folder should be used as the source of the documentation.
+
+**IMPORTANT** </br>
+The docs folder should never be pushed to the `master` or `upm` branch.
 Ideally it should only exist on the `docs` branch.
 
 

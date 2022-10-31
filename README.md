@@ -95,7 +95,7 @@ Contains all the assets required to run the examples.
 Can be used as a reference for the creation of own assets.
 
 ### Example Scenes
-Contains various examples. For further details please refer to [this readme](./Samples~/ExampleScenes/Scenes/README.md).
+Contains various examples. For further details please refer to [this readme](./Samples/ExampleScenes/Scenes/README.md).
 
 ### Legacy Example
 Contains a static scene with various messy test scripts and corresponding game objects.

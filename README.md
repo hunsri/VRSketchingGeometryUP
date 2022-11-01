@@ -5,15 +5,16 @@ This is a framework for developing 3D sketching applications in Unity.
 
 ## Overview
 
-The Unity project that holds the package and the project configuration lays on the `master` branch.</br>
-The version of the package that can be used to import it into Unity lays on the `upm` branch.
+The Unity project that holds the package and the project configuration is on the `master` branch. </br>
+The version of the package that can be used to import it into Unity is on the `upm` branch. </br>
+The files for the documentation can be found on the `docs` branch.
 
 ## Installation and user guide
 
 To import this package into Unity the import via URL can be used.</br>
 For example: `https://github.com/hunsri/VRSketchingGeometryUP.git#<version>` </br>
 
-For further details, please refer to [this readme](./Assets/VRSketchingGeometryPackage/README.md) inside the package.
+For further details, please refer to [this readme](Assets/VRSketchingGeometryPackage/README.md) inside the package.
 
 ## Developing for this package
 
@@ -29,6 +30,10 @@ You can find further details [here](https://www.patreon.com/posts/25070968)
 Check that the `Samples` folder located under `Assets/` is renamed to `Samples~` before creating a new release!
 Otherwise Unity will throw an error stating that the contained scripts can't be compiled.
 This practice follows the Unity guidelines for creating the package structure.
+This only has to be done for the versions on the upm branch!
+
+Before you start, check that the version of the package under `Assets/VRSketchingGeometryPackage/package.json` is correct.
+Also check that `Assets/VRSketchingGeometryPackage/CHANGELOG.md` is updated, to reflect the changes made.
 
 Note that `"version"` needs to be replaced by the version number that you want to release.
 ```
@@ -45,6 +50,12 @@ If the wrong tag is already pushed:
 ```
 git push origin :tagName
 ```
+
+### Pushing a new documentation to the doc branch
+
+To release a new version of the documentation the files have to be pushed onto a `docs` branch.
+For that you can create a new branch for the new version like `docs/0.1.0`.
+You can find more about the creation of the documentation [here](Docs.md)
 
 ## Tests
 

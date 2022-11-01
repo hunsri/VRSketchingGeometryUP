@@ -20,6 +20,9 @@ To interact with a scene at runtime you can use the buttons provided in the insp
 - Undo actions
 - Redo actions
 
+### Notes
+- lines drawn with e.g. a controller should use the ´AddControlPointContinuousCommand´ instead
+
 ## BrushExample
 
 ### Shows
@@ -29,3 +32,16 @@ To interact with a scene at runtime you can use the buttons provided in the insp
 
 ### Interaction
 - modified line creation
+
+***
+## Still Missing Examples
+More examples like these should be added in the future, to replace the Legacy example.
+The goal is to show all functionalities of the Modelling Kernel in detail.
+
+### Missing Scenes
+- Active line creation (with AddControlPointContinuousCommand instead of AddControlPointCommand)
+- Object selection
+- Object serialization/deserialization
+- RibbonSketchObject
+- PatchSketchObject
+- OBJ export of Sketches

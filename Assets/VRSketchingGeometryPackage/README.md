@@ -37,8 +37,10 @@ https://github.com/hunsri/VRSketchingGeometryUP.git#0.1.0
 - click on "Import"
 - files will be imported under `Assets/Samples/`
 
-## [API documentation](https://tterpi.github.io/VRSketchingGeometry/)
-Read the [developer guide](https://tterpi.github.io/VRSketchingGeometry/articles/intro.html) and [API documentation](https://tterpi.github.io/VRSketchingGeometry/api/index.html) at the github pages site.
+## API documentation
+Read the **developer guide** and **API documentation** at the GitHub pages site. </br>
+Alternatively, you can host these yourself too,
+check out the [Docs Reference](../../Docs.md) for further details!
 
 ## Quick start
 The following example script shows how to create a new line sketch object and add few control points to it using a command invoker.</br>
@@ -46,8 +48,6 @@ At the end one command is undone.</br></br>
 You will have to reference a `DefaultReference` Scriptable Object in the inspector.</br>
 An example can be found under `SharedAssets/Assets/DefaultReferences.asset`.</br>
 To access `SharedAssets` you have to import it in the Package Manager (see [Import the examples](./README.md#import-the-examples))</br>
-
-See [the example script](./Samples~/LegacyExample/Scripts/VRSketchingExample.cs) for a more comprehensive demonstration.
 
 ```C#
     using UnityEngine;
@@ -84,7 +84,7 @@ See [the example script](./Samples~/LegacyExample/Scripts/VRSketchingExample.cs)
 4. Serialize or export using methods of the sketch world script.
 5. Load serialized sketch world from the serialized xml file for further editing.
 
-An [example script](./Samples~/LegacyExample/Scripts/VRSketchingExample.cs) was created to show this process in practice.
+The [LegacyExample](./README.md#legacy-example) also shows this process in practice.
 
 ## Samples
 
@@ -96,8 +96,8 @@ These can be imported via the Unity Package Manager.
 Contains all the assets required to run the examples.
 Can be used as a reference for the creation of own assets.
 
-### Example Scenes
-Contains various examples. For further details please refer to [this readme](./Samples~/ExampleScenes/Scenes/README.md).
+### [Example Scenes](./Samples/ExampleScenes/Scenes/README.md)
+Contains various examples. For further details please refer to [this readme](./Samples/ExampleScenes/Scenes/README.md).
 
 ### Legacy Example
 Contains a static scene with various messy test scripts and corresponding game objects.

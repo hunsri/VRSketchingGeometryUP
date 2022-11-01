@@ -53,7 +53,7 @@ Finally **add and commit the changes** to git and push the changes onto the bran
 
 Once you are done, you can return to developing on another branch. </br>
 Also you can now set the newly pushed branch as the base of your GH-pages. </br>
-Or alternatively, merge it with a `doc` branch that holds the latest version of the documentation.
+Or alternatively, merge it with a `docs` branch that holds the latest version of the documentation.
 
 Note that you will have to specify that the `docs` folder should be used as the source of the documentation.
 

@@ -3,4 +3,4 @@
 #[Example Scenes](../Assets/VRSketchingGeometryPackage/Samples/ExampleScenes/Scenes/README.md)
 #[Developer guide](intro.md)
 #[Extension guide](extension_guide.md)
-#[Changelog](../Assets/VRSketchingGeometryPackage/changelog.md)
+#[Changelog](../Assets/VRSketchingGeometryPackage/CHANGELOG.md)

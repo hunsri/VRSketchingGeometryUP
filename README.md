@@ -32,7 +32,8 @@ Otherwise Unity will throw an error stating that the contained scripts can't be 
 This practice follows the Unity guidelines for creating the package structure.
 This only has to be done for the versions on the upm branch!
 
-Before you start, check that the version of the package under `Assets/package.json` is correct.
+Before you start, check that the version of the package under `Assets/VRSketchingGeometryPackage/package.json` is correct.
+Also check that `Assets/VRSketchingGeometryPackage/CHANGELOG.md` is updated, to reflect the changes made.
 
 Note that `"version"` needs to be replaced by the version number that you want to release.
 ```

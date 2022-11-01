@@ -36,6 +36,7 @@
           "articles/toc.yml",
           "*.md",
           "Assets/VRSketchingGeometryPackage/README.md",
+          "Assets/VRSketchingGeometryPackage/changelog.md",
           "Assets/VRSketchingGeometryPackage/Samples/ExampleScenes/Scenes/README.md"
         ],
         "exclude": [

@@ -5,8 +5,8 @@ This is a framework for developing 3D sketching applications in Unity.
 
 ## Overview
 
-The Unity project that holds the package and the project configuration lays on the `master` branch. </br>
-The version of the package that can be used to import it into Unity lays on the `upm` branch. </br>
+The Unity project that holds the package and the project configuration is on the `master` branch. </br>
+The version of the package that can be used to import it into Unity is on the `upm` branch. </br>
 The files for the documentation can be found on the `docs` branch.
 
 ## Installation and user guide

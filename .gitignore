@@ -68,5 +68,5 @@ crashlytics-build.properties
 /Assets/textures.meta
 
 /_site/
-/Packages/docfx.console.2.59.4/
+/Packages/docfx.console.*/
 /log.txt
